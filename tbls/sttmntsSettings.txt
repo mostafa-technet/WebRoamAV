@@ -1,0 +1,17 @@
+INSERT INTO tblSettings (ID, SAU, SIS, SRR, SRS) VALUES (1, fOnOff.IsChecked, sOnOff.IsChecked, tOnOff.IsChecked, foOnOff.IsChecked)
+
+UPDATE tblSettings SET ID, SAU=fOnOff.IsChecked, SIS=sOnOff.IsChecked, SRR=tOnOff.IsChecked, SRS=foOnOff.IsChecked
+
+
+UPDATE tblSettings SET AShow=ckSho.IsChecked, AMode=r1.IsChecked, APath='txtBrs1.Text', ACopyPATH='txtBrs2.Text'
+
+
+
+UPDATE tblSettings SET ISEnableP=ckEn.IsChecked , ISType=cmbType.SelectedIndex , ISServer='txtServer.Text' , ISPort=txtPort.Text , ISUser='txtUserName.Text', ISPassword='txtPassword.Text'
+
+
+
+UPDATE tblSettings SET RRRestore=ckB1.IsChecked, RRRepaire=ckB2.IsChecked
+
+
+UPDATE tblSettings SET RSDelAfter=ckB1.IsChecked?cmbLevel.SelectedIndex:-1

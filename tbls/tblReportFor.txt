@@ -1,0 +1,18 @@
+tblReportFor
+
+ID
+ReportFID
+Date
+Time
+ReportFor
+
+
+CREATE TABLE tblReportFor (
+    ID        INTEGER       UNIQUE
+                            PRIMARY KEY
+                            NOT NULL,
+    ReportFID INTEGER       NOT NULL,
+    Date      BIGINT        NOT NULL,
+    Time      CHAR (30),
+    ReportFor VARCHAR (150) 
+);

@@ -1,0 +1,22 @@
+tblQuBack
+
+ID (int)
+DeleteAfter (int)
+FileID (int)
+FileName (char 50)
+Location (varchar 250)
+QDate (char 30)
+IsDefault(bool)
+
+
+CREATE TABLE tblQuBack (
+    id          INTEGER       PRIMARY KEY
+                              UNIQUE
+                              NOT NULL,
+    DeleteAfter INTEGER,
+    FileID      INTEGER,
+    FileName    CHAR (50),
+    Location    VARCHAR (250),
+    QDate       CHAR (30),
+    IsDefault   BOOLEAN
+);

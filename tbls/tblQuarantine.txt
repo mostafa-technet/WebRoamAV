@@ -1,0 +1,22 @@
+tblQuarantine
+
+ID (int)
+FileName (varchar 150)
+Location (varchar 250)
+QuarantinedOn (varchar 40)
+VirusName (varchar 150)
+SendStatus (bool)
+Type (int) (Quarantine/backup)
+
+
+CREATE TABLE tblQuarantine (
+    ID            INTEGER       PRIMARY KEY
+                                UNIQUE
+                                NOT NULL,
+    FileName      VARCHAR (150),
+    Location      VARCHAR (250),
+    QuarantinedOn VARCHAR (40),
+    VirusName     VARCHAR (150),
+    SendStatus    BOOLEAN,
+    Type          INTEGER
+);

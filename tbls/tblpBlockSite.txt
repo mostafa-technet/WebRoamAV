@@ -1,0 +1,14 @@
+tblpBlockSite
+
+ID (bigint)
+Website (varchar 250)
+SubDomain (varchar 150)
+
+
+CREATE TABLE tblpBlockSite (
+    ID        BIGINT        PRIMARY KEY
+                            UNIQUE
+                            NOT NULL,
+    Website   VARCHAR (250),
+    SubDomain VARCHAR (150) 
+);

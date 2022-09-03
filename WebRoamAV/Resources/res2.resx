@@ -1,0 +1,3921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IDS_BASE_PRODUCTNAME" xml:space="preserve">
+    <value>Quick Heal Total Security</value>
+  </data>
+  <data name="IDS_LANG_LOCALE_DEC" xml:space="preserve">
+    <value>1033</value>
+  </data>
+  <data name="IDS_COMPANY_ENTEDTION" xml:space="preserve">
+    <value>Quick Heal Enterprise Edition</value>
+  </data>
+  <data name="IDS_COMPANY_NAME" xml:space="preserve">
+    <value>Quick Heal Technologies (P) Ltd.</value>
+  </data>
+  <data name="IDS_COMPANY_BUYURL" xml:space="preserve">
+    <value>http://www.quickheal.co.in/public/products/buynow.asp</value>
+  </data>
+  <data name="IDS_MAINDLG_DLLERROR" xml:space="preserve">
+    <value>%s is bad or corrupt.
+Try re-installing %s.
+
+If the problem persists, contact technical support.</value>
+  </data>
+  <data name="IDS_MAINDLG_FILENOTFOUND" xml:space="preserve">
+    <value>%s file not found.</value>
+  </data>
+  <data name="IDS_MAINDLG_SDNASCAN_INFORMATION" xml:space="preserve">
+    <value>There are new file entries in your Quarantine folder, that are yet to be submitted to research lab. We recomm to submit these new files to our research lab. This is important to curb the wild spread of the new virus or malware. Suspicious file submission ensures the detailed analysis of the file in research lab of Quick Heal. After the detailed analysis it can be added in the known virus signature database which will be provided in updates to all the users.
+
+Do you want to submit the new suspicious files in Quarantine?</value>
+  </data>
+  <data name="IDS_MAINDLG_SDNASCAN_DONTSHOWNEXTTIME" xml:space="preserve">
+    <value>Don't display this message next time.</value>
+  </data>
+  <data name="IDS_MAINDLG_SDNASCAN_YES" xml:space="preserve">
+    <value>&amp;Yes</value>
+  </data>
+  <data name="IDS_MAINDLG_SDNASCAN_NO" xml:space="preserve">
+    <value>&amp;No</value>
+  </data>
+  <data name="IDS_MAINDLG_ANTIVIRUS" xml:space="preserve">
+    <value>AntiVirus</value>
+  </data>
+  <data name="IDS_CLOSE" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="IDS_MAINDLG_BTNMINIMIZE" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="IDS_MAINDLG_RESTRICTED_MSG" xml:space="preserve">
+    <value>You do not have administrative access rights.
+Please logon as an Administrator and try again.</value>
+  </data>
+  <data name="IDS_MAINSTRING_ADMINSTRING" xml:space="preserve">
+    <value>%s Admin Console</value>
+  </data>
+  <data name="IDS_MAINSTRING_ADMINCLIENTSTRING" xml:space="preserve">
+    <value>%s Admin Console Client</value>
+  </data>
+  <data name="IDS_MAINSTRING_COMPANYNAME_CORE" xml:space="preserve">
+    <value>Quick Heal</value>
+  </data>
+  <data name="IDS_MAINSTRING_PRODUCTNAME" xml:space="preserve">
+    <value>Quick Heal Total Security</value>
+  </data>
+  <data name="IDS_MAINSTRING_PERSONAL_USE" xml:space="preserve">
+    <value>Personal Use</value>
+  </data>
+  <data name="IDS_MAINSTRING_DR" xml:space="preserve">
+    <value>Dr.</value>
+  </data>
+  <data name="IDS_MAINSTRING_PROF" xml:space="preserve">
+    <value>Prof.</value>
+  </data>
+  <data name="IDS_MAINSTRING_MR" xml:space="preserve">
+    <value>Mr.</value>
+  </data>
+  <data name="IDS_MAINSTRING_MRS" xml:space="preserve">
+    <value>Mrs.</value>
+  </data>
+  <data name="IDS_MAINSTRING_MS" xml:space="preserve">
+    <value>Ms.</value>
+  </data>
+  <data name="IDS_MAINSTRING_BUYNOWMSG" xml:space="preserve">
+    <value>Your current version of %s can only detect and report the
+viruses during scan. It does not repair the viruses.
+
+To add virus repairing capabilities in the current version you need
+to buy %s license from %s website. The
+ commercial license will include:
+
+1. Free upgrades till valid period of your license.
+2. Free email/telephone support till valid period of your license.
+</value>
+  </data>
+  <data name="IDS_MAINSTRING_FONTSIZE" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="IDS_MAINSTRING_COMPANYNAME" xml:space="preserve">
+    <value>Total Security</value>
+  </data>
+  <data name="IDS_MAINSTRING_COMPANYID_SUPPORT" xml:space="preserve">
+    <value>support@quickheal.com</value>
+  </data>
+  <data name="IDS_MAINSTRING_COMPANYFULLNAME" xml:space="preserve">
+    <value>Copyright � 2010 Quick Heal Technologies (P) Ltd.</value>
+  </data>
+  <data name="IDS_MAINSTRING_COMPANY_SITENAME" xml:space="preserve">
+    <value>www.quickheal.com</value>
+  </data>
+  <data name="IDS_MAINSTRING_FONTSIZE_HEADING" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="IDS_MAINSTRING_FONTSIZE_SUBHEADING" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="IDS_MAINSTRING_FONTNAME" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="IDS_ABOUT_VERSION" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="IDS_ABOUT_VIRUSDBDATE" xml:space="preserve">
+    <value>Virus Database:</value>
+  </data>
+  <data name="IDS_ABOUT_LICENSETO" xml:space="preserve">
+    <value>This product is licensed to:</value>
+  </data>
+  <data name="IDS_ABOUT_WARNING" xml:space="preserve">
+    <value>Warning: This computer program is protected by copyright law and international treaties.
+Unauthorized reproduction or distribution may result in severe civil and criminal penalties,
+and will be prosecuted to the maximum extent possible under the law.</value>
+  </data>
+  <data name="IDS_ABOUT_EVALUATIONCOPY" xml:space="preserve">
+    <value>This is an evaluation copy</value>
+  </data>
+  <data name="IDS_ABOUT_NOTREGISTREDCOPY" xml:space="preserve">
+    <value>This copy is not registered</value>
+  </data>
+  <data name="IDS_ABOUT_CAPTION_LIC_DETAIL" xml:space="preserve">
+    <value>%s License Details</value>
+  </data>
+  <data name="IDS_ABOUT_CAPTION_UPDATE_LIC" xml:space="preserve">
+    <value>Update &amp;License Details</value>
+  </data>
+  <data name="IDS_ABOUT_MSG_UPDATE_LIC" xml:space="preserve">
+    <value>Update License will check for any changes in the license information. 
+This check requires Internet connection. Make sure that you are
+connected to Internet. Please use this feature only if
+there is any change in your license information 
+(For example: Direct Renewal done by vor).
+
+To proceed click Continue.</value>
+  </data>
+  <data name="IDS_ABOUT_TITLE_UPDATE_LIC" xml:space="preserve">
+    <value>Update License</value>
+  </data>
+  <data name="IDS_ABOUT_MSG_LIC_NO_CHANGE" xml:space="preserve">
+    <value>There is no change in your license information.</value>
+  </data>
+  <data name="IDS_ABOUT_MSG_LIC_CHANGE" xml:space="preserve">
+    <value>Your license information has been updated.</value>
+  </data>
+  <data name="IDS_ABOUT_CAPTION_LICENSE" xml:space="preserve">
+    <value>License &amp;Details</value>
+  </data>
+  <data name="IDS_ABOUT_CAPTION_CONTINUE" xml:space="preserve">
+    <value>Co&amp;ntinue</value>
+  </data>
+  <data name="IDS_ABOUT_CAPTION_PRINT_LIC" xml:space="preserve">
+    <value>Pri&amp;nt License Details</value>
+  </data>
+  <data name="IDS_ABOUT_ACTIVATE" xml:space="preserve">
+    <value>&amp;Activate Now</value>
+  </data>
+  <data name="IDS_ABOUT_RENEW" xml:space="preserve">
+    <value>&amp;Renew Now</value>
+  </data>
+  <data name="IDS_ABOUT_COPYRIGHT" xml:space="preserve">
+    <value>� Copyright 2010 Quick Heal Technologies (P) Ltd. All rights reserved.</value>
+  </data>
+  <data name="IDS_ABOUT_LICENSE_INTERNET_MSG" xml:space="preserve">
+    <value>Unable to detect Internet Connection. Please connect
+to internet and try again.</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_REMOTE" xml:space="preserve">
+    <value>&amp;Remote Support</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_REMOTE_AGREE" xml:space="preserve">
+    <value>I &amp;Agree</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_REMOTE_DISAGREE" xml:space="preserve">
+    <value>I &amp;Disagree</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_REMOTE_HEADING" xml:space="preserve">
+    <value>%s Remote Support</value>
+  </data>
+  <data name="IDS_ABTDLG_URL_NOT_OPENED" xml:space="preserve">
+    <value>Unable to open specified URL. Please check if you have default browser set.</value>
+  </data>
+  <data name="IDS_ABTDLG_COMPANYNAME" xml:space="preserve">
+    <value>Company Name:</value>
+  </data>
+  <data name="IDS_ABTDLG_SERIALNO" xml:space="preserve">
+    <value>Product Key:</value>
+  </data>
+  <data name="IDS_ABTDLG_SUBSCRIPTION" xml:space="preserve">
+    <value>License valid till:</value>
+  </data>
+  <data name="IDS_ABTDLG_ACTIVATION" xml:space="preserve">
+    <value>Activation Number:</value>
+  </data>
+  <data name="IDS_ABTDLG_INSTALLATION" xml:space="preserve">
+    <value>Installation Number:</value>
+  </data>
+  <data name="IDS_ABTDLG_LICENSEDFOR" xml:space="preserve">
+    <value>Licensed For:</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_BACK" xml:space="preserve">
+    <value>&lt;&lt; &amp;Back</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_WEBBASEDMESSAGE" xml:space="preserve">
+    <value>%s
+System Information tool has generated a report that includes information regarding the condition of your PC. The collected information is compressed in INFO.QHC file that will be sent at mailto:%s for detailed analysis.</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_MESSAGE" xml:space="preserve">
+    <value>If you suspect a new malware in your PC, you are at right place. System Information tool creates a system report that will help us to find out if your system is infected by some new unknown virus, worm, backdoor, trojan, spyware or adware.
+
+For more details, Press Help.
+
+Press Next to continue with report generation, Cancel to exit.</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_COLLECTMESSAGE" xml:space="preserve">
+    <value>System Information tool has generated a report that includes
+information regarding the condition of your PC. It is generated      
+by analyzing the registry, system files and folders.
+The collected information is stored in file:
+%s
+
+Please s this file to our R&amp;D Center for analysis.
+Email: %s
+
+</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_PROBLEMMSG" xml:space="preserve">
+    <value>Please describe the problem you are facing in brief.</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_SMTPBASEDMESSAGE" xml:space="preserve">
+    <value>%s
+System Information tool has generated a report that includes
+information regarding the condition of your PC. It is generated
+by analyzing the registry, system files and folders.
+
+The report contains copy of few registry entries, entries from
+WIN.INI, SYSTEM.INI, AUTOEXEC.BAT and information
+about running processes. The collected information
+is compressed in INFO.QHC file that will be sent to %s
+Technical Support at %s for analysis.
+
+Regards
+%s Team
+
+******************************************************************
+Disclaimer:
+
+We do not intentionally collect your files, name, address, email
+address or any other form of information that can be personal.
+The information that we collect will only be used to analyze new
+infection in your PC. We respect your privacy. This information
+will not be shared or disclosed anywhere.
+
+Visit Us At: %s
+******************************************************************
+</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_DISPLAYINFO" xml:space="preserve">
+    <value>Gathering system information. Please wait...</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_STC_UPLOADING_FILE" xml:space="preserve">
+    <value>Uploading file</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_MSG_UPLOADING_SUCCEDED" xml:space="preserve">
+    <value>System information file has been submitted successfully.</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_SYSINFO_MAIL" xml:space="preserve">
+    <value>sysinfo@quickheal.com</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFONEXT_MAILID" xml:space="preserve">
+    <value>Your &amp;Email Address:</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFONEXT_MAILTO" xml:space="preserve">
+    <value>&amp;Mail To:</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFONEXT_PROBLEMHEADING" xml:space="preserve">
+    <value>I am sing the system information because</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFONEXT_SUSPECTMALWARE" xml:space="preserve">
+    <value>I &amp;suspect my system is infected by new malwares.</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFONEXT_GENERALPROBLEM" xml:space="preserve">
+    <value>I &amp;am having problem while using %s.</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFONEXT_COMMENTS" xml:space="preserve">
+    <value>C&amp;omments:</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCY_COMPLETE" xml:space="preserve">
+    <value>Emergency disk has been successfully created</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCY_CMDSCANNER_COMPLETE" xml:space="preserve">
+    <value>Command Line Scanner has been successfully created </value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCY_FILE_CORRUPT" xml:space="preserve">
+    <value>Emergency configuration files are corrupt</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCY_FILE_MISSING" xml:space="preserve">
+    <value>Emergency configuration files are missing.</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_INFOFORMATDISK" xml:space="preserve">
+    <value>While creating emergency disk you will need to provide several formatted disks.
+Warning: Please provide clean formatted disk otherwise data will be lost.
+Do you want to continue?</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_INFOSUCCESSCOPY" xml:space="preserve">
+    <value>All Files Copied successfully</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_INFOFILECOPY" xml:space="preserve">
+    <value>Copying Files</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_LABEL" xml:space="preserve">
+    <value>Create Emergency CD</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_ERRMSGACCESSDRIVE" xml:space="preserve">
+    <value>Unable to access drive</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_SUBLABEL" xml:space="preserve">
+    <value>Welcome to Emergency CD Creation Wizard</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_MESSAGE" xml:space="preserve">
+    <value>Emergency CD can be used in emergency situation where your system is infected with virus that need
+to be cured from boot shell. If your AntiVirus is up to date then the emergency CD will be created using
+latest signature pattern files. Before creating the emergency CD, please ensure that the system is
+clean.</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_ERRMSGSAVEAT" xml:space="preserve">
+    <value>Invalid path, please specify correct path</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_ERRMSGCOPYOPERATION" xml:space="preserve">
+    <value>Unable to copy files to destination folder.</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_UNSUPPORTED_DISK" xml:space="preserve">
+    <value>Unsupported Disk Type. Please Insert 1.44 disk </value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_INFOCREATEFOLDER" xml:space="preserve">
+    <value>Specified folder doesn't exists. Do you want to create it?</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_INSUFFICIENT" xml:space="preserve">
+    <value>Insufficient Disk Space...</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_MESSAGE1" xml:space="preserve">
+    <value>To create emergency CD you need to have:
+- Licensed copy of Microsoft Windows Operating System. (Windows 2000/XP/2003 or above)
+- Microsoft Windows Installation CD. (Windows XP/2003)
+- A blank writable CD and a CD - Writer drive</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_MESSAGE2" xml:space="preserve">
+    <value>Emergency CD:
+- Can only be used to scan and clean drives of the same system for which you have licensed Microsoft
+   Windows operating system.
+- Cannot be used for any other system.</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISK_MESSAGE3" xml:space="preserve">
+    <value>Microsoft Windows and Windows XP are registered trademarks of Microsoft Corporation.
+Other product and company names mentioned on this page may be the trademarks of their respective owners.</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_BROWSETITLE" xml:space="preserve">
+    <value>Select Folder Path to Save Command line scanner files</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_INFOMOREDISK" xml:space="preserve">
+    <value>Disk %d has been successfully created. Please label this disk as Disk %d and insert new disk</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_INFOROOTDIRECTORY" xml:space="preserve">
+    <value>Writing root directory entry</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_INFOBOOTSECTOR" xml:space="preserve">
+    <value>Writing Boot Sector</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_INFOWRITEFAT" xml:space="preserve">
+    <value>Writing File Allocation Table</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_LABEL" xml:space="preserve">
+    <value>Options to create emergency disk</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_SUBLABEL" xml:space="preserve">
+    <value>Please use one of the following emergency options</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_CREATEDISK" xml:space="preserve">
+    <value>C&amp;reate emergency CD</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_DRIVEA" xml:space="preserve">
+    <value>Drive &amp;A:</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_DRIVEB" xml:space="preserve">
+    <value>Dri&amp;ve B:</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_DRIVE" xml:space="preserve">
+    <value>Drive</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_SAVEAT" xml:space="preserve">
+    <value>&amp;Save Command line Scanner at</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_BROWSE" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="IDS_TOOLS_EMERGENCYDISKSEC_PROGRESSLABEL" xml:space="preserve">
+    <value>Copying...</value>
+  </data>
+  <data name="IDS_SAVECHANGES_MESSAGE" xml:space="preserve">
+    <value>Do you wish to save changes?</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_LABEL" xml:space="preserve">
+    <value>System Information</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_SUBLABEL" xml:space="preserve">
+    <value>An easy tool to trace new malware</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFO_NEXT" xml:space="preserve">
+    <value>Ne&amp;xt &gt;&gt;</value>
+  </data>
+  <data name="IDS_OPTIONS_INPWHITELIST_INVALIDEMAIL" xml:space="preserve">
+    <value>Invalid Email address</value>
+  </data>
+  <data name="IDS_NEW" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_ON" xml:space="preserve">
+    <value>on</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_WEEKS" xml:space="preserve">
+    <value>week(s)</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_DAYS" xml:space="preserve">
+    <value>day(s)</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_WEEK" xml:space="preserve">
+    <value>week</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_DIAGNOSTIC" xml:space="preserve">
+    <value>Quick Heal support needs these support tools to diagnose your system</value>
+  </data>
+  <data name="IDS_STATUS_FILES_AND_FOLDERS" xml:space="preserve">
+    <value>Files &amp;&amp; Folders</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_EMERGENCY_CD" xml:space="preserve">
+    <value>Create emergency cd which helps to clean badly infected PC</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_EXCLUDE_FILE_EXTENSIONS" xml:space="preserve">
+    <value>Exclude file extensions from Virus Protection</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_HIJACK_RESTORE" xml:space="preserve">
+    <value>Restores important Internet Explorer settings modified by malwares</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_PREVENTIVE" xml:space="preserve">
+    <value>Tools used to secure your system</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_QUARANTINE" xml:space="preserve">
+    <value>Helps to safely isolate the infected and suspicious files</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_SECURE_USB_DRIVE" xml:space="preserve">
+    <value>Prevents USB drives against autorun malware infection</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_SYSTEM_EXPLORER" xml:space="preserve">
+    <value>Diagnose system for running processes</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_TRACK_CLEANER" xml:space="preserve">
+    <value>Cleans application and Internet activity traces</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_WINDOWS_SPY" xml:space="preserve">
+    <value>Finds detailed information about an application or process</value>
+  </data>
+  <data name="IDS_SCAN_TAB_STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IDS_STATUS_EMAILS" xml:space="preserve">
+    <value>Emails</value>
+  </data>
+  <data name="IDS_SCAN_TAB_ACTION" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="IDS_SCAN_MOBILE_ADDMOBILE" xml:space="preserve">
+    <value>Add Mo&amp;bile</value>
+  </data>
+  <data name="IDS_SCAN_MOBILE_REMOVEMOBILE" xml:space="preserve">
+    <value>Remo&amp;ve Mobile</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_BACKUPINITIALLY" xml:space="preserve">
+    <value>Backup before ta&amp;king action</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_ATTACHSETTINGS" xml:space="preserve">
+    <value>Attachment control settings</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_BLOCKATTACHMULTIEXT" xml:space="preserve">
+    <value>Block attachments with multiple e&amp;xtensions</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_BLOCKEMAILEXPLOIT" xml:space="preserve">
+    <value>Block emails crafted to exploit &amp;vulnerability</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_ENABLEATTACHCONTROL" xml:space="preserve">
+    <value>Enable &amp;attachment control</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_BLOCKALLATTACH" xml:space="preserve">
+    <value>&amp;Block all attachments</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_BLOCKUSERSPECIFICATTACH" xml:space="preserve">
+    <value>Block &amp;user specified attachments</value>
+  </data>
+  <data name="IDS_OPT_TRUSECLT_EMAILCLIENTLIST" xml:space="preserve">
+    <value>Email client list</value>
+  </data>
+  <data name="IDS_OPT_SCNEXTDRV_EXTDRVACTION" xml:space="preserve">
+    <value>Select action to be performed when external drives like USB drives are plugged in</value>
+  </data>
+  <data name="IDS_OPT_SCNEXTDRV_SCNROOTDRVFILES" xml:space="preserve">
+    <value>Scan files on &amp;root of the drive only</value>
+  </data>
+  <data name="IDS_OPT_SCNEXTDRV_SCNFULLDRIVE" xml:space="preserve">
+    <value>Scan &amp;full drive</value>
+  </data>
+  <data name="IDS_OPT_DATAPRO_EXTDRVPOLICY" xml:space="preserve">
+    <value>Select policy for external drives</value>
+  </data>
+  <data name="IDS_OPT_DATAPRO_NOWRITEACCESS" xml:space="preserve">
+    <value>Read only and no &amp;write access to external drives</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_FILENAME" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_LOCATION" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_QRON" xml:space="preserve">
+    <value>Quarantined On</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_VIRUSNAME" xml:space="preserve">
+    <value>Virus Name</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_MEMALERR" xml:space="preserve">
+    <value>Insufficient memory.
+Please close some of the applications
+and run Quarantine again.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_QRERR" xml:space="preserve">
+    <value>Quarantine Error</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_QLF_CORRUPT" xml:space="preserve">
+    <value>Quarantine log file seems to be corrupted.
+Attempting possible recovery.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_UNLQUARFUN" xml:space="preserve">
+    <value>Unable to load QUARFUN.DLL.
+Make sure that the file is present at %s Folder</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_CORRUPT_QUARFUN" xml:space="preserve">
+    <value>QUARFUN.DLL seems to be corrupted.
+Please replace the above file or reinstall %s.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_UNACCESSABLE_FILE" xml:space="preserve">
+    <value>%s
+Unable to access the file.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_READONLY_FILE" xml:space="preserve">
+    <value>%s
+File is read only. Do you want to continue?</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_NOTOPEN_FILE" xml:space="preserve">
+    <value>%s
+File could not be opened.
+Can not add the file to Quarantine.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_OUTOFLIMIT_FILE" xml:space="preserve">
+    <value>The size of
+%s File
+is more than %dMB.
+Continue Anyway?</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_OUTOFLIMIT_DISK" xml:space="preserve">
+    <value>Insufficient disk space.
+Free some disk space and try again.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_NOQUARANTINE_FILE" xml:space="preserve">
+    <value>Cannot Quarantine file from Quarantine Directory</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_DELETE_FILE" xml:space="preserve">
+    <value>Are you sure you want delete the file?</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_QRWAR" xml:space="preserve">
+    <value>Quarantine Warning</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_NOREMOVE_FILE" xml:space="preserve">
+    <value>Unable to remove the file from Quarantine.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_NOREMQUAR_FILE" xml:space="preserve">
+    <value>Could not remove file from Quarantine.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_REMOVEALL_WARNING" xml:space="preserve">
+    <value>Do you really want to delete all the files
+from Quarantine?</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_RESTORE_WARNING" xml:space="preserve">
+    <value>The file being restored may contain a virus.
+Are you sure?</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_SSTATUS" xml:space="preserve">
+    <value>S Status</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_LABEL" xml:space="preserve">
+    <value>Quarantine</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_SUBLABEL" xml:space="preserve">
+    <value>This utility will help you to quarantine the suspected files. Below is the lists of files quarantined and backed up.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_S" xml:space="preserve">
+    <value>&amp;S</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_QUARERR" xml:space="preserve">
+    <value>Could not collect the information</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_SQUARINFO" xml:space="preserve">
+    <value>Please s %s to our R&amp;D center for analysis.</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_BACKUP" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_MOBILE" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="IDS_TOOLS_QURANTINE_QUARANTINE" xml:space="preserve">
+    <value>Quarantine</value>
+  </data>
+  <data name="IDS_TOOLS_QUARANTINE_TYPE" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IDS_TOOLS_QUAR_COLLECTMESSAGE" xml:space="preserve">
+    <value>Unable to submit quarantine files.
+The quarantined file is stored at %s
+
+Please s this file to our R&amp;D centre for analysis at
+%s
+
+</value>
+  </data>
+  <data name="IDS_TOOLS_MIN" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="IDS_TOOLS_HRS" xml:space="preserve">
+    <value>Hrs</value>
+  </data>
+  <data name="IDS_OPT_DATAPRO_BLOCKCOMPLETEACCESS" xml:space="preserve">
+    <value>&amp;Block complete access to external drives</value>
+  </data>
+  <data name="IDS_MEMSCAN_WORMFOUNDINMEMORY" xml:space="preserve">
+    <value>Threats found active in the memory. Please perform a complete scan of your system for proper disinfection.</value>
+  </data>
+  <data name="IDS_MEMSCAN_UNABLETOLOAD" xml:space="preserve">
+    <value>Unable to load the file %s</value>
+  </data>
+  <data name="IDS_MEMSCAN_VIRACTIVE" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="IDS_MEMSCAN_PARTINFECT" xml:space="preserve">
+    <value>Partition table is infected by %s Virus Please reboot the system with clean bootable and remove the virus using %s Emergency Disk.</value>
+  </data>
+  <data name="IDS_MEMORY_SCAN" xml:space="preserve">
+    <value>Memory Scan</value>
+  </data>
+  <data name="IDS_MEMSCAN_BOOTINFECT" xml:space="preserve">
+    <value>Boot Record is infected by %s Virus Please reboot the system with clean bootable and remove the virus using %s Emergency Disk.</value>
+  </data>
+  <data name="IDS_MEMSCAN_QHALERT" xml:space="preserve">
+    <value>%s Memory Scan Alert.</value>
+  </data>
+  <data name="IDS_MEMSCAN_VIRACTIVELOADED" xml:space="preserve">
+    <value>Threats found active in the memory. Boot time scan will be scheduled. Please click OK to proceed.</value>
+  </data>
+  <data name="IDS_MEMSCAN_VIRDOBOOTSCAN" xml:space="preserve">
+    <value>%s
+Is active in memory. It is loaded through 
+%s and also
+%s
+Please reboot the system with clean bootable and scan the system.</value>
+  </data>
+  <data name="IDS_MEMSCAN_DLLVIRUS" xml:space="preserve">
+    <value>%s
+Is active in memory. It is loaded through 
+%s
+
+This file is marked for deletion on next boot.
+ Please scan the complete system.</value>
+  </data>
+  <data name="IDS_MEMSCAN_DNASCANFOUNDSUSPICIOUS" xml:space="preserve">
+    <value>DNAScan found suspicious file loaded into memory.</value>
+  </data>
+  <data name="IDS_MEMSCAN_MBROFDRIVE" xml:space="preserve">
+    <value>Master boot record of physical disk %u</value>
+  </data>
+  <data name="IDS_MEMSCAN_BOOTSECOFDRIVE" xml:space="preserve">
+    <value>Boot Record of drive %c</value>
+  </data>
+  <data name="IDS_MEMSCAN_FILEMAKED_DELON_NEXTBOOT" xml:space="preserve">
+    <value>This file is marked for deletion on next boot.</value>
+  </data>
+  <data name="IDS_MEMSCAN_EMERGENCY_DISK" xml:space="preserve">
+    <value>Threats found active in the memory. Please reboot the system using Emergency CD/DVD and scan the system.</value>
+  </data>
+  <data name="IDS_MEMSCAN_DNASCAN_ACTIVEPROGRAMISSUSPICIOUS" xml:space="preserve">
+    <value>Following active program is suspicious</value>
+  </data>
+  <data name="IDS_SCAN_NEWSCAN_CAPTION" xml:space="preserve">
+    <value>Scan Wizard</value>
+  </data>
+  <data name="IDS_SCAN_SCANFILE_UNABLETOLOADSCANAPI" xml:space="preserve">
+    <value>Unable to load ScanAPI</value>
+  </data>
+  <data name="IDS_SCAN_FILE_STOP" xml:space="preserve">
+    <value>&amp;Stop</value>
+  </data>
+  <data name="IDS_SCAN_FILE_SCANFOLDER" xml:space="preserve">
+    <value>Folder:</value>
+  </data>
+  <data name="IDS_SCAN_FILE_SCANFILE" xml:space="preserve">
+    <value>Extracting:</value>
+  </data>
+  <data name="IDS_SCAN_FILE_SHUTDOWNPC" xml:space="preserve">
+    <value>Shut down PC when finished</value>
+  </data>
+  <data name="IDS_SCAN_FILE_SCAN_PROGRESS" xml:space="preserve">
+    <value>Scan Progress</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_SCANREP" xml:space="preserve">
+    <value>Report for - %s</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_STIME" xml:space="preserve">
+    <value>Time %02d:%02d:%02d</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_VIRUSDB" xml:space="preserve">
+    <value>
+ Virus database - </value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_QHVERSION" xml:space="preserve">
+    <value>
+
+ %s version - </value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_VIRUSFOUND" xml:space="preserve">
+    <value>Detected:</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_VIRUSFOUNDIN" xml:space="preserve">
+    <value>Virus found in</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILESUSPICIOUS" xml:space="preserve">
+    <value>File is suspicious</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILEREPAIRED" xml:space="preserve">
+    <value>File is repaired</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_IOERROR" xml:space="preserve">
+    <value>I/O error</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILEQUARANTINED" xml:space="preserve">
+    <value>File is quarantined</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILEMARKEDTOBEDELETED" xml:space="preserve">
+    <value>File is marked for deletion</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILESKIPPED" xml:space="preserve">
+    <value>File is skipped</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILECLEAN" xml:space="preserve">
+    <value>File is clean</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILEDELETED" xml:space="preserve">
+    <value>File is deleted</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_MBROFDISK" xml:space="preserve">
+    <value>Master boot record of disk %d</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_BOOTSECOFDRIVE" xml:space="preserve">
+    <value>Boot Record of Drive %s</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILETYPEISPACKED" xml:space="preserve">
+    <value>Packed:</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_FILETYPEISZIP" xml:space="preserve">
+    <value>Archive File:</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_ACCESSDENIEDFILESKIPPED" xml:space="preserve">
+    <value>Access denied, file skipped</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_HIDDENPROCESS" xml:space="preserve">
+    <value>process is hidden</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_FOLDERNOTEXIST" xml:space="preserve">
+    <value>&lt;%s&gt; Folder does not exist
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_FILENOTEXIST" xml:space="preserve">
+    <value>File does not exist</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_UNKNOWNERROR" xml:space="preserve">
+    <value>Unknown Error</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_FOLDERSKIPPEDWHILESCANNING" xml:space="preserve">
+    <value>&lt;%s&gt; Folder skipped by user while scanning
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANNINGINTERRUPTEDBYUSER" xml:space="preserve">
+    <value>Scanning interrupted by user.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_FILESKIPPEDWHILESCANNING" xml:space="preserve">
+    <value>&lt;%s&gt; File skipped by user while scanning
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_FILESKIPPED_FILENAME_BEYONDMAXPATH" xml:space="preserve">
+    <value>&lt;%s&gt; file name length exceeds the standard length.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANNINGSTOPPEDBYADMIN" xml:space="preserve">
+    <value>Scanning is stopped by Administrator.</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_PACKER_ON" xml:space="preserve">
+    <value>- Scan suspicious packed files is on.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_PACKER_OFF" xml:space="preserve">
+    <value>- Scan suspicious packed files is off.
+</value>
+  </data>
+  <data name="IDS_SCANDLG_MEMSCANRESULT_SFILESTOCAT" xml:space="preserve">
+    <value>S Files to %s</value>
+  </data>
+  <data name="IDS_SCANDLG_DLGREPORT_LVFILENAME" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="IDS_SCANDLG_DLGREPORT_LVACTIONTAKEN" xml:space="preserve">
+    <value>Action Taken</value>
+  </data>
+  <data name="IDS_SCANDLG_DLGREPORT_LVSTATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_BOOTPARTITIONVIRUSES" xml:space="preserve">
+    <value>Boot/Partition viruses</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_FILESQUARANTINED" xml:space="preserve">
+    <value>Files quarantined</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_FILESSCANNED" xml:space="preserve">
+    <value>Files scanned</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_FILESDELETED" xml:space="preserve">
+    <value>Files deleted</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_IOERRORS" xml:space="preserve">
+    <value>I/O errors</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_VIRUSDETECTED" xml:space="preserve">
+    <value>Threats detected</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_VIRUSREPAIRED" xml:space="preserve">
+    <value>Files repaired</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_VIRUSSKIPED" xml:space="preserve">
+    <value>Archive/Packed</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_MAILBOXSCAN" xml:space="preserve">
+    <value>Mailbox scan is</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_SCANCAPTION" xml:space="preserve">
+    <value>Current scan settings</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_SCANNINGSTATUS" xml:space="preserve">
+    <value>Scanning status</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_DNASCANNINGWARNING" xml:space="preserve">
+    <value>DNAScan warnings</value>
+  </data>
+  <data name="IDS_SCANDLG_SCANFILE_DOSCANNINGERROR_ACCESSDENIED" xml:space="preserve">
+    <value>Access is denied.</value>
+  </data>
+  <data name="IDS_SCANDLG_LOGMSG_SYSTEMMEMORY" xml:space="preserve">
+    <value>System Memory</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_WARNING" xml:space="preserve">
+    <value>DNAScan Warning</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_POSSIBLENEWVIRUS" xml:space="preserve">
+    <value>Possible new threat...</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_FILEISSUSPICIOUS" xml:space="preserve">
+    <value>Following file is suspicious</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_FILENAME" xml:space="preserve">
+    <value>File Name:</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_ACTION" xml:space="preserve">
+    <value>&amp;Action:</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_ACTIONREPAIR" xml:space="preserve">
+    <value>Repair</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_ACTIONSKIP" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="IDS_SCANDLG_LOGMSG_SCANNINGFINISHTIME" xml:space="preserve">
+    <value>Scan finished at:</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_LASTMESSAGESCANNINGFINISHED" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="IDS_SCANDLG_STATISTICS_LASTMESSAGESCANNINGINTERRUPTED" xml:space="preserve">
+    <value>Interrupted</value>
+  </data>
+  <data name="IDS_SCANDLG_BOOTVIRUS_REPAIRED" xml:space="preserve">
+    <value>Repaired</value>
+  </data>
+  <data name="IDS_SCANDLG_BOOTVIRUS_SKIPPED" xml:space="preserve">
+    <value>Skipped</value>
+  </data>
+  <data name="IDS_SCANDLG_BOOTVIRUS_UNABLETOREPAIR" xml:space="preserve">
+    <value>Unable to repair</value>
+  </data>
+  <data name="IDS_SCANDLG_INTEGRATEDSCANNER" xml:space="preserve">
+    <value>%s Scanner</value>
+  </data>
+  <data name="IDS_SCANDLG_VERSION" xml:space="preserve">
+    <value>%s Version - %s</value>
+  </data>
+  <data name="IDS_SCANDLG_VDBDATE" xml:space="preserve">
+    <value>Virus database - %s</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_ACTIONTOBETAKEN" xml:space="preserve">
+    <value>Respond when a virus is found:</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_ACTIONTOBETAKENARCHIVE" xml:space="preserve">
+    <value>Respond when a virus is found in an archive file:</value>
+  </data>
+  <data name="IDS_SCANDLG_SCANFILEDLG_SKIPFOLDERTOOLTIP" xml:space="preserve">
+    <value>Skip current folder</value>
+  </data>
+  <data name="IDS_SCANDLG_SCANFILEDLG_SKIPFILETOOLTIP" xml:space="preserve">
+    <value>Skip current file</value>
+  </data>
+  <data name="IDS_SCANDLG_LOGMSG_SCANNINGSTARTEDTIME" xml:space="preserve">
+    <value>Scan started at:</value>
+  </data>
+  <data name="IDS_SCANDLG_MEMORYSCANNER" xml:space="preserve">
+    <value>%s Memory Scanner</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_MSGBOXTEXT" xml:space="preserve">
+    <value>Connection Wizard</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_WELMSG" xml:space="preserve">
+    <value>Welcome to %s Mobile Connection Wizard. This wizard will help you to detect the Mobile Phones connected to your computer. These settings will be saved to scan your mobile later by selecting the mobile.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_WINMOBBTN" xml:space="preserve">
+    <value>&amp;Windows Mobile Phone(HP, HTC, O2, etc.)</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_OTHMOBBTN" xml:space="preserve">
+    <value>&amp;Other Mobile Phone(Nokia, Sony Ericsson, etc.)</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_SELECTPORT" xml:space="preserve">
+    <value>Select the type of connection you wish to use to connect your mobile phone to computer.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_SEARCHMOB" xml:space="preserve">
+    <value>Please wait while mobile connection wizard detects
+your mobile phone.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_INSTCONN" xml:space="preserve">
+    <value>%s Mobile Phone requires %s Connector to be installed on your Mobile Phone.
+
+Click on Install Connector to install the %s Connector. If the connector is already installed, it may not be running. Please start the connector and click Next.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_CONNNOTINST" xml:space="preserve">
+    <value>%s Connector is either not installed or started. 
+ If it is already installed, please start it from your mobile
+ phone and try again.</value>
+  </data>
+  <data name="IDS_STATUS_INTERNET_AND_NETWORK" xml:space="preserve">
+    <value>Internet &amp;&amp; Network</value>
+  </data>
+  <data name="IDS_STATUS_FILES_EXTERNAL_DEVICES" xml:space="preserve">
+    <value>External Drives 
+&amp;&amp; Devices</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_INSTCONNBTN" xml:space="preserve">
+    <value>&amp;Install Connector</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_SEARCHFAILED" xml:space="preserve">
+    <value>Mobile connection wizard was not able to detect %s mobile phone. Please check the connectivity between mobile phone and computer and try again.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_SEARCHSUCCESS" xml:space="preserve">
+    <value>%s mobile phone detected successfully. Click on Finish to add this phone to the mobile phone list.
+</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_SELMOB" xml:space="preserve">
+    <value>Please select the mobile phone.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_CONINSTSUCC" xml:space="preserve">
+    <value>%s Connector installer has been successfully sent to your mobile.
+Please view the message to start the installer. After installation start
+the connector.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_MOBSELPORT" xml:space="preserve">
+    <value>Please select a port.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_FINDFAILED" xml:space="preserve">
+    <value>Unable to detect the mobile phone. Please check the connectivity
+ between mobile phone and computer and try again.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_PORTTYPECABLE" xml:space="preserve">
+    <value>Cable Connection (USB/Serial)</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_PORTTYPEBLUETOOTH" xml:space="preserve">
+    <value>Bluetooth Connection</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_ABORTSEARCH" xml:space="preserve">
+    <value>Do you really want to abort searching %s mobile phone?</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_CAPTION" xml:space="preserve">
+    <value>%s Mobile Connection Wizard</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_MOBILIST" xml:space="preserve">
+    <value>Mobile List</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_SELMOBHEADING" xml:space="preserve">
+    <value>Select your mobile phone.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_MSGCAPTION" xml:space="preserve">
+    <value>Connection Wizard</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_PORTTYPEIRDA" xml:space="preserve">
+    <value>IrDA Connection</value>
+  </data>
+  <data name="IDS_SCANDLG_SILENTSCAN_SCANPROGRESS" xml:space="preserve">
+    <value>Scanning is in progress</value>
+  </data>
+  <data name="IDS_SCANDLG_VFOUND_CAPTION" xml:space="preserve">
+    <value>%s - Threats Detected</value>
+  </data>
+  <data name="IDS_SCANDLG_TABMOBILE" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="IDS_SCANDLG_SCANDISK" xml:space="preserve">
+    <value>Please insert new disk and click OK when ready...</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_REMOVEMOBILE" xml:space="preserve">
+    <value>Please Select Mobile Phone to remove</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_ASKREMOVEMOBILE" xml:space="preserve">
+    <value>Do your really want to remove %s mobile phone from the list?</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_UNABLELOADLIB" xml:space="preserve">
+    <value>Unable to load Mobile Scan library</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_CONNFAILED" xml:space="preserve">
+    <value>Unable to detect Mobile Phone with selected connection.
+Please check Mobile Phone connectivity and try again.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_PHONEOFFLINE" xml:space="preserve">
+    <value>The scanning is interrupted due to the loss of connection with the mobile phone.
+Please scan the mobile phone again to complete the scan.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_SCANINPROGRESS" xml:space="preserve">
+    <value>Other instance of PC2Mobile Scan or configuration is already running.
+You can use PC2Mobile Scan feature, once the previous instance has completed.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_EVALEXPIRED" xml:space="preserve">
+    <value>Evaluation period of %s is over. To avail 
+PC2Mobile Scan feature you need to buy %s</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_SEARCHING" xml:space="preserve">
+    <value>Searching...</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIZARDPAGE_CONNINSTFAIL" xml:space="preserve">
+    <value>Unable to s %s connector to your mobile phone. 
+Please check connectivity between your mobile phone and computer and try again.</value>
+  </data>
+  <data name="IDS_SCANDLG_MALWAREFOUND" xml:space="preserve">
+    <value>During scan, %s has found Malware(s) in your system.
+It is recommed that you scan your system with %s
+AntiMalware to detect and remove the remnants of the Malware.
+
+To launch %s AntiMalware click OK, click Cancel to quit.</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_PACKER_ON" xml:space="preserve">
+    <value>Scan suspicious packed files is on.</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_PACKER_OFF" xml:space="preserve">
+    <value>Scan suspicious packed files is off.</value>
+  </data>
+  <data name="IDS_SCANDLG_MOBI_WIN7" xml:space="preserve">
+    <value>Quick Heal PC2Mobile Scanning through Bluetooth
+devices is not supported on this Operating System.</value>
+  </data>
+  <data name="IDS_SCANDLG_MYPROFILE_MOBILEALREADYCONFIGURED" xml:space="preserve">
+    <value>%s mobile phone is already configured.</value>
+  </data>
+  <data name="IDS_SCANDLG_MEMSCAN_RECHECK" xml:space="preserve">
+    <value>Rechecking</value>
+  </data>
+  <data name="IDS_SCANDLG_SET_NATIVE" xml:space="preserve">
+    <value>Boot Time Scan needs to be performed for
+complete disinfection of active malware(s).
+
+Do you want to set Boot Time Scanner?</value>
+  </data>
+  <data name="IDS_SCANFILEDLG_DOYOUWANTOSTOPSCAN" xml:space="preserve">
+    <value>Do you want to stop scanning?</value>
+  </data>
+  <data name="IDS_SCANFILEDLG_INITIALIZINGPLZWAIT" xml:space="preserve">
+    <value>Initializing</value>
+  </data>
+  <data name="IDS_SCANFILEDLG_PARTINFECT" xml:space="preserve">
+    <value>%s is infected by %s 
+Boot from a clean bootable and use %s 
+Emergency diskette to remove the virus.</value>
+  </data>
+  <data name="IDS_DLG_ONLNPROM_ACTON_15_MINUTES" xml:space="preserve">
+    <value>Turn on after 15 minutes</value>
+  </data>
+  <data name="IDS_DLG_ONLNPROM_ACTON_30_MINUTES" xml:space="preserve">
+    <value>Turn on after 30 minutes</value>
+  </data>
+  <data name="IDS_DLG_ONLNPROM_ACTON_1_HOUR" xml:space="preserve">
+    <value>Turn on after 1 hour</value>
+  </data>
+  <data name="IDS_DLG_ONLNPROM_ACTON_AFTER_RESTART" xml:space="preserve">
+    <value>Turn on after next reboot</value>
+  </data>
+  <data name="IDS_DLG_ONLNPROM_ACTON_DISABLE_PERMANENTLY" xml:space="preserve">
+    <value>Permanently disable</value>
+  </data>
+  <data name="IDS_DLG_ONLNPROM_ONLNENABLECAPTION" xml:space="preserve">
+    <value>Turning off Virus Protection is not recommed as it
+will compromise the security of your computer. Your
+computer will be vulnerable against malwares.</value>
+  </data>
+  <data name="IDS_DLG_ONLNPROM_SELECT_ACTION" xml:space="preserve">
+    <value>&amp;Select Action:</value>
+  </data>
+  <data name="IDS_DLG_PACKER_INFO" xml:space="preserve">
+    <value>Detected suspicious packed file</value>
+  </data>
+  <data name="IDS_DLG_PACKER_DONOT_PROMPT_PACKER" xml:space="preserve">
+    <value>Do not &amp;prompt for %s packed file again</value>
+  </data>
+  <data name="IDS_DLG_PACKER_TITLE" xml:space="preserve">
+    <value>%s - Suspicious Packed File Warning</value>
+  </data>
+  <data name="IDS_DLG_PACKER_DONOT_PROMPT_FILE" xml:space="preserve">
+    <value>&amp;Do not prompt for this file again</value>
+  </data>
+  <data name="IDS_EXCLUSION_KNOWN_VIRUS" xml:space="preserve">
+    <value>Known Virus Threats</value>
+  </data>
+  <data name="IDS_EXCLUSION_DNA_SCAN" xml:space="preserve">
+    <value>DNA Scan</value>
+  </data>
+  <data name="IDS_EXCLUSION_PKR_IDENTIFICATION" xml:space="preserve">
+    <value>Suspicious packed files scan</value>
+  </data>
+  <data name="IDS_EXCLUSION_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_EXCLUSION_BTN_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_DEFAULT" xml:space="preserve">
+    <value>&amp;Default</value>
+  </data>
+  <data name="IDS_OPT_DATAPRO_DATAPRODESC" xml:space="preserve">
+    <value>Blocks access to removable drives ( USB drives, Pen drives , Memory cards etc. ) which in turn protects
+your confidential information being copied using these drives. This feature is depent on Virus Protection.
+The feature does not imply on Floppy Drives.</value>
+  </data>
+  <data name="IDS_EXCLUSION_BTN_EDIT" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="IDS_EXCLUSION_BTN_REMOVE" xml:space="preserve">
+    <value>&amp;Remove</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_TITLE_NEW" xml:space="preserve">
+    <value>New Exclude Item</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_TITLE_EDIT" xml:space="preserve">
+    <value>Edit Exclude Item</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_ITEM" xml:space="preserve">
+    <value>&amp;Item:</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_CHK_SUBFOLDER" xml:space="preserve">
+    <value>Include &amp;Subfolder</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_CHK_KNOWN" xml:space="preserve">
+    <value>&amp;Known virus detection</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_CHK_UNKNOWN" xml:space="preserve">
+    <value>&amp;DNAScan</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_CHK_ONLINEPROTECTION" xml:space="preserve">
+    <value>&amp;Virus Protection</value>
+  </data>
+  <data name="IDS_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_BTN_HELP" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_GRP_TITLE" xml:space="preserve">
+    <value>Exclude From:</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_SHOWUPNOTIFYWIN" xml:space="preserve">
+    <value>Show update &amp;notification window</value>
+  </data>
+  <data name="IDS_EXCLUSION_HEADING" xml:space="preserve">
+    <value>Exclusion</value>
+  </data>
+  <data name="IDS_EXCLUSION_INVALIDPFILENAMEORDIRECTORYNAME" xml:space="preserve">
+    <value>The file name or directory name is invalid.</value>
+  </data>
+  <data name="IDS_EXCLUSION_DLGNEW_EDITCAPTION" xml:space="preserve">
+    <value>Edit Exclude Item</value>
+  </data>
+  <data name="IDS_EXCLUSION_DLGNEW_NEWCAPTION" xml:space="preserve">
+    <value>New Exclude Item</value>
+  </data>
+  <data name="IDS_EXCLUSION_NEW_SELECT_FOLDER" xml:space="preserve">
+    <value>Select Folder to Exclude</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_DLGCAPTION" xml:space="preserve">
+    <value>%s Virus Protection - Virus Found!</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_FOUNDSTRAIN" xml:space="preserve">
+    <value>Detected: %s in</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_ACCESSDENIED" xml:space="preserve">
+    <value>Access denied</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_FILECLEANED" xml:space="preserve">
+    <value>File successfully repaired</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_FILEQUARANTINED" xml:space="preserve">
+    <value>File successfully quarantined</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_FILEDELETED" xml:space="preserve">
+    <value>File successfully deleted</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_ANERROROCCURED" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_NOACTIONTAKEN" xml:space="preserve">
+    <value>No action taken</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_FLOPPYADRIVE" xml:space="preserve">
+    <value>Boot Record of A:</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_FLOPPYBDRIVE" xml:space="preserve">
+    <value>Boot Record of B:</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_PLEASEREMOVEFLOPPY" xml:space="preserve">
+    <value>Please remove the floppy</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_APPALREADYRUNNINGINANOTHERSESSION" xml:space="preserve">
+    <value>Virus Protection is running in other user's session
+and is also protecting current user session.
+Virus Protection icon will not appear on system tray.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_SERVICEISNOTPROPERLYLOADED" xml:space="preserve">
+    <value>Virus Protection service is not loaded properly.
+Unable to load Virus Protection.
+Problem has been fixed, please restart your system to load
+Virus Protection.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_CANNOTRUNONCURRENTPLATFORM" xml:space="preserve">
+    <value>This application cannot run on the current platform.</value>
+  </data>
+  <data name="IDS_MAIN_VDB_XCOORD" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_SCANMEMORY" xml:space="preserve">
+    <value>&amp;Scan Memory</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_UPDATENOW" xml:space="preserve">
+    <value>&amp;Update Now</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_ERROR_READINGCONFIGFILE" xml:space="preserve">
+    <value>Error reading configuration file.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_ERROR_CONFIGURINGOPTIONS" xml:space="preserve">
+    <value>Error configuring options.</value>
+  </data>
+  <data name="IDS_SCAN_HDR_CUSTOMSCAN" xml:space="preserve">
+    <value>Custom Scan</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_ROAMINGCLIENT" xml:space="preserve">
+    <value>&amp;Roaming Client</value>
+  </data>
+  <data name="IDS_SCAN_HDR_BOOTTIMESCAN" xml:space="preserve">
+    <value>Boot Time Scan</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_MSG_EMG_DISK" xml:space="preserve">
+    <value>%s Boot Time Scan has identified some critical threats
+which cannot be cleaned in native mode. Please update your
+%s to latest virus definitions and create Emergency CD
+from Tools-&gt;Create Emergency CD option. Once completed with
+creation process, boot your system with Emergency CD and scan.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_ENABLE_SELF_PROTECTION" xml:space="preserve">
+    <value>En&amp;able Self-Protection</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_DISABLE_SELF_PROTECTION" xml:space="preserve">
+    <value>Dis&amp;able Self-Protection</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_DISABLE_ENTERTAINMENT_MODE" xml:space="preserve">
+    <value>Disable Entertainment &amp;Mode</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_ENABLE_ENTERTAINMENT_MODE" xml:space="preserve">
+    <value>Enable Entertainment &amp;Mode</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_ENTERTAINMENT_MODE_ENABLE" xml:space="preserve">
+    <value>You have selected Entertainment Mode.
+
+Entertainment mode temporarily stops displaying alert messages
+and prompts. This option is useful especially when you are playing
+games, watching movies or using any other full screen applications.
+In this mode, %s will protect your system silently and will
+not display any alerts of any activities or events.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_ENTERTAINMENT_MODE_DISABLE" xml:space="preserve">
+    <value>You have disabled entertainment mode. %s
+will now run in interactive mode. Alerts messages and
+prompts will be displayed in case of any activities or
+events.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_MALWAREFOUND" xml:space="preserve">
+    <value>%s Virus Protection has detected Malware in your system. It is recommed that you scan your system with %s AntiMalware to detect and remove the remnants of the Malware.
+
+To launch %s AntiMalware click OK, click Cancel to quit.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_ACTIVE_VIRUSFOUND" xml:space="preserve">
+    <value>%s has detected some malwares
+running in your computer. It is recommed that you
+perform system memory scan immediately to remove
+active infection from your computer.
+
+To perform system memory scan, click OK.</value>
+  </data>
+  <data name="IDS_ONLINEEXE_ONLNALRT_OBJECT_BLOCKED" xml:space="preserve">
+    <value>Infected object is Blocked.</value>
+  </data>
+  <data name="IDS_ONLINEEXE_DNASCAN_ACCESSDENYQUARANTINED" xml:space="preserve">
+    <value>Access is denied and file is quarantined</value>
+  </data>
+  <data name="IDS_ONLINEEXE_ONLNALRT_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_ONLINEEXE_ONLNALRT_BTN_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_ONLINEEXE_OPS_STARTUP_FAILED" xml:space="preserve">
+    <value>Virus Protection service is either not installed or not running.
+It is recommed that you contact your vor or reinstall
+%s.</value>
+  </data>
+  <data name="IDS_ONLINEEXE_ONLNALRT_INFECTED_WEBSITE" xml:space="preserve">
+    <value>The website you are visiting is infected.</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONREPAIRED" xml:space="preserve">
+    <value>Repaired</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONQUARANTINED" xml:space="preserve">
+    <value>Quarantined</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONDELETED" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONACCESSDENIED" xml:space="preserve">
+    <value>Access denied</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONCLEANINGFAILED" xml:space="preserve">
+    <value>Repair failed</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONQUARANTINEFAILED" xml:space="preserve">
+    <value>Quarantine failed</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONDELETEFAILED" xml:space="preserve">
+    <value>Delete failed</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONACCESSDENYFAILED" xml:space="preserve">
+    <value>Failed to deny access</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONERROR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONNONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ONLINEPROT" xml:space="preserve">
+    <value>%s Virus Protection</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ONTHEDATE" xml:space="preserve">
+    <value>On the date %s Time: %s 
+</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_FOUNDSTRAIN" xml:space="preserve">
+    <value>Detected: %s in
+%s</value>
+  </data>
+  <data name="IDS_QHONSVC_LOG_ACTIONTAKEN" xml:space="preserve">
+    <value>Action taken: %s</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_FILEISCLEAN" xml:space="preserve">
+    <value>File is clean</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_FILENAMESTRING" xml:space="preserve">
+    <value>File Name: %s</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_ARCHIVEFILEUSEINTGRATEDSCANNER" xml:space="preserve">
+    <value>Archive File.
+Scan using %s Scanner.</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_MAILBOXFILEUSEINTGRATEDSCANNER" xml:space="preserve">
+    <value>Mailbox File.
+Scan using %s Scanner.</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_FILEISINFECTEDBY" xml:space="preserve">
+    <value>File is infected by
+%s</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_COULDNOTINITIATESCAN" xml:space="preserve">
+    <value>Could not initiate the scan.</value>
+  </data>
+  <data name="IDS_ECD_NAME" xml:space="preserve">
+    <value>Create Emergency CD</value>
+  </data>
+  <data name="IDS_ECD_BACK" xml:space="preserve">
+    <value>&amp;Back</value>
+  </data>
+  <data name="IDS_ECD_NEXT" xml:space="preserve">
+    <value>Ne&amp;xt</value>
+  </data>
+  <data name="IDS_ECD_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_ECD_HELP" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="IDS_ECD_WELCOME" xml:space="preserve">
+    <value>Welcome to Emergency CD Creation Wizard</value>
+  </data>
+  <data name="IDS_ECD_SETUPPATH" xml:space="preserve">
+    <value>Absolute path to the Setup Files to create setup folder:</value>
+  </data>
+  <data name="IDS_ECD_BURNCD" xml:space="preserve">
+    <value>Please insert a blank CD and click</value>
+  </data>
+  <data name="IDS_ECD_STOP" xml:space="preserve">
+    <value>&amp;Stop</value>
+  </data>
+  <data name="IDS_ECD_MSG_NOABORT_SETUP" xml:space="preserve">
+    <value>Creating setup folder is not aborted.</value>
+  </data>
+  <data name="IDS_ECD_MSG_SETUP" xml:space="preserve">
+    <value>Do you want to create setup folder?</value>
+  </data>
+  <data name="IDS_ECD_MSG_NOABORT_BURN" xml:space="preserve">
+    <value>Aborting Burn CD is failed.</value>
+  </data>
+  <data name="IDS_ECD_MSG_BURN" xml:space="preserve">
+    <value>Do you want to burn CD?</value>
+  </data>
+  <data name="IDS_ECD_MSG_SETUPPATH" xml:space="preserve">
+    <value>Setup Disk path is invalid.</value>
+  </data>
+  <data name="IDS_ECD_MSG_COPYFAILED" xml:space="preserve">
+    <value>Copying is failed.</value>
+  </data>
+  <data name="IDS_ECD_MSG_NOSPACE" xml:space="preserve">
+    <value>No enough space is available to create the setup folder.</value>
+  </data>
+  <data name="IDS_ECD_MSG_NOFILE" xml:space="preserve">
+    <value>Missing required setup disk files.</value>
+  </data>
+  <data name="IDS_ECD_MSG_ABORT_SETUP" xml:space="preserve">
+    <value>Creating Setup Disk is stopped.</value>
+  </data>
+  <data name="IDS_ECD_MSG_SETUPFAIL" xml:space="preserve">
+    <value>Creating setup disk folder is failed.</value>
+  </data>
+  <data name="IDS_ECD_MSG_SETUPSUCCESS" xml:space="preserve">
+    <value>Setup folder has been created.</value>
+  </data>
+  <data name="IDS_ECD_MSG_CDDRIVE_FAIL" xml:space="preserve">
+    <value>Getting CD drive is failed.</value>
+  </data>
+  <data name="IDS_ECD_MSG_WRITECD_FAIL" xml:space="preserve">
+    <value>Writing to CD is failed.</value>
+  </data>
+  <data name="IDS_ECD_MSG_READCD_FAIL" xml:space="preserve">
+    <value>Reading from CD is failed.</value>
+  </data>
+  <data name="IDS_ECD_MSG_BURNCD_STOP" xml:space="preserve">
+    <value>Burning CD is stopped.</value>
+  </data>
+  <data name="IDS_ECD_MSG_BURNCD_FAIL" xml:space="preserve">
+    <value>Burn CD is failed.</value>
+  </data>
+  <data name="IDS_ECD_MSG_BURN_COMPLETE" xml:space="preserve">
+    <value>Burning process has been completed.</value>
+  </data>
+  <data name="IDS_ECD_BURNCD_NAME" xml:space="preserve">
+    <value>B&amp;urn CD</value>
+  </data>
+  <data name="IDS_ECD_BROWSE_FOLDER" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="IDS_ECD_INFO1" xml:space="preserve">
+    <value>Emergency CD can be used in emergency situation where your system is infected with virus that needs to be cured
+from DOS boot shell. If your AntiVirus is up to date then the Emergency CD will be created using latest signature
+pattern files.</value>
+  </data>
+  <data name="IDS_ECD_INFO2" xml:space="preserve">
+    <value>To create Emergency CD you need to have:</value>
+  </data>
+  <data name="IDS_ECD_INFO3" xml:space="preserve">
+    <value>- Licensed copy of Microsoft Windows Operating System. (Windows 2000/XP/2003)
+- Microsoft Windows Installation CD. (Windows 2000/XP/2003 or above)
+- A blank writable CD and a CD-Writer drive.</value>
+  </data>
+  <data name="IDS_ECD_INFO4" xml:space="preserve">
+    <value>Emergency CD:</value>
+  </data>
+  <data name="IDS_ECD_INFO5" xml:space="preserve">
+    <value>- Can only be used to scan and clean drives of the same system for which you have licensed Microsoft
+  Windows operating system.
+- Cannot be used for any other system.</value>
+  </data>
+  <data name="IDS_ECD_NOTE" xml:space="preserve">
+    <value>Microsoft Windows and Windows XP are either registered trademarks or trademarks of Microsoft Corporation. Other
+product and company names mentioned on this page may be the trademarks of their respective owners.</value>
+  </data>
+  <data name="IDS_ECD_SETUPDISK1" xml:space="preserve">
+    <value>Bootable System Files</value>
+  </data>
+  <data name="IDS_ECD_SETUPDISK2" xml:space="preserve">
+    <value>Please use following option to make CD bootable.</value>
+  </data>
+  <data name="IDS_ECD_SETUPDISK3" xml:space="preserve">
+    <value>To make CD bootable, fetch system files from:</value>
+  </data>
+  <data name="IDS_ECD_BLANKCD" xml:space="preserve">
+    <value>Blank CD</value>
+  </data>
+  <data name="IDS_ECD_CDDRIVE" xml:space="preserve">
+    <value>Select CD Drive</value>
+  </data>
+  <data name="IDS_ECD_SETUP_PROGRESS" xml:space="preserve">
+    <value>Fetching system files from CD.........</value>
+  </data>
+  <data name="IDS_ECD_BURNCD_PROGRESS" xml:space="preserve">
+    <value>Emergency CD/DVD creation in progress.........</value>
+  </data>
+  <data name="IDS_ECD_SUCCESS" xml:space="preserve">
+    <value>Emergency CD has been successfully created.</value>
+  </data>
+  <data name="IDS_ECD_VERSION" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="IDS_ECD_VERSION_INFO" xml:space="preserve">
+    <value>8.00</value>
+  </data>
+  <data name="IDS_ECD_VIRUS_DATA" xml:space="preserve">
+    <value>Virus Database:</value>
+  </data>
+  <data name="IDS_ECD_VIRUS_DATA_INFO" xml:space="preserve">
+    <value>16 October 2006</value>
+  </data>
+  <data name="IDS_ECD_USE_ECD" xml:space="preserve">
+    <value>Using Emergency CD</value>
+  </data>
+  <data name="IDS_ECD_REBOOT" xml:space="preserve">
+    <value>Reboot your system using Emergency CD/DVD and proceed with the steps provided in boot shell scanner.</value>
+  </data>
+  <data name="IDS_ECD_FINISH" xml:space="preserve">
+    <value>&amp;Finish</value>
+  </data>
+  <data name="IDS_ECD_SETUPCD" xml:space="preserve">
+    <value>&amp;Operating System Installation CD</value>
+  </data>
+  <data name="IDS_ECD_SYSTEMFILES" xml:space="preserve">
+    <value>&amp;System files used earlier while creating emergency CD</value>
+  </data>
+  <data name="IDS_ECD_MSG_SETUPPATHEMPTY" xml:space="preserve">
+    <value>Setup Disk path should not be empty.</value>
+  </data>
+  <data name="IDS_ECD_MSG_INPUT_INVALID" xml:space="preserve">
+    <value>Input is invalid.</value>
+  </data>
+  <data name="IDS_ECD_MSG_CDDRIVE_INVALID" xml:space="preserve">
+    <value>CD drive is invalid.</value>
+  </data>
+  <data name="IDS_ECD_FAIL" xml:space="preserve">
+    <value>Creating emergency CD has been failed.</value>
+  </data>
+  <data name="IDS_ECD_TEXT_FONT" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="IDS_ECD_BTN_FONT" xml:space="preserve">
+    <value>Tahoma</value>
+  </data>
+  <data name="IDS_ECD_MSG_NO_DISC" xml:space="preserve">
+    <value>CD is not available. Please insert the blank CD.</value>
+  </data>
+  <data name="IDS_ECD_MSG_NO_WRITEABLE" xml:space="preserve">
+    <value>CD is not writable. Please insert the another CD.</value>
+  </data>
+  <data name="IDS_NEXT" xml:space="preserve">
+    <value>&amp;Next</value>
+  </data>
+  <data name="IDS_ECD_BURNCD_PROCEED" xml:space="preserve">
+    <value>to proceed</value>
+  </data>
+  <data name="IDS_ECD_MSG_NO_WIN_VERSION" xml:space="preserve">
+    <value>Windows version is not found.</value>
+  </data>
+  <data name="IDS_ECD_NO_SUPPORT" xml:space="preserve">
+    <value>Please insert operating system installation CD.</value>
+  </data>
+  <data name="IDS_ECD_NO_WIN_VER" xml:space="preserve">
+    <value>Unable to determine Windows version </value>
+  </data>
+  <data name="IDS_ECD_UNIDENTIFIED_OS_VER" xml:space="preserve">
+    <value>Unable to determine operating system version.</value>
+  </data>
+  <data name="IDS_REPORTS_SCANNERRPT_HEADING" xml:space="preserve">
+    <value>Scan Report</value>
+  </data>
+  <data name="IDS_REPORTS_ONLINEPROTRPT_HEADING" xml:space="preserve">
+    <value>Virus Protection Report</value>
+  </data>
+  <data name="IDS_REPORTS_EMAILPROTRPT_HEADING" xml:space="preserve">
+    <value>Email Protection Report</value>
+  </data>
+  <data name="IDS_REPORTS_STARTUPSCANRPT_HEADING" xml:space="preserve">
+    <value>Startup Scan Report</value>
+  </data>
+  <data name="IDS_REPORTS_SCHEDULERRPT_HEADING" xml:space="preserve">
+    <value>Scheduler Report</value>
+  </data>
+  <data name="IDS_REPORTS_LIVEUPDATERPT_HEADING" xml:space="preserve">
+    <value>Quick Update Report</value>
+  </data>
+  <data name="IDS_REPORTS_MEMORYSCANSCANRPT_HEADING" xml:space="preserve">
+    <value>Memory Scan Report</value>
+  </data>
+  <data name="IDS_REPORTS_NATIVESCANNER_HEADING" xml:space="preserve">
+    <value>Boot Time Scanner Report</value>
+  </data>
+  <data name="IDS_REPORTS_MOBILESCANNER_HEADING" xml:space="preserve">
+    <value>Mobile Scanner Report</value>
+  </data>
+  <data name="IDS_REPORTS_DMGCLNR_HEADING" xml:space="preserve">
+    <value>Registry Restore Report</value>
+  </data>
+  <data name="IDS_REPORTS_ANTIPHISH_HEADING" xml:space="preserve">
+    <value>Phishing Protection Report</value>
+  </data>
+  <data name="IDS_REPORTS_ANTIMLWR_HEADING" xml:space="preserve">
+    <value>AntiMalware Report</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_PRODUCT_KEY" xml:space="preserve">
+    <value>Product Key: %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_INSTALLATION_NUMBER" xml:space="preserve">
+    <value>Installation Number: %s</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_REMOVABLEDISK" xml:space="preserve">
+    <value>Removable Disk</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_SIZE" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_MB" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_GB" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_INFO" xml:space="preserve">
+    <value>Removable drive(s) has been plugged in. Following is the list of drives:</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_SELSECTALL" xml:space="preserve">
+    <value>Select &amp;All</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_SCANROOT" xml:space="preserve">
+    <value>Scan files on &amp;root of drive only.</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_SCANFULL" xml:space="preserve">
+    <value>Scan &amp;full drive.</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_DONOTSCAN" xml:space="preserve">
+    <value>Do &amp;Not Scan</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_CAPTION" xml:space="preserve">
+    <value>Scan Removable Devices</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_LOCALDISK" xml:space="preserve">
+    <value>Local Disk</value>
+  </data>
+  <data name="IDS_REMDRIVESCAN_USBDRIVESCAN" xml:space="preserve">
+    <value>USB Drive Scan</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_MAINMAILMESSAGE" xml:space="preserve">
+    <value>%s
+Submitting newly quarantined files to research lab.
+--------------
+Important
+--------------
+Due to the big size of the attachment, it has been
+split up and attached to %d of Emails
+for sing to Research lab.</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_SUBMAILMESSAGE" xml:space="preserve">
+    <value>Submitting newly quarantined files to research lab. Email no. %d</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_MAINMESSAGE1" xml:space="preserve">
+    <value>%s
+Submitting newly quarantined files to research lab.</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_SUBJECT_FIRST" xml:space="preserve">
+    <value>File Analysis</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_SUBJECT_NEXT" xml:space="preserve">
+    <value>File Analysis ( %d )</value>
+  </data>
+  <data name="IDS_QUARANTINE_EMAILID" xml:space="preserve">
+    <value>&amp;Email:</value>
+  </data>
+  <data name="IDS_QUARANTINE_EMAILID_REQUIRED" xml:space="preserve">
+    <value>To submit Quarantine file, please provide your email address, select the reason for submission and click OK.</value>
+  </data>
+  <data name="IDS_QUARANTINE_SUBMIT_QUARFILE" xml:space="preserve">
+    <value>Submitting %s files. Please wait...</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_SUBMIT_PARTS" xml:space="preserve">
+    <value>Submitting %s files (Part %%d). Please wait...</value>
+  </data>
+  <data name="IDS_QUARANTINE_SUBMIT_SUCCESS" xml:space="preserve">
+    <value>Successfully submitted %s file(s).</value>
+  </data>
+  <data name="IDS_QUARANTINE_SUBMIT_FAIL" xml:space="preserve">
+    <value>Failed to submit %s file(s).</value>
+  </data>
+  <data name="IDS_QUARANTINE_INVALID_EMAILID" xml:space="preserve">
+    <value>Please provide correct email address.</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_QUAR_CONTEXT" xml:space="preserve">
+    <value>quarantined</value>
+  </data>
+  <data name="IDS_QUARANTINE_SNA_DNA_CONTEXT" xml:space="preserve">
+    <value>DNA suspicious</value>
+  </data>
+  <data name="IDS_QUARANTINE_SELECT_REASON" xml:space="preserve">
+    <value>Select the reason for submission</value>
+  </data>
+  <data name="IDS_QUARANTINE_RDO_DNA" xml:space="preserve">
+    <value>&amp;Suspicious file</value>
+  </data>
+  <data name="IDS_QUARANTINE_RDO_UNREPAIRABLE" xml:space="preserve">
+    <value>File is &amp;unrepairable</value>
+  </data>
+  <data name="IDS_QUARANTINE_RDO_FALSEPOSITIVE" xml:space="preserve">
+    <value>&amp;False positive</value>
+  </data>
+  <data name="IDS_ASPLUGIN_NULL_MAILID" xml:space="preserve">
+    <value>Email Id of ser is not available.</value>
+  </data>
+  <data name="IDS_ASPLUGIN_LIST_CONFIRM_STRING" xml:space="preserve">
+    <value>Do you want to add this Email Id(s) into %s?
+</value>
+  </data>
+  <data name="IDS_ASPLUGIN_LIST_INFO_STRING" xml:space="preserve">
+    <value>Email Id(s) added to %s.</value>
+  </data>
+  <data name="IDS_ASPLUGIN_MORE_MAIL_ID" xml:space="preserve">
+    <value>Please select less than 10 Email Ids.</value>
+  </data>
+  <data name="IDS_ASPLUGIN_DISABLE" xml:space="preserve">
+    <value>Unable to add Email Id(s) to Quick Heal %s.
+Antispam Plugin feature is disabled in %s.</value>
+  </data>
+  <data name="IDS_BRO_PROTECTION" xml:space="preserve">
+    <value>Browsing Protection</value>
+  </data>
+  <data name="IDS_BRO_PROT_ACTION_BLOCK" xml:space="preserve">
+    <value>Blocked</value>
+  </data>
+  <data name="IDS_BRO_PROT_REPORT" xml:space="preserve">
+    <value>Browsing Protection Report</value>
+  </data>
+  <data name="IDS_ACTLOG_ACT" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="IDS_ACTLOG_DONE" xml:space="preserve">
+    <value>Activity done by</value>
+  </data>
+  <data name="IDS_ACTLOG_DISABLED" xml:space="preserve">
+    <value>is disabled.</value>
+  </data>
+  <data name="IDS_ACTLOG_ENABLED" xml:space="preserve">
+    <value>is enabled.</value>
+  </data>
+  <data name="IDS_ACTLOG_ONLN_NOLOAD" xml:space="preserve">
+    <value>is configured not to load at next Windows Startup.</value>
+  </data>
+  <data name="IDS_ACTLOG_ONLN_LOAD" xml:space="preserve">
+    <value>is configured to load at next Windows Startup.</value>
+  </data>
+  <data name="IDS_ACTLOG_MAIL_FILTER" xml:space="preserve">
+    <value>Trusted Email Clients filter</value>
+  </data>
+  <data name="IDS_ACTLOG_DEFAULT" xml:space="preserve">
+    <value>is set to default.</value>
+  </data>
+  <data name="IDS_DMGCLNR_DMGREPORT_TITLE" xml:space="preserve">
+    <value>Critical Registry Restore Report</value>
+  </data>
+  <data name="IDS_DMGCLNR_PROBLEM_DETECTED" xml:space="preserve">
+    <value>Problem Detected: </value>
+  </data>
+  <data name="IDS_DMGCLNR_ACTION_TAKEN" xml:space="preserve">
+    <value>Action Taken: Repaired.</value>
+  </data>
+  <data name="IDS_DMGCLNR_SUMM_START_AT" xml:space="preserve">
+    <value>Scan started at: </value>
+  </data>
+  <data name="IDS_DMGCLNR_SUMM_FINISH_AT" xml:space="preserve">
+    <value>Scan finished at: </value>
+  </data>
+  <data name="IDS_DMGCLNR_SUMM_DETECT_CNT" xml:space="preserve">
+    <value>Critical Registry Problem Detected - </value>
+  </data>
+  <data name="IDS_DMGCLNR_SUMM_REPAIR_CNT" xml:space="preserve">
+    <value>Critical Registry Repaired - </value>
+  </data>
+  <data name="IDS_DMGCLNR_DETAIL_HEADER" xml:space="preserve">
+    <value>Critical System Registry Restored</value>
+  </data>
+  <data name="IDS_DMGCLNR_LINE" xml:space="preserve">
+    <value>--------------------------------------------------------------------</value>
+  </data>
+  <data name="IDS_DMGCLNR_FEATURE_NAME" xml:space="preserve">
+    <value>Critical System Registry Restore</value>
+  </data>
+  <data name="IDS_REGINX_REPORT_TITLE" xml:space="preserve">
+    <value>Registry Restore for Malware Entries</value>
+  </data>
+  <data name="IDS_REGINX_SUMM_DETECT_COUNT" xml:space="preserve">
+    <value>Malware Registry Entries Detected - </value>
+  </data>
+  <data name="IDS_REGINX_SUMM_REPAIR_COUNT" xml:space="preserve">
+    <value>Malware Registry Entries Repaired - </value>
+  </data>
+  <data name="IDS_REGINX_DETAIL_HEADER" xml:space="preserve">
+    <value>Registry Restore for Malware Entries</value>
+  </data>
+  <data name="IDS_NATIVESET_DOYOUWANTTORESTART" xml:space="preserve">
+    <value>Boot Time Scan is scheduled to run on next boot
+to clean infection from your system.
+
+Do you want to restart the system now?</value>
+  </data>
+  <data name="IDS_NATIVESET_UNABLETOSCHEDULE" xml:space="preserve">
+    <value>Unable to schedule Boot Time Scanner</value>
+  </data>
+  <data name="IDS_NATIVESET_UNABLETOCOPY" xml:space="preserve">
+    <value>Unable to copy file %s as %s</value>
+  </data>
+  <data name="IDS_NATIVESET_UNABLETOACCESS" xml:space="preserve">
+    <value>Unable to access</value>
+  </data>
+  <data name="IDS_NATIVESET_UNABLETOSCHEDULEMSG" xml:space="preserve">
+    <value>Unable to schedule Boot Time Scan to execute for next boot.
+Boot Time Scanner files may be corrupt or damaged.
+
+Please use the Emergency Bootable CD to clean the system.</value>
+  </data>
+  <data name="IDS_NATIVESET_RESTRICTEDUSER" xml:space="preserve">
+    <value>To avail this feature administrative privilege is required.
+You are currently logged in as a non-administrative user which
+do not have administrative privileges. To avail this feature
+please login as administrative user.</value>
+  </data>
+  <data name="IDS_NATIVE_CONFIRMATION" xml:space="preserve">
+    <value>Do you want to set Boot Time Scanner?</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_NOTINSTALLED" xml:space="preserve">
+    <value>%s is not properly installed.</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_DNAWARNING" xml:space="preserve">
+    <value>File is suspicious.</value>
+  </data>
+  <data name="IDS_QHCSSCAN_DLG_FILEISPACKEDWITH" xml:space="preserve">
+    <value>File is packed with
+%s</value>
+  </data>
+  <data name="IDS_SFILESTOCAT_FAIL" xml:space="preserve">
+    <value>Unable to S the files to %s
+Please s this file to our R&amp;D Center at %s for further analysis.</value>
+  </data>
+  <data name="IDS_SFILESTOCAT_FAIL_HEADER" xml:space="preserve">
+    <value>Error while sing Email</value>
+  </data>
+  <data name="IDS_RESTORE_MSG_FAILEDHEADER" xml:space="preserve">
+    <value>Restore failed...</value>
+  </data>
+  <data name="IDS_RESTORE_MSG_NEWPATH" xml:space="preserve">
+    <value>Can not restore file to it's original location.
+Do you want to save file at some other location?</value>
+  </data>
+  <data name="IDS_PSSCAN_VERSION" xml:space="preserve">
+    <value>Version:  </value>
+  </data>
+  <data name="IDS_PSSCAN_VIRUSDATABASEDATE" xml:space="preserve">
+    <value>Virus Database Date:  </value>
+  </data>
+  <data name="IDS_EMERGENCY_DISK_NOTE" xml:space="preserve">
+    <value>Please remove the Operating system installation CD.</value>
+  </data>
+  <data name="IDS_EMERGENCYDISK_DISK_ERROR" xml:space="preserve">
+    <value>Unable to read write disk, please insert new disk</value>
+  </data>
+  <data name="IDS_RIGHTCLICK_MENUITEM_SCAN" xml:space="preserve">
+    <value>&amp;Scan</value>
+  </data>
+  <data name="IDS_RIGHTCLICK_HELPSTRING" xml:space="preserve">
+    <value>Scan with %s.</value>
+  </data>
+  <data name="IDS_MOBIPOPUP_CAPTION" xml:space="preserve">
+    <value>%s
+PC2Mobile Scan</value>
+  </data>
+  <data name="IDS_MOBIPOPUP_MOBIFOUND" xml:space="preserve">
+    <value>Windows Mobile detected.
+Scan mobile for viruses?</value>
+  </data>
+  <data name="IDS_BROWSE_BACKUPFOLDERPATH" xml:space="preserve">
+    <value>Select Backup Folder Path</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_QHM" xml:space="preserve">
+    <value>%s Messenger</value>
+  </data>
+  <data name="IDS_EXTRATOOLS_HIJRES_RESTRICTEDMSG" xml:space="preserve">
+    <value>Administrative privileges required.
+
+Hijack Restore cannot restore system registry settings in
+restricted user mode. You will need to have administrative 
+privileges to perform this task.</value>
+  </data>
+  <data name="IDS_BFFOLDER_CHK_EXCLUDE_SUBFOLDER" xml:space="preserve">
+    <value>Exclude &amp;Subfolder</value>
+  </data>
+  <data name="IDS_DNASCAN_STATIC_ONLNALRT_ACTION" xml:space="preserve">
+    <value>Action:</value>
+  </data>
+  <data name="IDS_PACKER_IDENTIFICATION" xml:space="preserve">
+    <value>&amp;Suspicious packed files scan</value>
+  </data>
+  <data name="IDS_VIRUSPROTECTION" xml:space="preserve">
+    <value>Virus Protection</value>
+  </data>
+  <data name="IDS_STATUS_DNASCAN_PROTECTION" xml:space="preserve">
+    <value>DNAScan</value>
+  </data>
+  <data name="IDS_MAILPROTECTION" xml:space="preserve">
+    <value>Email Protection</value>
+  </data>
+  <data name="IDS_STATUS_SPAM_PROTECTION" xml:space="preserve">
+    <value>Spam Protection</value>
+  </data>
+  <data name="IDS_STATUS_FIREWALL_PROTECTION" xml:space="preserve">
+    <value>Firewall Protection</value>
+  </data>
+  <data name="IDS_STATUS_PHISHING_PROTECTION" xml:space="preserve">
+    <value>Phishing Protection</value>
+  </data>
+  <data name="IDS_STATUS_AUTORUN_PROTECTION" xml:space="preserve">
+    <value>Autorun Protection</value>
+  </data>
+  <data name="IDS_STATUS_SCAN_EXTERNAL_DRIVES" xml:space="preserve">
+    <value>Scan External Drives</value>
+  </data>
+  <data name="IDS_STATUS_BLOCKEDCOPY" xml:space="preserve">
+    <value>Your %s Product Key is being used from
+multiple installations. Updates for this Product Key are being
+downloaded from multiple locations. Each %s   
+Product Key can download updates only for single PC.
+
+Unable to update your copy of %s.
+Please contact your vor or %s Support to
+resolve this problem.</value>
+  </data>
+  <data name="IDS_STATUS_INVALID_COPY_BLOCKED" xml:space="preserve">
+    <value>Invalid License.
+
+Your %s Product Key is being used from
+multiple computers. Updates for this Product Key are being
+downloaded from multiple computers. Each %s   
+Product Key can download updates only for single PC.
+
+Unable to update your copy of %s.
+Please contact your vor or %s Support to
+resolve this problem.</value>
+  </data>
+  <data name="IDS_STATUS_INCONSISTENTCOPY" xml:space="preserve">
+    <value>%s has detected some inconsistency 
+in the installed version.
+
+Please reinstall %s and try again.</value>
+  </data>
+  <data name="IDS_OPTIONS_TREE_ONLINEPROTECTION" xml:space="preserve">
+    <value>Virus Protection</value>
+  </data>
+  <data name="IDS_OPTIONS_TREE_MAILPROTECTION" xml:space="preserve">
+    <value>Email Protection</value>
+  </data>
+  <data name="IDS_CS_HDR_SECURED" xml:space="preserve">
+    <value>System is secure</value>
+  </data>
+  <data name="IDS_CS_HDR_NOT_SECURED" xml:space="preserve">
+    <value>System is not secure</value>
+  </data>
+  <data name="IDS_CS_HDR_OUT_OF_DATE" xml:space="preserve">
+    <value>Protection is out of date</value>
+  </data>
+  <data name="IDS_CS_HDR_RESTART" xml:space="preserve">
+    <value>Restart required</value>
+  </data>
+  <data name="IDS_CS_HDR_NOT_REGISTERED" xml:space="preserve">
+    <value>Copy is not registered</value>
+  </data>
+  <data name="IDS_CS_HDR_UNABLE_TO_FIX" xml:space="preserve">
+    <value>Unable to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_SECURED" xml:space="preserve">
+    <value>System is being actively protected
+No action required</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_ACTIVE_VIRUS" xml:space="preserve">
+    <value>Virus active in memory
+Click Restart Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_AUTO_UPDATE_OFF" xml:space="preserve">
+    <value>Automatic Update is turned off
+Click Resolve Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_OUT_OF_DATE_FEWDAYS" xml:space="preserve">
+    <value>Virus protection is not updated since %u days
+Click Update Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_OUT_OF_DATE_LONGTIME" xml:space="preserve">
+    <value>Virus protection is not updated since long time
+Click Update Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_RESTART_FOR_CRITICAL_UPDATE" xml:space="preserve">
+    <value>System restart is required to apply the critical update
+Click Restart Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_RENEW_SUBSCRIPTION_ABTEXP" xml:space="preserve">
+    <value>License is about to expire
+Click Renew Now to ext the license period</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_RENEW_SUBSCRIPTION_EXP" xml:space="preserve">
+    <value>License has expired
+Click Renew Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_ACTIVATION_REQUIRED" xml:space="preserve">
+    <value>Activation is required
+Click Register Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_VIR_PRO_OFF" xml:space="preserve">
+    <value>Virus Protection is turned off
+Click Resolve Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_PCCLINIC_NO_NET" xml:space="preserve">
+    <value>Visit Quick Heal online PC Clinic
+Internet Connection Required</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_PCCLINIC_FIXNOW" xml:space="preserve">
+    <value>Visit Quick Heal online PC Clinic
+Click Resolve Now to fix the problem</value>
+  </data>
+  <data name="IDS_CS_ACTION_RESTART_NOW" xml:space="preserve">
+    <value>Restart Now</value>
+  </data>
+  <data name="IDS_CS_ACTION_BUY_NOW" xml:space="preserve">
+    <value>Buy Now</value>
+  </data>
+  <data name="IDS_CS_ACTION_UPDATE_NOW" xml:space="preserve">
+    <value>Update Now</value>
+  </data>
+  <data name="IDS_CS_ACTION_RENEW_NOW" xml:space="preserve">
+    <value>Renew Now</value>
+  </data>
+  <data name="IDS_CS_ACTION_REGISTER_NOW" xml:space="preserve">
+    <value>Register Now</value>
+  </data>
+  <data name="IDS_CS_ACTION_RESOLVE_NOW" xml:space="preserve">
+    <value>Resolve Now</value>
+  </data>
+  <data name="IDS_FONTNAME" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="IDS_FONTSIZE_FIRSTLEVEL_ITEM" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="IDS_FONTSIZE_FIRSTLEVEL_SUBITEM" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="IDS_FONTSIZE_SECONDLEVEL_ITEM" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="IDS_FONTSIZE_SECONDLEVEL_SUBITEM" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="IDS_EXCLUSION_EXCLUDE_SUBFOLDER" xml:space="preserve">
+    <value>Exclude Subfolder</value>
+  </data>
+  <data name="IDS_EXCLUSION_EXCLUSION_FROM" xml:space="preserve">
+    <value>Exclusion for</value>
+  </data>
+  <data name="IDS_EXCLUSION_SETTINGS" xml:space="preserve">
+    <value>Include Subfolders</value>
+  </data>
+  <data name="IDS_EXCLUSION_FILE_PATH" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="IDS_EXCLUSION_STC_INFO" xml:space="preserve">
+    <value>List of files and folders to be excluded from scanning</value>
+  </data>
+  <data name="IDS_EXCLUSION_BTN_ADD" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="IDS_SAVE_CHANGES" xml:space="preserve">
+    <value>&amp;Save Changes</value>
+  </data>
+  <data name="IDS_STATUS_NEWS" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="IDS_STATUS_PCTUNER" xml:space="preserve">
+    <value>Launch PCTuner</value>
+  </data>
+  <data name="IDS_MAIN_TOOLS" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="IDS_MAIN_REPORTS" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="IDS_MAIN_VIRUS_DATA" xml:space="preserve">
+    <value>Virus database</value>
+  </data>
+  <data name="IDS_STATUS_NEWS_LINK" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="IDS_MAIN_BACKTODASH" xml:space="preserve">
+    <value>Back to Dashboard</value>
+  </data>
+  <data name="IDS_STATUS_SCAN" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="IDS_MAIN_HELP" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="IDS_EXCLUSION_INCLUDE_SUBFOLDER" xml:space="preserve">
+    <value>Include Subfolder</value>
+  </data>
+  <data name="IDS_DIALOG_BACKGROUND_COLOR" xml:space="preserve">
+    <value>255 255 255</value>
+  </data>
+  <data name="IDS_DETAILS" xml:space="preserve">
+    <value>&amp;Details</value>
+  </data>
+  <data name="IDS_DELETE" xml:space="preserve">
+    <value>Del&amp;ete</value>
+  </data>
+  <data name="IDS_DELETEALL" xml:space="preserve">
+    <value>Delete &amp;All</value>
+  </data>
+  <data name="IDS_SCANNER" xml:space="preserve">
+    <value>Scanner</value>
+  </data>
+  <data name="IDS_SCHEDULAR" xml:space="preserve">
+    <value>Scan Scheduler</value>
+  </data>
+  <data name="IDS_AUTOMATICUPDATE" xml:space="preserve">
+    <value>Automatic Update</value>
+  </data>
+  <data name="IDS_PHISHINGPROTECTION" xml:space="preserve">
+    <value>Phishing Protection</value>
+  </data>
+  <data name="IDS_REGISTRY_RESTORE" xml:space="preserve">
+    <value>Registry Restore</value>
+  </data>
+  <data name="IDS_BOOTTIME_SCANNER" xml:space="preserve">
+    <value>Boot Time Scanner</value>
+  </data>
+  <data name="IDS_ANTI_MALWARE_SCAN" xml:space="preserve">
+    <value>AntiMalware Scan</value>
+  </data>
+  <data name="IDS_MOBILESCANNER" xml:space="preserve">
+    <value>PC2Mobile Scan</value>
+  </data>
+  <data name="IDS_DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="IDS_TIME" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="IDS_REPORT_REPORTFOR" xml:space="preserve">
+    <value>Report For</value>
+  </data>
+  <data name="IDS_PRINT" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="IDS_SAVEAS" xml:space="preserve">
+    <value>&amp;Save As</value>
+  </data>
+  <data name="IDS_PREV" xml:space="preserve">
+    <value>P&amp;rev</value>
+  </data>
+  <data name="IDS_DEFAULT_ALL" xml:space="preserve">
+    <value>Default All</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_AT" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_EVERY_DAYS" xml:space="preserve">
+    <value>&amp;Every day(s):</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_EVERY_WEEKDAYS" xml:space="preserve">
+    <value>&amp;Every Weekday(s):</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_FINISH" xml:space="preserve">
+    <value>&amp;Finish</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_FIRST_BOOT" xml:space="preserve">
+    <value>Start at f&amp;irst boot</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_FREQUENCY" xml:space="preserve">
+    <value>&amp;Frequency:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_HIGH_PRIORITY" xml:space="preserve">
+    <value>&amp;High</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_LAST_SCAN_ITEMS" xml:space="preserve">
+    <value>&amp;Last Scanned Items</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_LOW_PRIORITY" xml:space="preserve">
+    <value>&amp;Low</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_NEW_SCAN" xml:space="preserve">
+    <value>New &amp;Scan</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_PASSWORD" xml:space="preserve">
+    <value>&amp;Password:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_SCAN_NAME" xml:space="preserve">
+    <value>&amp;Scan Name:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_SCAN_OPTION" xml:space="preserve">
+    <value>Scanner Option</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_SCAN_PRIORITY" xml:space="preserve">
+    <value>Scan Priority:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_SCAN_SETTINGS" xml:space="preserve">
+    <value>Scan Se&amp;ttings</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_SELECTED_FOLDERS" xml:space="preserve">
+    <value>Selected Folder &amp;&amp; Drives:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_START_AT" xml:space="preserve">
+    <value>Start &amp;at:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_USERNAME" xml:space="preserve">
+    <value>&amp;Username:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_WEEKDAY" xml:space="preserve">
+    <value>&amp;Weekdays:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_DAILY" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="IDS_OPT_BSITEDLG_WEB_LIST" xml:space="preserve">
+    <value>List of URLs (Websites) to be blocked</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_DAY" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_EVERY" xml:space="preserve">
+    <value>Every</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_FIRST_BOOT" xml:space="preserve">
+    <value>First Boot</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_FREQUENCY" xml:space="preserve">
+    <value>Frequency</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_FRIDAY" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_HOURS" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="IDS_SCAN_YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MINUTES" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MONDAY" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_CONFIRMREMOVE" xml:space="preserve">
+    <value>Do you want to remove the Schedule Scan?</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_EVERYDAYATLEAST" xml:space="preserve">
+    <value>The number of days must be at least one</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_FILECORRUPTED" xml:space="preserve">
+    <value>Configuration file may be corrupted.</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_FOLDER_PRESENT" xml:space="preserve">
+    <value>Folder already present</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_INTERVALATLEAST" xml:space="preserve">
+    <value>Repeat interval must be at least 1</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_INVALID_TASK_NAME" xml:space="preserve">
+    <value>A task name cannot contain any of the following characters:
+\ / : * ? .  &lt; &gt; |</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_PROVIDE_TASK_NAME" xml:space="preserve">
+    <value>Please provide valid Schedule Scan Name</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_PROVIDE_USER_NAME" xml:space="preserve">
+    <value>Please provide valid User Name</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_TASK_PRESENT" xml:space="preserve">
+    <value>Scheduled Scan with same name already present</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_MSG_TASK_SCHEDULED" xml:space="preserve">
+    <value>Scan already scheduled</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_NAME" xml:space="preserve">
+    <value>Schedule Item</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_NOT_REPEAT" xml:space="preserve">
+    <value>No Repeat</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_PATH" xml:space="preserve">
+    <value>Scan Location</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_REPEAT_EVERY" xml:space="preserve">
+    <value>Repeat Every:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_REPEAT_SCAN" xml:space="preserve">
+    <value>&amp;Repeat scan after every</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SATURDAY" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SCAN_FILES_FOLDERS" xml:space="preserve">
+    <value>Select Folders or Drives</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SCAN_FREQUENCY" xml:space="preserve">
+    <value>Scan Frequency</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SCAN_NAME" xml:space="preserve">
+    <value>Scan Name:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SCANNED_ITEMS" xml:space="preserve">
+    <value>Scanned Items</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SCHEDULED_BY" xml:space="preserve">
+    <value>Scan Scheduled by</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_START_DATE" xml:space="preserve">
+    <value>Scan Scheduled On:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_START_TIME" xml:space="preserve">
+    <value>Start Time:</value>
+  </data>
+  <data name="IDS_SCAN_NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SUNDAY" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_THURSDAY" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_TITLE" xml:space="preserve">
+    <value>Scan Schedule</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_TUESDAY" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_WEDNESDAY" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_WEEKLY" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_WINDOW_PASSWORD" xml:space="preserve">
+    <value>Enter Window Password</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_INETDOWNLOAD" xml:space="preserve">
+    <value>Download from &amp;Internet</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_PICKFROMPATH" xml:space="preserve">
+    <value>&amp;Pick update files from specified path</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_DOWNLOADADMNCONSERVER" xml:space="preserve">
+    <value>Download from &amp;Admin Console Server</value>
+  </data>
+  <data name="IDS_TOOLS_TYPE_CLEANING_RESTORE" xml:space="preserve">
+    <value>Cleaning &amp;&amp; Restore Tools</value>
+  </data>
+  <data name="IDS_TOOLS_TYPE_DIAGNOSTIC" xml:space="preserve">
+    <value>Diagnostic Tools</value>
+  </data>
+  <data name="IDS_TOOLS_TYPE_PREVENTIVE" xml:space="preserve">
+    <value>Preventive Tools</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_HIJACK_RESTORE" xml:space="preserve">
+    <value>Hijack Restore</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_TRACK_CLEANER" xml:space="preserve">
+    <value>Track Cleaner</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_EMERGENCY_CD" xml:space="preserve">
+    <value>Create Emergency CD</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_ANTIMALWARE" xml:space="preserve">
+    <value>Launch AntiMalware</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_QUARANTINE" xml:space="preserve">
+    <value>View Quarantine Files</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_ANTIROOTKIT" xml:space="preserve">
+    <value>Anti-Rootkit</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_SECURE_USB_DRIVE" xml:space="preserve">
+    <value>USB Drive Protection</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_SYSTEM_EXPLORER" xml:space="preserve">
+    <value>System Explorer</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_WINDOWS_SPY" xml:space="preserve">
+    <value>Windows Spy</value>
+  </data>
+  <data name="IDS_TOOLS_CAP_EXCLUDE_FILE_EXTENSIONS" xml:space="preserve">
+    <value>Exclude File Extensions</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_ANTIMALWARE" xml:space="preserve">
+    <value>Scan and clean roguewares and other potentially harmful software from your PC</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_ANTIROOTKIT" xml:space="preserve">
+    <value>Perform deep scan of your PC to detect and remove hidden rootkits</value>
+  </data>
+  <data name="IDS_TOOLS_DESC_CLEANING_RESTORE" xml:space="preserve">
+    <value>Tools to clean &amp;&amp; restore your system to its original configuration</value>
+  </data>
+  <data name="IDS_SCAN_SKIPFOLDER" xml:space="preserve">
+    <value>Sk&amp;ip Folder</value>
+  </data>
+  <data name="IDS_SCAN_SKIPFILE" xml:space="preserve">
+    <value>S&amp;kip File</value>
+  </data>
+  <data name="IDS_SCAN_ERROR_DRVNOTEXIST" xml:space="preserve">
+    <value>No files found on the drive &lt;%s&gt; 
+</value>
+  </data>
+  <data name="IDS_FINISH" xml:space="preserve">
+    <value>Fi&amp;nish</value>
+  </data>
+  <data name="IDS_OPT_SPAM_TAGSUBJECTWITHTEXT" xml:space="preserve">
+    <value>Ta&amp;g subject with text (Recommed)</value>
+  </data>
+  <data name="IDS_OPT_SPAM_SPAMPROTECTIONLEVEL" xml:space="preserve">
+    <value>Spam protection level</value>
+  </data>
+  <data name="IDS_OPT_SPAM_LEVELSTRICT" xml:space="preserve">
+    <value>Strict</value>
+  </data>
+  <data name="IDS_OPT_SPAM_LEVELMODERATE" xml:space="preserve">
+    <value>Moderate</value>
+  </data>
+  <data name="IDS_OPT_SPAM_LEVELSOFT" xml:space="preserve">
+    <value>Soft</value>
+  </data>
+  <data name="IDS_OPT_SPAM_CUSTOMIZE_BLACKLIST" xml:space="preserve">
+    <value>Customiz&amp;e...</value>
+  </data>
+  <data name="IDS_OPT_SPAM_CUSTOMIZE_WHITELIST" xml:space="preserve">
+    <value>Customi&amp;ze...</value>
+  </data>
+  <data name="IDS_OPT_SPAM_ENABLEBLACKLIST" xml:space="preserve">
+    <value>Enable email &amp;black list</value>
+  </data>
+  <data name="IDS_OPT_SPAM_ENABLEWHITELIST" xml:space="preserve">
+    <value>Enable email &amp;white list</value>
+  </data>
+  <data name="IDS_OPT_SPAM_ENABLEANTISPAMPLUGIN" xml:space="preserve">
+    <value>Enable AntiSpam &amp;plugin</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_DISPLAYALERTMSG" xml:space="preserve">
+    <value>Display alert &amp;message</value>
+  </data>
+  <data name="IDS_OPT_EMAIL_ACTIONONVIRUSDETECT" xml:space="preserve">
+    <value>Select action to be performed when virus is found</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_COPYUPDATEFILES" xml:space="preserve">
+    <value>Copy &amp;update files to specified location</value>
+  </data>
+  <data name="IDS_OPT_REPSET_DELETEREPORTAFTER" xml:space="preserve">
+    <value>Delete &amp;reports after</value>
+  </data>
+  <data name="IDS_OPT_REGRES_AUTOREPAIRREGISTRY" xml:space="preserve">
+    <value>Auto repair registry</value>
+  </data>
+  <data name="IDS_OPT_REGRES_CRITICALSYSREGREPAIR" xml:space="preserve">
+    <value>R&amp;estore critical system registry areas</value>
+  </data>
+  <data name="IDS_OPT_REGRES_REPAIRMALREGENTRIES" xml:space="preserve">
+    <value>&amp;Repair malicious registry entries</value>
+  </data>
+  <data name="IDS_OPT_INETSET_ENABLEPROXYSERVER" xml:space="preserve">
+    <value>&amp;Enable proxy settings</value>
+  </data>
+  <data name="IDS_OPT_INETSET_INETTYPE" xml:space="preserve">
+    <value>Ty&amp;pe:</value>
+  </data>
+  <data name="IDS_OPT_INETSET_INETSERVER" xml:space="preserve">
+    <value>Ser&amp;ver:</value>
+  </data>
+  <data name="IDS_OPT_INETSET_INETPORT" xml:space="preserve">
+    <value>Po&amp;rt:</value>
+  </data>
+  <data name="IDS_OPT_INETSET_AUTHDETAILS" xml:space="preserve">
+    <value>Authenticate to connect through firewall or proxy server</value>
+  </data>
+  <data name="IDS_OPT_INETSET_INETUSERNAME" xml:space="preserve">
+    <value>&amp;User Name:</value>
+  </data>
+  <data name="IDS_OPT_INETSET_INETPASSWORD" xml:space="preserve">
+    <value>Passw&amp;ord:</value>
+  </data>
+  <data name="IDS_OPT_SELECT_FOLDER_PATH" xml:space="preserve">
+    <value>Select Folder Path</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_EDITBTN" xml:space="preserve">
+    <value>E&amp;dit</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_INVALIDEMAIL" xml:space="preserve">
+    <value>Invalid Email address</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_LABELWHITELIST" xml:space="preserve">
+    <value>White List</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_LABELBLACKLIST" xml:space="preserve">
+    <value>Black List</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_LABELKEYWORDSLIST" xml:space="preserve">
+    <value>Keywords list</value>
+  </data>
+  <data name="IDS_OPT_GENERALOPTIONS_INVALIDOLDPASSWORD" xml:space="preserve">
+    <value>Invalid old password</value>
+  </data>
+  <data name="IDS_OPT_GENERALOPTIONS_PASSWORDDOESNOTMATCH" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
+  <data name="IDS_OPT_IWL_IMPORTLIST" xml:space="preserve">
+    <value>I&amp;mport List</value>
+  </data>
+  <data name="IDS_OPT_IWL_EXPORTLIST" xml:space="preserve">
+    <value>E&amp;xport List</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_IMPORTERROR" xml:space="preserve">
+    <value>Error occurred while reading file.</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_EXPORTERROR" xml:space="preserve">
+    <value>Error occurred while Exporting file.</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_EMAIL_ID_IN_BLACKLIST" xml:space="preserve">
+    <value>Email Id already exists in Black List</value>
+  </data>
+  <data name="IDS_OPT_INPWHITELIST_EMAIL_ID_IN_WHITELIST" xml:space="preserve">
+    <value>Email Id already exists in White List</value>
+  </data>
+  <data name="IDS_OPT_MAINDLG_ASKPASSWORD_INVALIDPASSWORD" xml:space="preserve">
+    <value>Invalid password</value>
+  </data>
+  <data name="IDS_OPT_OLDPASSWORD" xml:space="preserve">
+    <value>&amp;Enter old password:</value>
+  </data>
+  <data name="IDS_OPT_NEWPASSWORD" xml:space="preserve">
+    <value>Enter &amp;new password:</value>
+  </data>
+  <data name="IDS_OPT_CONFIRMNEWPASSWORD" xml:space="preserve">
+    <value>Confirm new &amp;password:</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_SETTING_AUTO" xml:space="preserve">
+    <value>A&amp;utomatic (Recommed)</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_SETTING_ADV" xml:space="preserve">
+    <value>Ad&amp;vanced</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_EXECUTABLES" xml:space="preserve">
+    <value>Scan e&amp;xecutable files</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_ALL" xml:space="preserve">
+    <value>Scan &amp;all files (Takes longer time)</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_ARCHIVE" xml:space="preserve">
+    <value>Scan a&amp;rchive files</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_PACKED" xml:space="preserve">
+    <value>Scan &amp;packed files</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_LIST_FILES" xml:space="preserve">
+    <value>&amp;List files while scanning</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_MAILBOXES" xml:space="preserve">
+    <value>Scan &amp;mailboxes</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_MAILBOX_QUICK_SCAN" xml:space="preserve">
+    <value>Qu&amp;ick scan of mailboxes</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SCAN_MAILBOX_THROUGH_SCAN" xml:space="preserve">
+    <value>&amp;Thorough scan of mailboxes</value>
+  </data>
+  <data name="IDS_OPT_VIRPTDLG_DISP_ALERT_MSG" xml:space="preserve">
+    <value>Display &amp;alert messages</value>
+  </data>
+  <data name="IDS_OPT_VIRPTDLG_VIR_FOUND_ACTION_DENY_ACCESS" xml:space="preserve">
+    <value>De&amp;ny access</value>
+  </data>
+  <data name="IDS_OPT_DNASCDLG_SUBMIT_SUSPISIOUS_LABEL" xml:space="preserve">
+    <value>Submit suspicious files</value>
+  </data>
+  <data name="IDS_OPT_DNASCDLG_DO_NOT_SUBMIT_SUSPISIOUS" xml:space="preserve">
+    <value>Do &amp;not submit files</value>
+  </data>
+  <data name="IDS_OPT_DNASCDLG_SUBMIT_SUSPISIOUS" xml:space="preserve">
+    <value>Sub&amp;mit files</value>
+  </data>
+  <data name="IDS_OPT_DNASCDLG_SW_SUSPICIOUS_SUBMIT_NOTY" xml:space="preserve">
+    <value>S&amp;how notification while submitting files</value>
+  </data>
+  <data name="IDS_OPT_ARCSTDLG_ARCH_SCAN_LEVEL" xml:space="preserve">
+    <value>Archive Scan level</value>
+  </data>
+  <data name="IDS_OPT_ARCSTDLG_SEL_ARCH_TYPE" xml:space="preserve">
+    <value>Select the type of archive that should be scanned</value>
+  </data>
+  <data name="IDS_OPT_ARCSTDLG_SELECT_ALL" xml:space="preserve">
+    <value>&amp;Select All</value>
+  </data>
+  <data name="IDS_OPT_ARCSTDLG_DESELECT_ALL" xml:space="preserve">
+    <value>Dese&amp;lect All</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_SCNST_HEADING" xml:space="preserve">
+    <value>Scan Settings</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_SCNST_DESC" xml:space="preserve">
+    <value>Configure scan settings</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_VIRPT_HEADING" xml:space="preserve">
+    <value>Virus Protection</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_VIRPT_DESC" xml:space="preserve">
+    <value>Continuous protection against viruses, malwares and other malicious threats</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_DNASC_HEADING" xml:space="preserve">
+    <value>DNAScan</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_DNASC_DESC" xml:space="preserve">
+    <value>Detects and eliminates new and unknown malicious threats</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_BLOKPACKED_HEADING" xml:space="preserve">
+    <value>Block Suspicious Packed Files</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_BLOKPACKED_DESC" xml:space="preserve">
+    <value>Identify and block suspiciously packed files</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_AUTOROGUEWARESC_HEADING" xml:space="preserve">
+    <value>Automatic Rogueware Scan</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_AUTOROGUEWARESC_DESC" xml:space="preserve">
+    <value>Automatically scans and removes roguewares and fake antivirus softwares</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_SCNSCHD_HEADING" xml:space="preserve">
+    <value>Scan Schedule</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_SCNSCHD_DESC" xml:space="preserve">
+    <value>Helps to configure scan at specified time schedule</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_EXCLFLNFD_HEADING" xml:space="preserve">
+    <value>Exclude Files &amp;&amp; Folders</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_EXCLFLNFD_DESC" xml:space="preserve">
+    <value>Exclude files and folders from scanning</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_QURNTNBKUP_HEADING" xml:space="preserve">
+    <value>Quarantine &amp;&amp; Backup</value>
+  </data>
+  <data name="IDS_OPT_FLNFDDLG_QURNTNBKUP_DESC" xml:space="preserve">
+    <value>Configure quarantine and backup settings</value>
+  </data>
+  <data name="IDS_OPT_NAVIGATION_TEXT_FLNFDDLG" xml:space="preserve">
+    <value>Back to Files &amp;&amp; Folders</value>
+  </data>
+  <data name="IDS_OPT_NAVIGATION_TEXT_EMAILSDLG" xml:space="preserve">
+    <value>Back to Emails</value>
+  </data>
+  <data name="IDS_OPT_EMAILDLG_EMAILPT_HEADING" xml:space="preserve">
+    <value>Email Protection</value>
+  </data>
+  <data name="IDS_OPT_EMAILDLG_EMAILPT_DESC" xml:space="preserve">
+    <value>Automatic protection against malwares coming through emails</value>
+  </data>
+  <data name="IDS_OPT_EMAILDLG_TRUSTMAILCLIENTPT_HEADING" xml:space="preserve">
+    <value>Trusted Email Clients Protection</value>
+  </data>
+  <data name="IDS_OPT_EMAILDLG_TRUSTMAILCLIENTPT_DESC" xml:space="preserve">
+    <value>Allows only trusted email clients to s emails</value>
+  </data>
+  <data name="IDS_OPT_EMAILDLG_SPAMPT_HEADING" xml:space="preserve">
+    <value>Spam Protection</value>
+  </data>
+  <data name="IDS_OPT_EMAILDLG_SPAMPT_DESC" xml:space="preserve">
+    <value>Blocks unwanted emails like spam, phishing and porn emails</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_AUTO_UPDATE_HEADING" xml:space="preserve">
+    <value>Automatic Update</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_AUTO_UPDATE_DESC" xml:space="preserve">
+    <value>Change automatic update settings</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_INTERNETST_HEADING" xml:space="preserve">
+    <value>Internet Settings</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_INTERNETST_DESC" xml:space="preserve">
+    <value>Change Internet settings if not able to connect to the Internet</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_REGISTRY_RESTORE_HEADING" xml:space="preserve">
+    <value>Registry Restore</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_REGISTRY_RESTORE_DESC" xml:space="preserve">
+    <value>Restores critical system registry areas changed by viruses and malwares</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_SELFPT_HEADING" xml:space="preserve">
+    <value>Self Protection</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_SELFPT_DESC" xml:space="preserve">
+    <value>Safeguards product's installation files, folders and settings</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_PASSWORDPT_HEADING" xml:space="preserve">
+    <value>Password Protection</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_PASSWORDPT_DESC" xml:space="preserve">
+    <value>Prevents unauthorized access to product settings</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_RPTST_HEADING" xml:space="preserve">
+    <value>Report Settings</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_RPTST_DESC" xml:space="preserve">
+    <value>Configure schedule for deleting reports</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_RPT_VIR_STAT_HEADING" xml:space="preserve">
+    <value>Report Virus Statistics</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_RPT_VIR_STAT_DESC" xml:space="preserve">
+    <value>Submits virus detection statistics to research center</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_RESTORE_DEFST_HEADING" xml:space="preserve">
+    <value>Restore Default Settings</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_RESTORE_DEFST_DESC" xml:space="preserve">
+    <value>Restore default settings of entire product</value>
+  </data>
+  <data name="IDS_OPT_SETNGDLG_BTN_DEFAULT_ALL" xml:space="preserve">
+    <value>&amp;Default All</value>
+  </data>
+  <data name="IDS_OPT_NAVIGATION_TEXT_SETTINGS" xml:space="preserve">
+    <value>Back to Settings</value>
+  </data>
+  <data name="IDS_OPT_QUARSET_DELETEQUARFILESAFTER" xml:space="preserve">
+    <value>Delete &amp;quarantine/backup files after</value>
+  </data>
+  <data name="IDS_OPT_QUARSET_VIEWQUARFILES" xml:space="preserve">
+    <value>&amp;View Files</value>
+  </data>
+  <data name="IDS_OPT_DAYS10" xml:space="preserve">
+    <value>10 days</value>
+  </data>
+  <data name="IDS_OPT_DAYS30" xml:space="preserve">
+    <value>30 days</value>
+  </data>
+  <data name="IDS_OPT_DAYS90" xml:space="preserve">
+    <value>90 days</value>
+  </data>
+  <data name="IDS_OPT_INETDLG_PROXY_TYPE_HTTPPROXY" xml:space="preserve">
+    <value>HTTP Proxy</value>
+  </data>
+  <data name="IDS_OPT_INETDLG_PROXY_TYPE_SOCKSV4" xml:space="preserve">
+    <value>SOCKS V4</value>
+  </data>
+  <data name="IDS_OPT_INETDLG_PROXY_TYPE_SOCKSV5" xml:space="preserve">
+    <value>SOCKS V5</value>
+  </data>
+  <data name="IDS_OPT_CNFATTCH_BLOCK_FOLL_ATTACHMENT" xml:space="preserve">
+    <value>Block following attachments</value>
+  </data>
+  <data name="IDS_OPT_CNFATTCH_APP_EXECUTABLES" xml:space="preserve">
+    <value>Application &amp;executables (.EXE,.DLL,.SCR,.OCX,.SYS )</value>
+  </data>
+  <data name="IDS_OPT_CNFATTCH_IMAGEPHOTO_FILES" xml:space="preserve">
+    <value>&amp;Image/Photo files (.PCX,.TIFF,.WPG,.BMP,.GIF,.JPEG,.WMP,.PNG,.TIF)</value>
+  </data>
+  <data name="IDS_OPT_CNFATTCH_MEDIA_FILES" xml:space="preserve">
+    <value>&amp;Media files (.AVI, .RM, .VOB, .MOV, .QT, .MPEG, .MPG, .WMV, .WMA, .MP4, .MP3)</value>
+  </data>
+  <data name="IDS_OPT_CNFATTCH_TEXT_FILES" xml:space="preserve">
+    <value>&amp;TEXT files (.TXT, .ASCI)</value>
+  </data>
+  <data name="IDS_OPT_CNFATTCH_USER_SPEC_EXTENSION" xml:space="preserve">
+    <value>User specified extensions</value>
+  </data>
+  <data name="IDS_OPT_CNFATTCH_INVALIDEXTENSION" xml:space="preserve">
+    <value>Invalid extension</value>
+  </data>
+  <data name="IDS_ADD" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="IDS_REPAIR" xml:space="preserve">
+    <value>&amp;Repair</value>
+  </data>
+  <data name="IDS_HELP" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="IDS_SKIP" xml:space="preserve">
+    <value>S&amp;kip</value>
+  </data>
+  <data name="IDS_BROWSE" xml:space="preserve">
+    <value>Bro&amp;wse...</value>
+  </data>
+  <data name="IDS_EMLPROSET_CONFIGURE" xml:space="preserve">
+    <value>Confi&amp;gure...</value>
+  </data>
+  <data name="IDS_EMLPROSET_BACKUPINITIALLY" xml:space="preserve">
+    <value>&amp;Backup before taking action</value>
+  </data>
+  <data name="IDS_EMLPROSET_ACTIONONVIRUSDETECT" xml:space="preserve">
+    <value>Select action to be performed when virus is found</value>
+  </data>
+  <data name="IDS_ARCSTDLG_VIR_FOUND_ACTION_QURNTINE" xml:space="preserve">
+    <value>&amp;Quarantine</value>
+  </data>
+  <data name="IDS_AUTOUPDT_BROWSEUPDTFILES" xml:space="preserve">
+    <value>&amp;Browse�</value>
+  </data>
+  <data name="IDS_FIREWALL_PROTECTION" xml:space="preserve">
+    <value>Firewall Protection</value>
+  </data>
+  <data name="IDS_PARENTAL_CONTROL" xml:space="preserve">
+    <value>Parental Control</value>
+  </data>
+  <data name="IDS_OPT_ENTERPASSWORD" xml:space="preserve">
+    <value>Enter &amp;password</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_INVALIDPATH" xml:space="preserve">
+    <value>Please specify valid path.</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_PATHNOTFOUND" xml:space="preserve">
+    <value>Path not found. Please specify valid path.</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_ACCDENIED" xml:space="preserve">
+    <value>Access Denied. Please specify valid path.</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_CHKQHBSET" xml:space="preserve">
+    <value>%s folder can not be assigned as backup folder.</value>
+  </data>
+  <data name="IDS_REMOVEALL" xml:space="preserve">
+    <value>Remove A&amp;ll</value>
+  </data>
+  <data name="IDS_RESTORE" xml:space="preserve">
+    <value>Res&amp;tore</value>
+  </data>
+  <data name="IDS_QURANTINE_SOMEFILECANTBEDELETED" xml:space="preserve">
+    <value>Some of the files can not be deleted</value>
+  </data>
+  <data name="IDS_CLEAN" xml:space="preserve">
+    <value>Clean</value>
+  </data>
+  <data name="IDS_LOGUI_ACTIVITYLOG_LIVEUPDATE" xml:space="preserve">
+    <value>Quick Update</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_DNASCANSTATUSON" xml:space="preserve">
+    <value>- DNAScan is on.
+</value>
+  </data>
+  <data name="IDS_SCANDLG_SETTINGS_DNASCANSTATUSOFF" xml:space="preserve">
+    <value>- DNAScan is off.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANNING_EXECUTABLESONLY" xml:space="preserve">
+    <value>- Scanning only executable files.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANNING_USERSPECIFIEDEXTENSIONS" xml:space="preserve">
+    <value>- Scanning file with the extensions specified by user.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANNING_ALLFILES" xml:space="preserve">
+    <value>- Scanning all files.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANPACKED_ON" xml:space="preserve">
+    <value>- Scan packed files is on.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANPACKED_OFF" xml:space="preserve">
+    <value>- Scan packed files is off.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_MAILBOXES_ON" xml:space="preserve">
+    <value>- Scan Mailbox is on.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_MAILBOXES_OFF" xml:space="preserve">
+    <value>- Scan Mailbox is off.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_ARCHIVEFILE_ON" xml:space="preserve">
+    <value>- Archive file scanning is on for - </value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_ARCHIVEFILE_OFF" xml:space="preserve">
+    <value>- Archive file scanning is off.
+</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_DUMBSCAN_ON" xml:space="preserve">
+    <value>- Dumb scanning is on.
+</value>
+  </data>
+  <data name="IDS_OPTIONS_REPAIRAUTODELETE" xml:space="preserve">
+    <value>Repair automatically, delete if unsuccessful</value>
+  </data>
+  <data name="IDS_SCANFILE_LOGMSG_SCANNSERSETTINGS_FOLLOWS" xml:space="preserve">
+    <value>Scanner Settings for this Scan were as follows.
+
+</value>
+  </data>
+  <data name="IDS_ACTION_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="IDS_PAUSE" xml:space="preserve">
+    <value>&amp;Pause</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_BUYNOW_SUBSCRIPTION_EXP" xml:space="preserve">
+    <value>License has expired
+Click Buy Now to fix the problem</value>
+  </data>
+  <data name="IDS_PAGE_SUBHDR_FULLSCAN" xml:space="preserve">
+    <value>Performing full system scan</value>
+  </data>
+  <data name="IDS_SCAN_CUSTOMSCAN_CAPTION" xml:space="preserve">
+    <value>Scan Now</value>
+  </data>
+  <data name="IDS_OPTIONS_ISEC_ANTIPHISH" xml:space="preserve">
+    <value>%s AntiPhishing</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SELECT_ITEMS_TO_SCAN" xml:space="preserve">
+    <value>Select item to scan</value>
+  </data>
+  <data name="IDS_OPT_GEN_DISABLESELFPROT_MSG" xml:space="preserve">
+    <value>Disabling Quick Heal Self Protection is not recommed.
+
+This feature protects the product�s internal files, folders and
+configurations from being tampered or modified. Disabling
+Self Protection may severely impact overall system security.
+
+Are you sure you want to disable Quick Heal Self Protection?</value>
+  </data>
+  <data name="IDS_OPT_GEN_ENABLESELFPROT_MSG" xml:space="preserve">
+    <value>Self Protection will start when you start your system next time.</value>
+  </data>
+  <data name="IDS_TOOLS_MACINFOERRMSG" xml:space="preserve">
+    <value>Unable to collect System Information.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_ENABLE" xml:space="preserve">
+    <value>&amp;Enable Virus Protection</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_FLOATINGMENU_DISABLE" xml:space="preserve">
+    <value>&amp;Disable Virus Protection</value>
+  </data>
+  <data name="IDS_OPEN" xml:space="preserve">
+    <value>&amp;Open</value>
+  </data>
+  <data name="IDS_SCAN_HDR_MOBILESCAN" xml:space="preserve">
+    <value>Mobile Scan</value>
+  </data>
+  <data name="IDS_CATEYE_DLLSMISING" xml:space="preserve">
+    <value>Some of the DLL files are missing. Could not load %s Virus Protection.</value>
+  </data>
+  <data name="IDS_STAT_ONLN_NO_FILE_SCANNED" xml:space="preserve">
+    <value>Number of files scanned</value>
+  </data>
+  <data name="IDS_STAT_ONLN_NO_FILE_INFECTED" xml:space="preserve">
+    <value>Number of infected files</value>
+  </data>
+  <data name="IDS_STAT_ONLN_NO_FILE_SUSP" xml:space="preserve">
+    <value>Number of suspicious files</value>
+  </data>
+  <data name="IDS_STAT_ONLN_NUM_PKR_FOUND" xml:space="preserve">
+    <value>Number of packed files identified</value>
+  </data>
+  <data name="IDS_STAT_ONLN_LAST_FILE_SCANNED" xml:space="preserve">
+    <value>Last file scanned</value>
+  </data>
+  <data name="IDS_STAT_ONLN_LAST_FILE_INFECTED" xml:space="preserve">
+    <value>Last file found infected</value>
+  </data>
+  <data name="IDS_STAT_ONLN_LAST_INFECTION" xml:space="preserve">
+    <value>Last infection name</value>
+  </data>
+  <data name="IDS_STAT_ONLN_LAST_FILE_SUSP" xml:space="preserve">
+    <value>Last file found suspicious</value>
+  </data>
+  <data name="IDS_STAT_ONLN_LAST_PKRFILE_IDENTIFIED" xml:space="preserve">
+    <value>Last packed file identified</value>
+  </data>
+  <data name="IDS_STAT_ONLN_LAST_PKR_IDENTIFIED" xml:space="preserve">
+    <value>Last packer identified</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_MAIL_SCANNED" xml:space="preserve">
+    <value>Number of emails scanned</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_MAIL_WITHATTACH" xml:space="preserve">
+    <value>Number of emails with attachments</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_MAIL_INFECTED" xml:space="preserve">
+    <value>Number of infected emails</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_ATTACH" xml:space="preserve">
+    <value>Number of attachments</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_ATTACH_INFECTED" xml:space="preserve">
+    <value>Number of infected attachments</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_ATTACH_SUSP" xml:space="preserve">
+    <value>Number of suspicious attachments</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_MEATTACH_BLKED" xml:space="preserve">
+    <value>Number of multiple extensions attachments blocked</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_VATTACH_BLKED" xml:space="preserve">
+    <value>Number of vulnerable emails blocked</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_ACATTACH_BLKED" xml:space="preserve">
+    <value>Number of attachments blocked by attachment control</value>
+  </data>
+  <data name="IDS_STAT_MAIL_LAST_APP_BLKED" xml:space="preserve">
+    <value>Last application blocked attempting to s mail</value>
+  </data>
+  <data name="IDS_STAT_MAIL_NO_ATTEMPTS_BLKED" xml:space="preserve">
+    <value>Number of attempts to s mail blocked</value>
+  </data>
+  <data name="IDS_SCANFILEDLG_TABDLG_TAB1" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="IDS_STAT_GEN_FROM" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="IDS_OPTIONS_ISECIPLIST_INPUTIPADDRESSTO" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="IDS_STAT_NA" xml:space="preserve">
+    <value>NA</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_DONTPRMPTNXTTIME_FORTHISFILE" xml:space="preserve">
+    <value>&amp;Do not prompt next time for this file</value>
+  </data>
+  <data name="IDS_OPT_QRTBKDLG_COUNT_FILE_LABEL" xml:space="preserve">
+    <value>%u file(s) quarantined/backup</value>
+  </data>
+  <data name="IDS_OPT_QRTBKDLG_NO_FILE_LABEL" xml:space="preserve">
+    <value>No file quarantined/backup</value>
+  </data>
+  <data name="IDS_ABOUT_HEADER" xml:space="preserve">
+    <value>About %s</value>
+  </data>
+  <data name="IDS_ABOUT_CAP_CAP_SERVICE_PACK" xml:space="preserve">
+    <value>Service Pack:</value>
+  </data>
+  <data name="IDS_ABOUT_CAP_WARNING" xml:space="preserve">
+    <value>Warning:</value>
+  </data>
+  <data name="IDS_ABOUT_PRINT_HEADER" xml:space="preserve">
+    <value>PRODUCT REGISTRATION INFORMATION</value>
+  </data>
+  <data name="IDS_ABOUT_CAP_REGISTER_NOW" xml:space="preserve">
+    <value>R&amp;egister Now</value>
+  </data>
+  <data name="IDS_SUPPORT_CAP_SYSTEM_INFORMATION" xml:space="preserve">
+    <value>&amp;Submit System Information</value>
+  </data>
+  <data name="IDS_SCANDLG_DNASCAN_UNQUARANTINE_DONTPRMPTNXTTIME_FORTHISFILE" xml:space="preserve">
+    <value>&amp;Restore from Quarantine, Do not prompt next time for this file</value>
+  </data>
+  <data name="IDS_OPT_INETSET_INVALIDPROXY" xml:space="preserve">
+    <value>Please enter valid proxy configuration.</value>
+  </data>
+  <data name="IDS_STATUS_INFO_BUYNOW" xml:space="preserve">
+    <value>&amp;Buy Now</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_CAP_TECHNICAL" xml:space="preserve">
+    <value>For technical support please refer below information:</value>
+  </data>
+  <data name="IDS_ABOUT_PRODUCT" xml:space="preserve">
+    <value>Product:</value>
+  </data>
+  <data name="IDS_OPT_SCNSTDLG_SELECT_MODE" xml:space="preserve">
+    <value>Select scan mode</value>
+  </data>
+  <data name="IDS_OPT_AUTOUPDT_SELECT_UPDATE_MODE" xml:space="preserve">
+    <value>Select update mode</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_FILESNFOLDERS" xml:space="preserve">
+    <value>Settings for files and folders protection</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_EMAILS" xml:space="preserve">
+    <value>Settings for email protection</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_INTERNET" xml:space="preserve">
+    <value>Settings for Internet and network protection</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_USB" xml:space="preserve">
+    <value>Settings for external drives protection</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_SETTINGS" xml:space="preserve">
+    <value>Change general settings</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_TOOLS" xml:space="preserve">
+    <value>Helps to diagnose system in case of virus attacks</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_REPORTS" xml:space="preserve">
+    <value>View reports and statistics</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_ABOUT" xml:space="preserve">
+    <value>Information about product license</value>
+  </data>
+  <data name="IDS_OPT_PAGE_SUBHDR_SUPPORT" xml:space="preserve">
+    <value>Getting technical support</value>
+  </data>
+  <data name="IDS_MAIN_ABOUT_HEADER" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="IDS_MAIN_SUPPORT_HEADER" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="IDS_STATUS_HDR_EXTERNAL_DEVICES" xml:space="preserve">
+    <value>External Drives &amp;&amp; Devices</value>
+  </data>
+  <data name="IDS_SCAN_HDR_FULLSCAN" xml:space="preserve">
+    <value>Full System Scan</value>
+  </data>
+  <data name="IDS_MAIN_SETTINGS" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="IDS_OPT_EXT_DRIVES_AUTORUN_DESC" xml:space="preserve">
+    <value>Prevents automatic execution from external drives like USB drive, CD/DVD etc.</value>
+  </data>
+  <data name="IDS_OPT_EXT_DRIVES_SCANEXT_DRIVES_DESC" xml:space="preserve">
+    <value>Scans external drives like USB drive as soon as they are connected</value>
+  </data>
+  <data name="IDS_OPT_EXT_DRIVES_DATA_THEFT_PRO_HEADING" xml:space="preserve">
+    <value>Data Theft Protection</value>
+  </data>
+  <data name="IDS_OPT_EXT_DRIVES_DATA_THEFT_PRO_DESC" xml:space="preserve">
+    <value>Blocks access to removable drives like USB drives, Pen drives etc.</value>
+  </data>
+  <data name="IDS_OPT_EXT_DRIVES_SCAN_WINDOW_MOBILE_HEADING" xml:space="preserve">
+    <value>Scan Windows Mobile</value>
+  </data>
+  <data name="IDS_OPT_EXT_DRIVES_SCAN_WINDOW_MOBILE_DESC" xml:space="preserve">
+    <value>Scan Windows Mobile automatically when connected</value>
+  </data>
+  <data name="IDS_OPT_NAVIGATION_TEXT_EXTDRIVES" xml:space="preserve">
+    <value>Back to External Drives &amp;&amp; Devices</value>
+  </data>
+  <data name="IDS_OPT_NETNWDLG_FIREWALLPT_DESC" xml:space="preserve">
+    <value>Protects PC from network attacks</value>
+  </data>
+  <data name="IDS_OPT_NETNWDLG_BROWSINGPT_DESC" xml:space="preserve">
+    <value>Blocks access to infected websites</value>
+  </data>
+  <data name="IDS_OPT_NETNWDLG_MALWAREPT_HEADING" xml:space="preserve">
+    <value>Malware Protection</value>
+  </data>
+  <data name="IDS_OPT_NETNWDLG_MALWAREPT_DESC" xml:space="preserve">
+    <value>Protects PC from spywares, adwares, keyloggers, riskwares</value>
+  </data>
+  <data name="IDS_OPT_NETNWDLG_PHISHINGPT_DESC" xml:space="preserve">
+    <value>Prevents from accessing phishing and fraudulent websites</value>
+  </data>
+  <data name="IDS_OPT_NETNWDLG_PARENTAL_CONTROL_DESC" xml:space="preserve">
+    <value>Prevents children from accessing restricted websites</value>
+  </data>
+  <data name="IDS_OPT_NAVIGATION_TEXT_NETNWDLG" xml:space="preserve">
+    <value>Back to Internet &amp;&amp; Network</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SCHEDULES" xml:space="preserve">
+    <value>Scan Schedules</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SUMMARY_FREQUENCY" xml:space="preserve">
+    <value>Frequency:</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_BLOCK_WEBSITES_CATAGORY" xml:space="preserve">
+    <value>R&amp;estrict access to particular categories of website</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_BLOCK_WEBSITES_SPECIFIC" xml:space="preserve">
+    <value>Restrict access to &amp;particular website</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_SCHEDULE_INET_ACCESS" xml:space="preserve">
+    <value>Sc&amp;hedule Internet access</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_CONFIGURE_CATAGERY" xml:space="preserve">
+    <value>&amp;Configure...</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_CONFIGURE_SPECIFIC" xml:space="preserve">
+    <value>C&amp;onfigure...</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_CONFIGURE_SCHEDULE" xml:space="preserve">
+    <value>Co&amp;nfigure...</value>
+  </data>
+  <data name="IDS_OPT_SINETDLG_SPECIFY_ACCESS_TYE" xml:space="preserve">
+    <value>Specify when the user can access the Internet</value>
+  </data>
+  <data name="IDS_OPT_SINETDLG_ALLOW_ALWAYS" xml:space="preserve">
+    <value>&amp;Always allow access to the Internet</value>
+  </data>
+  <data name="IDS_OPT_SINETDLG_ALLOW_AS_PER_SCHEDULE" xml:space="preserve">
+    <value>Allow access to the Internet as per the sc&amp;hedule</value>
+  </data>
+  <data name="IDS_OPT_SINETDLG_SELECT_SCHEDULE" xml:space="preserve">
+    <value>Select the cells to allow the days and times for accessing the Internet</value>
+  </data>
+  <data name="IDS_REMOVE" xml:space="preserve">
+    <value>&amp;Remove</value>
+  </data>
+  <data name="IDS_REMOVE_ALL" xml:space="preserve">
+    <value>Remove &amp;All</value>
+  </data>
+  <data name="IDS_IDS_AND_IPS" xml:space="preserve">
+    <value>IDS &amp;&amp; IPS</value>
+  </data>
+  <data name="IDS_STATUS_DATAPROTONLINEON" xml:space="preserve">
+    <value>Data Protection is depent on Virus Protection.
+Please enable Virus Protection to avail this service.</value>
+  </data>
+  <data name="IDS_WS_REPORT_MAIN_CAPTION" xml:space="preserve">
+    <value>Intrusion Detection &amp; Prevention</value>
+  </data>
+  <data name="IDS_WS_REPORT" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="IDS_WS_REPORT_VERSION" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="IDS_WS_REPORT_VULNERABILITY_DETECTED" xml:space="preserve">
+    <value>Vulnerability detected</value>
+  </data>
+  <data name="IDS_WS_REPORT_DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="IDS_WS_REPORT_REFERENCES" xml:space="preserve">
+    <value>References</value>
+  </data>
+  <data name="IDS_WS_REPORT_INTERNET_ACCESS_BLOCKED" xml:space="preserve">
+    <value>Internet Access Blocked</value>
+  </data>
+  <data name="IDS_WS_REPORT_WEBSITE_ACCESSED" xml:space="preserve">
+    <value>Website accessed</value>
+  </data>
+  <data name="IDS_WS_REPORT_REASON" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="IDS_WS_REPORT_WEBSITECATEGORY_AS" xml:space="preserve">
+    <value>Website categorized as</value>
+  </data>
+  <data name="IDS_WS_REPORT_WEBSITE_BELONGS_TO_BLOCKED_CATEGORY" xml:space="preserve">
+    <value>The website belongs to a blocked category.</value>
+  </data>
+  <data name="IDS_WS_REPORT_ACTION_ALLOWED" xml:space="preserve">
+    <value>Allowed</value>
+  </data>
+  <data name="IDS_WS_REPORT_WEBSITE_IN_BLOCK_LIST" xml:space="preserve">
+    <value>The website is configured in block list.</value>
+  </data>
+  <data name="IDS_WS_REPORT_PHISHING_SITE" xml:space="preserve">
+    <value>Phishing Site</value>
+  </data>
+  <data name="IDS_WS_REPORT_BP_SITE_ACCESSED" xml:space="preserve">
+    <value>Harmful website accessed.</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_REMOTE_TITLE" xml:space="preserve">
+    <value>Remote Support</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_SYSTEM_INFO_TITLE" xml:space="preserve">
+    <value>Submit System Information</value>
+  </data>
+  <data name="IDS_STATUS_ONLINEPROT_NEXTBOOT" xml:space="preserve">
+    <value>Virus Protection will be loaded when you start your system next time.</value>
+  </data>
+  <data name="IDS_ABOUT_LICENSETO_LABLE" xml:space="preserve">
+    <value>License To:</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_DESC_REMOTE" xml:space="preserve">
+    <value>For technical issues that need expert attention, avail remote support session. Available only on request on telephonic support.</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_DESC_SYSTEM_INFO" xml:space="preserve">
+    <value>For trouble shooting of possible new malware infection, s system information to research lab.</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CONFIGURE" xml:space="preserve">
+    <value>Configure Scan Schedule</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_ITEM_LIST" xml:space="preserve">
+    <value>This wizard will help you to scan your preferred files and folders on your
+computer at the schedule time.</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_REMOVE_MSG" xml:space="preserve">
+    <value>To remove an item from the list, select it and click Remove.</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_SUMMARY_INFO" xml:space="preserve">
+    <value>Summary of Scan Schedule:</value>
+  </data>
+  <data name="IDS_TOOLS_SSCAN_CAP_ADD_FOLDERS" xml:space="preserve">
+    <value>&amp;Add Folders</value>
+  </data>
+  <data name="IDS_WS_REPORT_INTERNET_BLOCKED_PC" xml:space="preserve">
+    <value>Internet access blocked by Parental Control.</value>
+  </data>
+  <data name="IDS_WS_REPORT_AP_SITE_ACCESSED" xml:space="preserve">
+    <value>Fraudulent website accessed.</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_BLOCK_WEBSITES_SPECIFIC_TITLE" xml:space="preserve">
+    <value>Block specified websites</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_SCHEDULE_INET_ACCESS_TITLE" xml:space="preserve">
+    <value>Schedule internet access</value>
+  </data>
+  <data name="IDS_OPT_REMOVE_ALL" xml:space="preserve">
+    <value>Remo&amp;ve All</value>
+  </data>
+  <data name="IDS_WS_REPORT_ATTEMPT_INTERNET_ACCESSED" xml:space="preserve">
+    <value>Attempt to access Internet was made at below given time.</value>
+  </data>
+  <data name="IDS_RESUME" xml:space="preserve">
+    <value>&amp;Resume</value>
+  </data>
+  <data name="IDS_PAUSED" xml:space="preserve">
+    <value>Paused</value>
+  </data>
+  <data name="IDS_STARTSCAN" xml:space="preserve">
+    <value>&amp;Start Scan</value>
+  </data>
+  <data name="IDS_PAGE_SUBHDR_CUSTOMSCAN" xml:space="preserve">
+    <value>Select folders and drives for scanning</value>
+  </data>
+  <data name="IDS_PAGE_SUBHDR_CUSTOMSCAN_PROGRESS" xml:space="preserve">
+    <value>Performing custom scan</value>
+  </data>
+  <data name="IDS_PAGE_SUBHDR_MEMORYSCAN" xml:space="preserve">
+    <value>Performing memory scan</value>
+  </data>
+  <data name="IDS_PAGE_SUBHDR_MOBILESCAN" xml:space="preserve">
+    <value>Select mobile device to scan</value>
+  </data>
+  <data name="IDS_CUSTOM_SCAN_SCANITEM" xml:space="preserve">
+    <value>Scan Item</value>
+  </data>
+  <data name="IDS_CUSTOM_SCAN_SCANSUBFOLDER" xml:space="preserve">
+    <value>Scan Subfolder</value>
+  </data>
+  <data name="IDS_OPT_EXCLUTE_WEBSITES_CATAGORY" xml:space="preserve">
+    <value>List of URLs (Websites) to exclude from the blocked category</value>
+  </data>
+  <data name="IDS_OPT_WEBSITES_CATAGORY_TITLE" xml:space="preserve">
+    <value>Web Category</value>
+  </data>
+  <data name="IDS_OPT_BWC_CATEGORY" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="IDS_OPT_BWC_STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IDS_PROMPT_HDR_NEWS" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="IDS_PROMPT_HDR_UPDATE" xml:space="preserve">
+    <value>Quick Update</value>
+  </data>
+  <data name="IDS_PROMPT_HDR_VP" xml:space="preserve">
+    <value>Virus Protection</value>
+  </data>
+  <data name="IDS_PROMPT_HDR_EMAIL" xml:space="preserve">
+    <value>Email Protection</value>
+  </data>
+  <data name="IDS_PROMPT_HDR_BROWSING" xml:space="preserve">
+    <value>Browsing Protection</value>
+  </data>
+  <data name="IDS_PROMPT_HDR_PHISHING" xml:space="preserve">
+    <value>Phishing Protection</value>
+  </data>
+  <data name="IDS_PROMPT_HDR_PARENTAL_CONTROL" xml:space="preserve">
+    <value>Parental Control</value>
+  </data>
+  <data name="IDS_PROMPT_VP_FILES" xml:space="preserve">
+    <value>File:</value>
+  </data>
+  <data name="IDS_ABOUT_DESC_OEM" xml:space="preserve">
+    <value>This is an OEM version.</value>
+  </data>
+  <data name="IDS_ABOUT_DESC_OEM_BUY_NOW" xml:space="preserve">
+    <value>To purchase commercial license version click Buy Now.</value>
+  </data>
+  <data name="IDS_ABOUT_DESC_FREE_TRIAL_BUY_NOW" xml:space="preserve">
+    <value>This is a trial version. We recomm you to purchase license version.</value>
+  </data>
+  <data name="IDS_ABOUT_DESC_OEM_FREE_TRIAL" xml:space="preserve">
+    <value>%d day(s) trial left.</value>
+  </data>
+  <data name="IDS_ABOUT_DESC_REGISTER_NOW" xml:space="preserve">
+    <value>If you have already purchased a license and have Product Key, click Register Now to register your copy.</value>
+  </data>
+  <data name="IDS_ABOUT_OEM_FREE_TRIAL_EXPIRED" xml:space="preserve">
+    <value>Trial has expired.</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_BUYNOW_SUBSCRIPTION_ABTEXP" xml:space="preserve">
+    <value>License is about to expire
+Click Buy Now to ext the license period</value>
+  </data>
+  <data name="IDS_CS_HDR_FREE_TRIAL_NOT_ACTIVATED" xml:space="preserve">
+    <value>Free trial is not activated</value>
+  </data>
+  <data name="IDS_CS_SUBHDR_FREE_TRIAL_NOT_ACTIVATED" xml:space="preserve">
+    <value>Activation is required
+Click Activate Now to receive free updates</value>
+  </data>
+  <data name="IDS_CS_ACTION_ACTIVATE_NOW" xml:space="preserve">
+    <value>Activate Now</value>
+  </data>
+  <data name="IDS_EXCLUSION_NOT_APPLICABLE" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_SUNDAY" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_MONDAY" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TUESDAY" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_WEDNESDAY" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_THURSDAY" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_FRIDAY" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_SATURDAY" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_12AM_1AM" xml:space="preserve">
+    <value>12 AM - 1 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_1AM_2AM" xml:space="preserve">
+    <value>1 AM - 2 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_2AM_3AM" xml:space="preserve">
+    <value>2 AM - 3 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_3AM_4AM" xml:space="preserve">
+    <value>3 AM - 4 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_4AM_5AM" xml:space="preserve">
+    <value>4 AM - 5 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_5AM_6AM" xml:space="preserve">
+    <value>5 AM - 6 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_6AM_7AM" xml:space="preserve">
+    <value>6 AM - 7 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_7AM_8AM" xml:space="preserve">
+    <value>7 AM - 8 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_8AM_9AM" xml:space="preserve">
+    <value>8 AM - 9 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_9AM_10AM" xml:space="preserve">
+    <value>9 AM - 10 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_10AM_11AM" xml:space="preserve">
+    <value>10 AM - 11 AM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_11AM_12PM" xml:space="preserve">
+    <value>11 AM - 12 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_12PM_1PM" xml:space="preserve">
+    <value>12 PM - 1 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_1PM_2PM" xml:space="preserve">
+    <value>1 PM - 2 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_2PM_3PM" xml:space="preserve">
+    <value>2 PM - 3 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_3PM_4PM" xml:space="preserve">
+    <value>3 PM - 4 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_4PM_5PM" xml:space="preserve">
+    <value>4 PM - 5 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_5PM_6PM" xml:space="preserve">
+    <value>5 PM - 6 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_6PM_7PM" xml:space="preserve">
+    <value>6 PM - 7 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_7PM_8PM" xml:space="preserve">
+    <value>7 PM - 8 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_8PM_9PM" xml:space="preserve">
+    <value>8 PM - 9 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_9PM_10PM" xml:space="preserve">
+    <value>9 PM - 10 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_10PM_11PM" xml:space="preserve">
+    <value>10 PM - 11 PM</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_TIME_11PM_12AM" xml:space="preserve">
+    <value>11 PM - 12 AM</value>
+  </data>
+  <data name="IDS_OPT_NOT_ACTIVITED_MESSAGE" xml:space="preserve">
+    <value>To avail this feature you need to activate your copy.
+Please activate your copy.</value>
+  </data>
+  <data name="IDS_OPT_LICENSE_EXPIRED_MESSAGE" xml:space="preserve">
+    <value>Your license has expired. To avail this feature,
+please renew the license.</value>
+  </data>
+  <data name="IDS_OPT_TRIAL_EXPIRED_MESSAGE" xml:space="preserve">
+    <value>Trial has expired. To avail this feature,
+please buy commercial license.</value>
+  </data>
+  <data name="IDS_OPT_OEM_EXPIRED_MESSAGE" xml:space="preserve">
+    <value>OEM has expired. To avail this feature,
+please buy commercial license.</value>
+  </data>
+  <data name="IDS_OPT_DEFAULT_ALL_MESSAGE" xml:space="preserve">
+    <value>This action will revert all settings to default, do you wish to continue?</value>
+  </data>
+  <data name="IDS_SCAN_STATUS_ACCESS_DENIED" xml:space="preserve">
+    <value>Access is denied</value>
+  </data>
+  <data name="IDS_PC2MOBILE_NOT_SUPPORTED" xml:space="preserve">
+    <value>Quick Heal PC2Mobile feature is not supported on this Operating System.</value>
+  </data>
+  <data name="IDS_WS_REPORT_FOR_IDS_IPS" xml:space="preserve">
+    <value>Intrusion Detection &amp;&amp; Prevention</value>
+  </data>
+  <data name="IDS_WACCTBLCTRL_FONTSIZE_ROWHEADING" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="IDS_CUSTOM_SCAN_INFO" xml:space="preserve">
+    <value>Select the scan item from below list and click Start Scan.
+To add new item to the list click Add.</value>
+  </data>
+  <data name="IDS_MOBILE_SCAN_INFO" xml:space="preserve">
+    <value>Select the mobile device from below list and click Start Scan.
+To add new mobile device to the list click Add Mobile.</value>
+  </data>
+  <data name="IDS_PROMPT_UPDATED_SUCCESSFULLY" xml:space="preserve">
+    <value>Updated successfully.</value>
+  </data>
+  <data name="IDS_PROMPT_WEBSITE_ACCESS_BLOCKED" xml:space="preserve">
+    <value>Access to website is blocked.</value>
+  </data>
+  <data name="IDS_PROMPT_HARMFUL_WEBSITE" xml:space="preserve">
+    <value>Website you are visiting is harmful.</value>
+  </data>
+  <data name="IDS_PROMPT_WEBSITE" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="IDS_PROMPT_FRAUDLENT_WEBSITE" xml:space="preserve">
+    <value>You are visiting a fraudulent website.</value>
+  </data>
+  <data name="IDS_PROMPT_RESTRICTED_WEBSITE" xml:space="preserve">
+    <value>Website you are visiting is restricted.</value>
+  </data>
+  <data name="IDS_OPT_BWC_WEB_INFO" xml:space="preserve">
+    <value>Select the access rights for below categories of website:</value>
+  </data>
+  <data name="IDS_OPT_BWC_EXCLUDE_INFO" xml:space="preserve">
+    <value>You can exclude certain known websites from getting blocked by adding the URL
+in exclusion list. Click Exclude to add website in exclusion list.</value>
+  </data>
+  <data name="IDS_OPT_BWC_EXCLUDE" xml:space="preserve">
+    <value>&amp;Exclude</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_BLOCK_WEBSITES_CATAGORY_DESC" xml:space="preserve">
+    <value>Click Categories to block different categories of websites like
+adult websites, social networking websites, etc.</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_BLOCK_WEBSITES_SPECIFIC_DESC" xml:space="preserve">
+    <value>Click Block List to specify known unwanted websites to the list.</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_SCHEDULE_INET_ACCESS_DESC" xml:space="preserve">
+    <value>Click Configure to specify time restrictions for Internet Access.</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_CATEGORIES" xml:space="preserve">
+    <value>Categ&amp;ories...</value>
+  </data>
+  <data name="IDS_OPT_PCTRLDLG_BLOCK_LIST" xml:space="preserve">
+    <value>Bloc&amp;k List...</value>
+  </data>
+  <data name="IDS_WSC_FIREWALL" xml:space="preserve">
+    <value>%s Firewall</value>
+  </data>
+  <data name="IDS_OPT_MAXEXTENTION_MESSAGE" xml:space="preserve">
+    <value>You have exceeded the maximum number of allowed extensions.</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_RESTART" xml:space="preserve">
+    <value>%s has detected that
+some malwares are active on the system. To
+perform disinfection it is recommed that
+you restart the system.</value>
+  </data>
+  <data name="IDS_MAIN_BUY_NOW" xml:space="preserve">
+    <value>This is a trial version. We recomm you to purchase
+commercial license version.</value>
+  </data>
+  <data name="IDS_OPT_WS_URL_NOT_SUPPORTED" xml:space="preserve">
+    <value>URL is not supported. Please enter only HTTP and FTP URL.</value>
+  </data>
+  <data name="IDS_OPT_WS_INVALID_URL" xml:space="preserve">
+    <value>Invalid URL. Please enter valid URL.</value>
+  </data>
+  <data name="IDS_OPT_WS_URL_ALREADY_PRESENT" xml:space="preserve">
+    <value>URL is already present in the list.</value>
+  </data>
+  <data name="IDS_OPT_WS_MAXURL_MESSAGE" xml:space="preserve">
+    <value>You have exceeded the maximum number of allowed URLs.</value>
+  </data>
+  <data name="IDS_OPT_DATAPRO_COMPLETEBLOCKWARNING" xml:space="preserve">
+    <value>Note: Scan external drives feature will be blocked due to the option selected.</value>
+  </data>
+  <data name="IDS_OPT_SCHEDULE_LEG_ALLOWEDTIME" xml:space="preserve">
+    <value>Allowed Time</value>
+  </data>
+  <data name="IDS_OPT_SCHEDULE_LEG_BLOCKEDTIME" xml:space="preserve">
+    <value>Blocked Time</value>
+  </data>
+  <data name="IDS_REPORTS_FIREWALL_PROTECTION_HEADING" xml:space="preserve">
+    <value>Firewall Protection Report</value>
+  </data>
+  <data name="IDS_REPORTS_IDSIPS_HEADING" xml:space="preserve">
+    <value>IDS IPS Report</value>
+  </data>
+  <data name="IDS_REPORTS_PC_HEADING" xml:space="preserve">
+    <value>Parental Control Report</value>
+  </data>
+  <data name="IDS_QHONLINEEXE_VIRUSFOUND_FILESKIPPED" xml:space="preserve">
+    <value>File was skipped</value>
+  </data>
+  <data name="IDS_USBPROMPT_FILE" xml:space="preserve">
+    <value>File:</value>
+  </data>
+  <data name="IDS_USB_PROMPT_NO_VIRUSFOUND" xml:space="preserve">
+    <value>No virus found</value>
+  </data>
+  <data name="IDS_USB_PROMPT_SCAN_COMPLETED" xml:space="preserve">
+    <value>Removable Drive (%c:) scan completed.</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_WEB_SUPPORT" xml:space="preserve">
+    <value>Web Support</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_DESC_WEB_SUPPORT" xml:space="preserve">
+    <value>Before submitting a support ticket, please check the solution for your problem in our FAQ section.</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_CAP_VISIT_FAQ" xml:space="preserve">
+    <value>&amp;Visit FAQ</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_EMAIL_SUPPORT" xml:space="preserve">
+    <value>Email Support</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_DESC_EMAIL_SUPPORT" xml:space="preserve">
+    <value>Submit email support query to our technical expert at our support center.</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_CAP_SUBMIT_TICKET" xml:space="preserve">
+    <value>Submit &amp;Ticket</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_PHONE_SUPPORT" xml:space="preserve">
+    <value>Phone Support</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_DESC_PHONE_SUPPORT" xml:space="preserve">
+    <value>For telephonic support call out India-based support center.</value>
+  </data>
+  <data name="IDS_ABOUT_SUPPORT_LOCAL_PHONES" xml:space="preserve">
+    <value>For local support phone numbers click here.</value>
+  </data>
+  <data name="IDS_EX_LST_TEXT_COLOR_HEADING" xml:space="preserve">
+    <value>65 65 65</value>
+  </data>
+  <data name="IDS_EX_LST_TEXT_COLOR_DESCRIPTION" xml:space="preserve">
+    <value>65 65 65</value>
+  </data>
+  <data name="IDS_EX_LST_TEXT_COLOR_STRING" xml:space="preserve">
+    <value>65 65 65</value>
+  </data>
+  <data name="IDS_EX_LST_ITEM_MOUSE_OVER_COLOR" xml:space="preserve">
+    <value>216 235 249</value>
+  </data>
+  <data name="IDS_EX_LST_ITEM_MOUSE_SELECTION_COLOR" xml:space="preserve">
+    <value>230 230 230</value>
+  </data>
+  <data name="IDS_EX_LST_ITEM_MOUSE_SELECTION_COLOR_ON_FOCUS" xml:space="preserve">
+    <value>220 220 220</value>
+  </data>
+  <data name="IDS_EX_LST_FONT_SIZE_HEADING" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="IDS_EX_LST_FONT_SIZE_DESCRIPTION" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="IDS_EXCLUSION_HEADER" xml:space="preserve">
+    <value>Specify the file extensions to exclude its scanning by real time virus protection. This is to troubleshoot performance related issues by excluding certain categorizes of file that may be causing the issue.</value>
+  </data>
+  <data name="IDS_SCAN_INIT_FAILED" xml:space="preserve">
+    <value>Unable to start scanning. Please contact
+Quick Heal Technical support for more
+assistance.</value>
+  </data>
+  <data name="IDS_SCANDLG_USB_SCANPROGRESS" xml:space="preserve">
+    <value>Removable drive scan in progress</value>
+  </data>
+  <data name="IDS_ABOUT_OEM_FREE_TRIAL_EXPIRE_TODAY" xml:space="preserve">
+    <value>Trial is expiring today.</value>
+  </data>
+  <data name="IDS_OPT_WEBSEC_URLNOTSUPPORTED_MSG" xml:space="preserve">
+    <value>Unicode URLs are not supported.</value>
+  </data>
+  <data name="IDS_USB_PROMPT_SCAN_COMPLETED_ALL_DRIVES" xml:space="preserve">
+    <value>Removable drives scan completed.</value>
+  </data>
+  <data name="IDS_NAV_MOBILE_SCAN" xml:space="preserve">
+    <value>Back to Mobile Scan</value>
+  </data>
+  <data name="IDS_NAV_CUSTOM_SCAN" xml:space="preserve">
+    <value>Back to Custom Scan</value>
+  </data>
+  <data name="IDS_PAGE_SUBHDR_MOBILESCAN_PROGRESS" xml:space="preserve">
+    <value>Performing mobile scan</value>
+  </data>
+  <data name="IDS_UPLDFILE_NO_INET_CONNECTION" xml:space="preserve">
+    <value>Unable to detect Internet Connection. 
+
+If you are on network using SOCKS5/Firewall 
+then please provide necessary authentication 
+information in Quick Heal Internet Settings.
+
+Would you like to try again?</value>
+  </data>
+</root>

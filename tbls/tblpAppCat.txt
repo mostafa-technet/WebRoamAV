@@ -1,0 +1,14 @@
+tblpAppCat
+
+ID (int)
+AppCatBits1 (int)
+ExcludePath (varchar 250)
+
+
+CREATE TABLE tblpAppCat (
+    ID          INTEGER       PRIMARY KEY
+                              UNIQUE
+                              NOT NULL,
+    AppCatBits1 INTEGER,
+    ExcludePath VARCHAR (250) 
+);

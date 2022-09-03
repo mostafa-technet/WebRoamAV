@@ -1,0 +1,290 @@
+﻿<Window x:Class="WebRoamAV.winFilesFolders"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p="clr-namespace:WebRoamAV.Resources"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebRoamAV"
+        mc:Ignorable="d"
+       WindowStyle="None" Topmost="False" WindowState="Normal"         
+         Background="White" Title="MainWindow" ResizeMode="CanMinimize"  Height="558" Width="696" WindowStartupLocation="Manual" Loaded="Window_Loaded" Keyboard.KeyDown="ButtonEsc_Click">
+  
+    <Window.Resources>
+        <ResourceDictionary
+  xmlns:local="clr-namespace:WebRoamAV">
+            <!--<span class="code-comment"> Import the resource dictionary which contains the Style
+       applied to Border of each horse's "pit". -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+                <ResourceDictionary Source="scrollviewerDic.xaml"/>
+                <ResourceDictionary Source="togglbuttonDic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="541*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"  Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Margin="0,10,85,525" Grid.RowSpan="2">
+
+            <TextBlock>
+                       
+                <Hyperlink Foreground="Green" x:Name="link1"  NavigateUri="frmSettings.xaml" RequestNavigate="link_RequestNavigate">
+                    <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="0" />    
+       </Style>
+</Hyperlink.Style>
+                <Run Text="Settings"/>
+            </Hyperlink>
+            </TextBlock>
+            <Label Width="10"/>
+            <TextBlock><Hyperlink  Foreground="Green" x:Name="link2" NavigateUri="wndTools.xaml"  RequestNavigate="link_RequestNavigate">
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+             <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="1" />   
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Tools"/></Hyperlink></TextBlock>
+            <Label Width="10"/>
+            <TextBlock><Hyperlink  Foreground="Green" x:Name="link3" NavigateUri="wpfReports.xaml"  RequestNavigate="link_RequestNavigate">
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+             <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="2" />   
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Report"/></Hyperlink></TextBlock>
+            <Label Width="10"/>
+            <TextBlock x:Name="tlink4"><Hyperlink  Foreground="Green" x:Name="link4" Click="link4_Click"><Hyperlink.Resources>
+                        <ContextMenu x:Key="link41" StaysOpen="true">
+                            <MenuItem Header="Help" Click="MenuItem_Click"/>
+                            <MenuItem Header="Submit System Information"  Click="MenuItem_Click" />
+                            <MenuItem Header="Support"  Click="MenuItem_Click" />
+                            <MenuItem Header="About" Click="MenuItem_Click"/>
+                        </ContextMenu>
+                    </Hyperlink.Resources>
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="3" />
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Help"/></Hyperlink></TextBlock>
+        </StackPanel>
+        
+        <ScrollViewer VerticalScrollBarVisibility="Auto"  Margin="0,173,23,51" Grid.Column="2" Grid.Row="1" PreviewMouseMove="ScrollViewer_PreviewMouseMove" MouseLeave="ScrollViewer_MouseLeave">
+            <StackPanel  Margin="0,0,0,0"  Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+                <Canvas Width="Auto"  Height="79" KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="7" PreviewKeyDown="Canvas_KeyDown" Cursor="Hand" PreviewMouseUp="Canvas_PreviewMouseUp">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Scan Settings" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Configure scan settings" Margin="10,45,0,0" FontSize="14"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79" Cursor="Hand" KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="8" PreviewKeyDown="Canvas_KeyDown_1" PreviewMouseUp="Canvas_PreviewMouseUp_1">
+                    <TextBlock Text="Virus Protection" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Continuous protection against viruses, malwares, and other malicious threats" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="fText" Text="OFF" Margin="490,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="fOnOff" IsTabStop="True" TabIndex="9" Focusable="True" PreviewKeyDown="fOnOff_KeyDown" Margin="540,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="fOnOff_Checked" Unchecked="fOnOff_Unchecked"/>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <!--Canvas Width="Auto"  Height="79" Cursor="Hand" PreviewMouseUp="Canvas_PreviewMouseUp_2">
+                    <TextBlock Text="Advanced DNA Scan" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Detects and eliminates new and unknown malicious threats" Margin="10,45,0,0" FontSize="14"/>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </>
+                <Line Fill="White" Width="Auto" Height="3"/-->
+                <!--Canvas Width="Auto"  Height="79">
+                    <TextBlock Text="Block Suspecious Packed Files" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Identify and block suspeciously packed files" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="sText" Text="OFF" Margin="490,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="sOnOff" Margin="540,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="sOnOff_Checked" Unchecked="sOnOff_Unchecked" Cursor="Hand"/>
+
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <TextBlock Text="Automatic Rogueware Scan" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Automatically scans and removes roguewares and fake antivirus softwares" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="tText" Text="OFF" Margin="490,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="tOnOff" Margin="540,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="tOnOff_Checked" Unchecked="tOnOff_Unchecked" Cursor="Hand"/>
+
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <TextBlock Text="Anti-Keylogger" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Prevents sending informations typed with the keyboard of your PC to hackers" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="t2Text" Text="OFF" Margin="490,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="t2OnOff" Margin="540,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="t2OnOff_Checked" Unchecked="t2OnOff_Unchecked" Cursor="Hand"/>
+
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79" Cursor="Hand" PreviewMouseUp="Canvas_PreviewMouseUp_3">
+                    <TextBlock Text="Screen Locker Protection" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Configure screen locker protection" Margin="10,45,0,0" FontSize="14"/>
+                            <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/-->
+                <Canvas Width="Auto"  Height="79" Cursor="Hand" KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="10" PreviewKeyDown="Canvas_KeyDown_2"  PreviewMouseUp="Canvas_PreviewMouseUp_4">
+                    <TextBlock Text="Scan Schedule" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Helps to configure scan at specified time schedule" Margin="10,45,0,0" FontSize="14"/>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79" Cursor="Hand" KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="11" PreviewKeyDown="Canvas_KeyDown_3" PreviewMouseUp="Canvas_PreviewMouseUp_5">
+                    <TextBlock Text="Exclude Files &amp; Folders" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Excludes files and folders from scanning" Margin="10,45,0,0" FontSize="14"/>
+                  
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79" Cursor="Hand" KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="12" PreviewKeyDown="Canvas_KeyDown_4" PreviewMouseUp="Canvas_PreviewMouseUp_6">
+                    <TextBlock Text="Quarantine &amp; Backup" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Configure quarantine and backup settings" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="La2Text" Text="181 file(s) quarantined/backup" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+            </StackPanel>
+        </ScrollViewer>
+        <Rectangle Name="rect2" Height="20" Width="Auto" Fill="#328A3E"  Grid.ColumnSpan="3" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <Rectangle Name="rect3" Fill="#328A3E" Margin="0,59,0,395"  Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Button x:Name="buttonMin" Content="-" IsTabStop="True" TabIndex="4" Focusable="True" PreviewKeyDown="buttonMin_KeyDown" Grid.Column="2" VerticalContentAlignment="Center" Margin="587,0,42,525" Style="{StaticResource buttonMin}" Click="buttonMin_Click" Grid.RowSpan="2"/>
+        <Button x:Name="buttonClose" IsTabStop="True" TabIndex="5" Focusable="True" PreviewKeyDown="buttonClose_KeyDown" Content="X" Grid.Column="2" VerticalContentAlignment="Center" Margin="625,0,4,525" Style="{StaticResource buttonMin}" Click="buttonClose_Click" Grid.RowSpan="2"/>
+        <Button x:Name="ButtonMn" Content="&lt;&lt;   Back to Menu" Grid.Column="4" HorizontalAlignment="Left" Margin="487,87,0,0" Grid.Row="1" VerticalAlignment="Top" Width="151" Height="32" Foreground="#FF008000" FontFamily="Eras Demi ITC" FontSize="15" Cursor="Hand" IsTabStop="True" TabIndex="6" Focusable="True" PreviewKeyDown="ButtonMn_KeyDown" PreviewMouseLeftButtonUp="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#eaf5f5f5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#ebe5e5e5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Rectangle Name="rectMain" Margin="0,0,0,0" StrokeThickness="1" Stroke="#328A3E"  Grid.ColumnSpan="3" Grid.RowSpan="2">
+        </Rectangle>
+        <Label x:Name="label" Content="{x:Static p:Resources.CopyRight}" Grid.Column="2" HorizontalAlignment="Left" Margin="0,517,0,-6" Grid.Row="1" VerticalAlignment="Top" Width="412" Height="30" Foreground="White"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="17*" />
+            <ColumnDefinition Width="331*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- <Rectangle Name="rect" Width="100" VerticalAlignment="Stretch" Fill="#99000000" Visibility="Collapsed" /> -->
+
+    </Grid>
+</Window>

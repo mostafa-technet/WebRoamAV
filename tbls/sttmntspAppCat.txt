@@ -1,0 +1,6 @@
+int ibt1 = 0;
+ibt1 = aOnOff0 | (aOnOff1.IsChecked >> 1) | (aOnOff2.IsChecked >> 2) | (aOnOff3.IsChecked >> 3) | (aOnOff4.IsChecked >> 4) | (aOnOff5.IsChecked >> 5) | (aOnOff6.IsChecked >> 6) | (aOnOff7.IsChecked >> 7) | (aOnOff8.IsChecked >> 8) | (aOnOff9.IsChecked >> 9) | (aOnOff10.IsChecked >> 10);
+
+
+INSERT INTO tblpAppCat (ID, AppCatBits1, ExcludePath) VALUES (1, ibt1, 'expath')
+UPDATE tblpAppCat SET WebCatBits1=ibt1, ExcludePath='expath'

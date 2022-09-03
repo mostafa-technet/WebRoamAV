@@ -1,0 +1,11 @@
+tblEmail
+
+ID (int)
+EmailBits (int)
+
+CREATE TABLE tblEmail (
+    ID        INTEGER UNIQUE
+                      PRIMARY KEY
+                      NOT NULL,
+    EmailBits INTEGER
+);

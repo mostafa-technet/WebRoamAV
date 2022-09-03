@@ -1,0 +1,12 @@
+tblExclude
+
+ID
+Extension
+
+
+CREATE TABLE tblExclude (
+    ID        INTEGER   PRIMARY KEY
+                        UNIQUE
+                        NOT NULL,
+    Extension CHAR (15) NOT NULL
+);

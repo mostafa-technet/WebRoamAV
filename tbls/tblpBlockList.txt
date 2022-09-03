@@ -1,0 +1,11 @@
+tblpBlockList
+
+ID (int)
+Path (varchar 250)
+
+CREATE TABLE tblpBlockList (
+    ID   INTEGER       PRIMARY KEY
+                       UNIQUE
+                       NOT NULL,
+    Path VARCHAR (250) 
+);

@@ -1,0 +1,53 @@
+tblBSandbox
+
+ID (int)
+SLevel (int)
+SLevelDef (int)
+ShowBW (bool)
+ShowBWDef (bool)
+DOpen (bool)
+DOpenDef (bool)
+PreventConf (bool)
+PreventConfDef (bool)
+PreventConfID (bigint)
+PreventConfPath (varchar 250)
+PreventConfSub (bool)
+PreventProt (bool)
+PreventProtDef (bool)
+PreventProtID (bigint)
+PreventProtPath (varchar 250)
+PreventProtSub (bool)
+AllowD (bool)
+AllowDDef (bool)
+AllowDID (bigint)
+AllowDPath (varchar 250)
+AllowDSub (bool)
+
+
+
+CREATE TABLE tblBSandbox (
+    ID              INTEGER       PRIMARY KEY
+                                  UNIQUE
+                                  NOT NULL,
+    SLevel          INTEGER,
+    SLevelDef       INTEGER,
+    ShowBW          BOOLEAN,
+    ShowBWDef       BOOLEAN,
+    DOpen           BOOLEAN,
+    DOpenDef        BOOLEAN,
+    PreventConf     BOOLEAN,
+    PreventConfDef  BOOLEAN,
+    PreventConfID   BIGINT,
+    PreventConfPath VARCHAR (250),
+    PreventConfSub  BOOLEAN,
+    PreventProt     BOOLEAN,
+    PreventProtDef  BOOLEAN,
+    PreventProtID   BIGINT,
+    PreventProtPath VARCHAR (250),
+    PreventProtSub  BOOLEAN,
+    AllowD          BOOLEAN,
+    AllowDDef       BOOLEAN,
+    AllowDID        BIGINT,
+    AllowDPath      VARCHAR (250),
+    AllowDSub       BOOLEAN
+);

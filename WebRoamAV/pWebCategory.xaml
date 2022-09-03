@@ -1,0 +1,808 @@
+﻿<Window x:Class="WebRoamAV.pWebCategory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p="clr-namespace:WebRoamAV.Resources"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebRoamAV"
+        mc:Ignorable="d"
+        Title="Web Category" Topmost="False" Height="700" Width="560" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen"  Loaded="Window_Loaded">
+    <Window.InputBindings>
+        <KeyBinding Command="{x:Static local:Commands.btnpExcludePressed}" CommandTarget="{Binding ElementName=btnExclude}" Modifiers="Alt" Key="E"/>
+        <KeyBinding Command="{x:Static local:Commands.btnpDefaultPressed}" CommandTarget="{Binding ElementName=btnDefault}" Modifiers="Alt" Key="D"/>
+        <KeyBinding Command="{x:Static local:Commands.btnpOKPressed}" CommandTarget="{Binding ElementName=btnExclude}" Modifiers="Alt" Key="O"/>
+        <KeyBinding Command="{x:Static local:Commands.btnpCancelPressed}" CommandTarget="{Binding ElementName=btnExclude}" Modifiers="Alt" Key="C"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+
+        <CommandBinding
+      Command="{x:Static local:Commands.btnpExcludePressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnpDefaultPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnpOKPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnpCancelPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <ResourceDictionary
+  xmlns:local="clr-namespace:WebRoamAV">
+            <!--<span class="code-comment"> Import the resource dictionary which contains the Style
+       applied to Border of each horse's "pit". -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+                <ResourceDictionary Source="scrollviewerDic.xaml"/>
+                <ResourceDictionary Source="togglbuttonDic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+            <Label Content="Block the websites categories based on age group" Height="30" Width="Auto" Grid.Column="1" HorizontalAlignment="Left"/>
+        <ComboBox Width="120" Height="25"  HorizontalAlignment="Right" Grid.Column="1" SelectedIndex="0">
+            <ComboBoxItem>Under 5 years</ComboBoxItem>
+            <ComboBoxItem>06-09 years</ComboBoxItem>
+            <ComboBoxItem>10-13 years</ComboBoxItem>
+            <ComboBoxItem>14-17 years</ComboBoxItem>
+            <ComboBoxItem>18 and above</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Select the access rights for below categories of website:" FontSize="14" FontWeight="Bold" Foreground="Gray" Height="30" Width="Auto" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"/>
+        <TextBlock Text="You can exclude certain known websites from getting blocked by adding the URL in exclusion list. Click Exclude to add website in exclusion list." Height="50" Grid.Row="3" Width="350" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+        <Button Name="btnExclude" Content="_Exclude" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Width="80" Height="25" Click="btnExclude_Click"/>
+        <Button Name="btnDefault" Content="_Default" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="0 0 200 0" Width="80" Height="25" Click="btnDefault_Click"/>
+        <Button Name="btnOK" Content="_OK" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="0 0 100 0" Width="80" Height="25" Click="btnOK_Click"/>
+        <Button Name="btnCancel" Content="_Cancel" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancel_Click"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"  Margin="0,0,0,0" Grid.Column="1" Grid.Row="2" PreviewMouseMove="ScrollViewer_PreviewMouseMove" MouseLeave="ScrollViewer_MouseLeave">
+            <StackPanel  Margin="0,0,0,0"  Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Adult" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites containing adult content like dating, sex, nudity, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText0" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff0" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked0" Unchecked="aOnOff_Unchecked0"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Advertisements and Pop-ups" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that provide advertising graphics, banners, pop-ups, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText1" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff1" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked1" Unchecked="aOnOff_Unchecked1"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Anonymizers" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites helping to surf anonymously, sometimes to circumvent web filtering." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText2" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff2" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked2" Unchecked="aOnOff_Unchecked2"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Arts and E-Arts" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites concering arts, artistic instituitions, digital greeting cards, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText3" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff3" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked3" Unchecked="aOnOff_Unchecked3"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Business" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites containing financial and business related information." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText4" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff4" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked4" Unchecked="aOnOff_Unchecked4"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Chat" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that enable realtime messaging." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText5" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff5" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked5" Unchecked="aOnOff_Unchecked5"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Child Abuse" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that portray or discuss children in sexual or other abusive acts." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText6" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff6" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked6" Unchecked="aOnOff_Unchecked6"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Computers and Technology" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to computer software, hardware, serviices, IT news, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText7" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff7" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked7" Unchecked="aOnOff_Unchecked7"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Crime and Violence" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites promoting criminal activities and violence" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText8" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff8" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked8" Unchecked="aOnOff_Unchecked8"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Download and Sharing" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites sharing downloadable software, freeware, shareware, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText9" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff9" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked9" Unchecked="aOnOff_Unchecked9"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Educational" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites containing educational information, encyclopaedia, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText10" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff10" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked10" Unchecked="aOnOff_Unchecked10"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Fashion and Beauty" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites concerning fashion, jewellery, glamour, beauty, cosmetics, etc" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText11" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff11" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked11" Unchecked="aOnOff_Unchecked11"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Forums and Newsgroups" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites for sharing information in the form of news groups, forums, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText12" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff12" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked12" Unchecked="aOnOff_Unchecked12"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Gambling" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to online gambling, lottery, casinos, betting agencies, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText13" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff13" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked13" Unchecked="aOnOff_Unchecked13"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Games" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites containing online and downloadable games." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText14" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff14" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked14" Unchecked="aOnOff_Unchecked14"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Government" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites run by governmental organizations, departments, or agencies." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText15" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff15" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked15" Unchecked="aOnOff_Unchecked15"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Hacking and Illegal software" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that advise about hacking for llegal cyber activities." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText16" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff16" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked16" Unchecked="aOnOff_Unchecked16"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Health and Medicine" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites containging information related to health, healthcare services, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText17" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff17" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked17" Unchecked="aOnOff_Unchecked17"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Illegal Drugs and Alcohol" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites promoting illegal drugs, alcohol, tobacco, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText18" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff18" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked18" Unchecked="aOnOff_Unchecked18"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Job Search" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to job listings, career information, job search, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText19" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff19" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked19" Unchecked="aOnOff_Unchecked19"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Leisure and Entertainment" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to recreation, entertainment, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText20" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff20" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked20" Unchecked="aOnOff_Unchecked20"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="News" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites covering news and current events." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText21" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff21" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked21" Unchecked="aOnOff_Unchecked21"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Offensive" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites containing offensive content." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText22" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff22" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked22" Unchecked="aOnOff_Unchecked22"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Politics" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to political parties, election information, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText23" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff23" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked23" Unchecked="aOnOff_Unchecked23"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Pornographic" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that contain explicit sexual content." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText24" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff24" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked24" Unchecked="aOnOff_Unchecked24"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Profanity" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites with tasteless content such as bathroom humor or profanity" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText25" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff25" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked25" Unchecked="aOnOff_Unchecked25"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Real Estate" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to commercial and residential real estate services." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText26" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff26" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked26" Unchecked="aOnOff_Unchecked26"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Religion" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to faith, spirituality, religious beliefs, worship places." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText27" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff27" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked27" Unchecked="aOnOff_Unchecked27"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Restaurants and Dining" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that list, review, advertise food, dining or catering services" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText28" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff28" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked28" Unchecked="aOnOff_Unchecked28"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="School Cheating" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites promoting unethical practices such as cheating or plagiarism." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText29" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff29" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked29" Unchecked="aOnOff_Unchecked29"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Search Engine and Portals" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites enabling the searching of the Web, newsgroups, images, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText30" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff30" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked30" Unchecked="aOnOff_Unchecked30"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Sex Education" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to sex education, pregnancy, abortion, contraceptives, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText31" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff31" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked31" Unchecked="aOnOff_Unchecked31"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Shopping" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites for online shopping, catalogs, auctions, classified ads." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText32" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff32" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked32" Unchecked="aOnOff_Unchecked32"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Social Networking" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that enable social networking." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText33" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff33" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked33" Unchecked="aOnOff_Unchecked33"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Spam Sites" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that have been promoted through spam techniques." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText34" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff34" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked34" Unchecked="aOnOff_Unchecked34"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Sports" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites relating to sports teams, fan clubs, scores and sports news." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText35" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff35" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked35" Unchecked="aOnOff_Unchecked35"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Translators" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that translate Web pages or phraes from one language to another." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText36" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff36" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked36" Unchecked="aOnOff_Unchecked36"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Travel" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites related to travel and tourism and online booking of travel services." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText37" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff37" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked37" Unchecked="aOnOff_Unchecked37"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Video Streaming" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites providing streaming content like videos, music, TV, etc." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText38" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff38" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked38" Unchecked="aOnOff_Unchecked38"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Weapons" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites that depict, sell, review or describe weapons, including for sport." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText39" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff39" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked39" Unchecked="aOnOff_Unchecked39"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Web Based free E-mail" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites providing free web based email account services." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText40" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff40" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked40" Unchecked="aOnOff_Unchecked40"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="All Others" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Sites not falling under any of the above categories." Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="aText41" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff41" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked41" Unchecked="aOnOff_Unchecked41"/>
+                </Canvas>
+            </StackPanel>
+        </ScrollViewer>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="220*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>

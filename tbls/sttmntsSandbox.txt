@@ -1,0 +1,11 @@
+INSERT INTO tblBSandbox (ID, SLevel, SLevelDef, ShowBW, ShowBWDef, DOpen, DOpenDef, PreventConf, PreventConfDef, PreventProt, PreventProtDef, AllowD, AllowDDef) VALUES (1, cmbLevel.SelectedIndex.ToString(), 1, ckBr.IsChecked.ToString(), TRUE, ckOp.IsChecked.ToString(), TRUE, ckOPrev.IsChecked.ToString(), FALSE, ckOPrev2.IsChecked, FALSE, ckOAl.IsChecked, FALSE)
+UPDATE tblBSandbox SET SLevel=cmbLevel.SelectedIndex.ToString(), ShowBW=ckBr.IsChecked.ToString(), DOpen=ckOp.IsChecked.ToString()
+INSERT INTO tblBSandbox (ID, PreventConfID , PreventConfPath, PreventConfSub) VALUES (cnt, i.ToString(), 'dataGridView1.Rows[i].Cells[0].ToString()', dataGridView1.Rows[i].Cells[1].ToString())
+INSERT INTO tblBSandbox (ID, PreventProtID , PreventProtPath, PreventProtSub) VALUES (cnt, j.ToString(), 'dataGridView1.Rows[j].Cells[0].ToString()', dataGridView1.Rows[j].Cells[1].ToString())
+INSERT INTO tblBSandbox (ID, AllowDID,AllowDPath,AllowDSub) VALUES (cnt,k.ToString() , 'dataGridView1.Rows[k].Cells[0].ToString()', dataGridView1.Rows[k].Cells[1].ToString())
+DELETE FROM tblBSandbox WHERE PreventConfPath='dataGridView1.Rows[j].Cells[0].ToString()'
+DELETE FROM tblBSandbox WHERE PreventProtPath='dataGridView1.Rows[j].Cells[0].ToString()'
+DELETE FROM tblBSandbox WHERE AllowDPath='dataGridView1.Rows[j].Cells[0].ToString()'
+DELETE FROM tblBSandbox WHERE PreventConfPath<>''
+DELETE FROM tblBSandbox WHERE PreventProtPath<>''
+DELETE FROM tblBSandbox WHERE AllowDPath<>''

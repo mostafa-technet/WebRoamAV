@@ -1,0 +1,14 @@
+tblTrusted
+
+ID(int)
+FileName (varchar 250)
+IsDefault (bool)
+
+
+CREATE TABLE tblTrusted (
+    ID        INTEGER       PRIMARY KEY
+                            UNIQUE
+                            NOT NULL,
+    FileName  VARCHAR (250),
+    IsDefault BOOLEAN
+);

@@ -1,0 +1,31 @@
+tblEmailProt
+
+ID (int)
+DisplayAM (bool)
+Action (int)
+Backup (bool)
+BlkAttachment (bool)
+BlkEmail (bool)
+EnableAt (bool)
+BlockEn (int)
+IssDefault (bool)
+AExtensionID (int)
+AExtensionName (char 10)
+
+
+
+CREATE TABLE tblEmailProt (
+    ID             INTEGER   PRIMARY KEY
+                             UNIQUE
+                             NOT NULL,
+    DisplayAM      BOOLEAN,
+    [Action]       INTEGER,
+    Backup         BOOLEAN,
+    BlkAttachment  BOOLEAN,
+    BlkEmail       BOOLEAN,
+    EnableAt       BOOLEAN,
+    BlockEn        INTEGER,
+    IssDefault     BOOLEAN,
+    AExtensionID   INTEGER,
+    AExtensionName CHAR (10) 
+);

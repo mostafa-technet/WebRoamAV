@@ -1,0 +1,6 @@
+int ibt1 = 0, ibt2 = 0;
+ibt1 = aOnOff0 | (aOnOff1.IsChecked >> 1) | (aOnOff2.IsChecked >> 2) | (aOnOff3.IsChecked >> 3) | (aOnOff4.IsChecked >> 4) | (aOnOff5.IsChecked >> 5) | (aOnOff6.IsChecked >> 6) | (aOnOff7.IsChecked >> 7) | (aOnOff8.IsChecked >> 8) | (aOnOff9.IsChecked >> 9) | (aOnOff10.IsChecked >> 10) | (aOnOff11.IsChecked >> 11) | (aOnOff12.IsChecked >> 12) | (aOnOff13.IsChecked >> 13) | (aOnOff14.IsChecked >> 14) | (aOnOff15.IsChecked >> 15) | (aOnOff16.IsChecked >> 16) | (aOnOff17.IsChecked >> 17) | (aOnOff18.IsChecked >> 18) | (aOnOff19.IsChecked >> 19) ;
+ibt2 =  aOnOff20 | (aOnOff21.IsChecked >> 1) | (aOnOff22.IsChecked >> 2) | (aOnOff23.IsChecked >> 3) | (aOnOff24.IsChecked >> 4) | (aOnOff25.IsChecked >> 5) | (aOnOff26.IsChecked >> 6) | (aOnOff27.IsChecked >> 7) | (aOnOff28.IsChecked >> 8) | (aOnOff29.IsChecked >> 9) | (aOnOff30.IsChecked >> 10) | (aOnOff31.IsChecked >> 11) | (aOnOff32.IsChecked >> 12) | (aOnOff33.IsChecked >> 13) | (aOnOff34.IsChecked >> 14) | (aOnOff35.IsChecked >> 15) | (aOnOff36.IsChecked >> 16) | (aOnOff37.IsChecked >> 17) | (aOnOff38.IsChecked >> 18) | (aOnOff39.IsChecked >> 19) | (aOnOff40.IsChecked >> 20)  | (aOnOff41.IsChecked >> 21);
+
+INSERT INTO tblpWebCat (ID, WebCatBits1, WebCatBits2) VALUES (1, ibt1, ibt2)
+UPDATE tblpWebCat SET WebCatBits1=ibt1, WebCatBits2=ibt2

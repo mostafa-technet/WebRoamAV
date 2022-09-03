@@ -1,0 +1,33 @@
+tblHijack
+
+ID (int)
+Settings (varchar 200)
+CurSettings (varchar 250)
+PrevDfSettings (varchar 250)
+Status (int)
+----------------------
+
+Desktop Navigation Failure
+Home Page
+Local Page
+Navigation Canceled
+Navigation failure
+Off-line Information
+Post Not Cached
+Search Page
+Search Page (All User)
+
+
+
+
+CREATE TABLE tblHijack (
+    ID             INTEGER       PRIMARY KEY
+                                 UNIQUE
+                                 NOT NULL,
+    Settings       VARCHAR (200),
+    CurSettings    VARCHAR (250),
+    PrevDfSettings VARCHAR (250),
+    Status         INTEGER
+);
+
+

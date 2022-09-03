@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8565CDA7-85C3-4942-B0CC-20048E97C528}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebRoamAV</RootNamespace>
+    <AssemblyName>WebRoamAV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_X64</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_X64</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>3</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>net_guard_logo2_yVg_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Email, Version=22.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Email.22.2.0\lib\net45\Aspose.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoUpdater.NET, Version=1.5.1.0, Culture=neutral, PublicKeyToken=e122b8022998aba8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\vbnet\debugAV\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>E:\Program Files\System.Data.SQLite\2010\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\ManagedWifi.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>..\..\webroam_booter\webroam_booter\bin\Debug\TaskScheduler.2.8.15\lib\net452\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ShellExtensions">
+      <HintPath>..\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.ShellExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="nClam, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\nClam.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PacketDotNet">
+      <HintPath>bin\x64\Release\PacketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="SevenZipSharp">
+      <HintPath>..\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpPcap">
+      <HintPath>bin\x64\Release\SharpPcap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.Entity\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Management.Automation\1.0.0.0__31bf3856ad364e35\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Calendar, Version=1.0.3526.15150, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationClient1">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClientsideProviders" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ActivateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivateForm.Designer.cs" />
+    <Compile Include="ActivateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivateWindow.Designer.cs" />
+    <Compile Include="AdvanceSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvanceSettings.Designer.cs">
+      <DependentUpon>AdvanceSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARSettings.Designer.cs">
+      <DependentUpon>ARSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bootscanmode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bootscanmode.Designer.cs">
+      <DependentUpon>bootscanmode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Captcha.cs" />
+    <Compile Include="CaptchaDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptchaDlg.Designer.cs" />
+    <Compile Include="ConfigPrgRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPrgRules.Designer.cs">
+      <DependentUpon>ConfigPrgRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePassword.Designer.cs" />
+    <Compile Include="EDDevices.xaml.cs">
+      <DependentUpon>EDDevices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EDDTheftP.xaml.cs">
+      <DependentUpon>EDDTheftP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EDScanED.xaml.cs">
+      <DependentUpon>EDScanED.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnterPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterPassword.Designer.cs" />
+    <Compile Include="ExcludeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcludeItem.Designer.cs">
+      <DependentUpon>ExcludeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddEditExceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEditExceptions.Designer.cs">
+      <DependentUpon>fAddEditExceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddEditExceptions2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEditExceptions2.Designer.cs">
+      <DependentUpon>fAddEditExceptions2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddEditExceptions3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEditExceptions3.Designer.cs">
+      <DependentUpon>fAddEditExceptions3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddEditExceptions4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEditExceptions4.Designer.cs">
+      <DependentUpon>fAddEditExceptions4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddEditExceptions5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEditExceptions5.Designer.cs">
+      <DependentUpon>fAddEditExceptions5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddEditExceptions6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEditExceptions6.Designer.cs">
+      <DependentUpon>fAddEditExceptions6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExcludeURL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExcludeURL.Designer.cs">
+      <DependentUpon>fExcludeURL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileDirectoryEnumerable.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormattedcheckedListBox.cs" />
+    <Compile Include="FormattedcheckedListBox.Designer.cs">
+      <DependentUpon>FormattedcheckedListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVlApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVlApplication.Designer.cs">
+      <DependentUpon>frmVlApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVlSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVlSettings.Designer.cs">
+      <DependentUpon>frmVlSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gMbox.xaml.cs">
+      <DependentUpon>gMbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExportSettings.Designer.cs">
+      <DependentUpon>ImportExportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseDetailsForm.Designer.cs" />
+    <Compile Include="pApplicationBlockList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pApplicationBlockList.Designer.cs">
+      <DependentUpon>pApplicationBlockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pApplicationCategory.xaml.cs">
+      <DependentUpon>pApplicationCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParentalControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentalControl.Designer.cs">
+      <DependentUpon>ParentalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pInternetSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pInternetSchedule.Designer.cs">
+      <DependentUpon>pInternetSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pPCSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pPCSchedule.Designer.cs">
+      <DependentUpon>pPCSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductKeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductKeyForm.Designer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pWebBlockList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pWebBlockList.Designer.cs">
+      <DependentUpon>pWebBlockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pWebCategory.xaml.cs">
+      <DependentUpon>pWebCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reference.cs" />
+    <Compile Include="RegisterInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterInfoForm.Designer.cs" />
+    <Compile Include="Resources\res2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>res2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScanItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanItem.Designer.cs">
+      <DependentUpon>ScanItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanModeConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanModeConfig.Designer.cs">
+      <DependentUpon>ScanModeConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanSchedFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanSchedFinish.Designer.cs">
+      <DependentUpon>ScanSchedFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectAction.Designer.cs">
+      <DependentUpon>SelectAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowHelp.Designer.cs">
+      <DependentUpon>ShowHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleParental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleParental.Designer.cs">
+      <DependentUpon>SimpleParental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tEmDisk1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tEmDisk1.Designer.cs">
+      <DependentUpon>tEmDisk1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tEmDisk2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tEmDisk2.Designer.cs">
+      <DependentUpon>tEmDisk2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tEmDisk3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tEmDisk3.Designer.cs">
+      <DependentUpon>tEmDisk3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tEmDisk4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tEmDisk4.Designer.cs">
+      <DependentUpon>tEmDisk4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tExcludeFileExtension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tExcludeFileExtension.Designer.cs">
+      <DependentUpon>tExcludeFileExtension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tHiJackRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tHiJackRestore.Designer.cs">
+      <DependentUpon>tHiJackRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tSystemExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tSystemExplorer.Designer.cs">
+      <DependentUpon>tSystemExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tTrackCleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tTrackCleaner.Designer.cs">
+      <DependentUpon>tTrackCleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tUSBDriveProtection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tUSBDriveProtection.Designer.cs">
+      <DependentUpon>tUSBDriveProtection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tViewQuarantineFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tViewQuarantineFiles.Designer.cs">
+      <DependentUpon>tViewQuarantineFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tWindowsSpy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tWindowsSpy.Designer.cs">
+      <DependentUpon>tWindowsSpy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoForm.Designer.cs" />
+    <Compile Include="wBlockA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wBlockA.Designer.cs">
+      <DependentUpon>wBlockA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wExcludeFF.xaml.cs">
+      <DependentUpon>wExcludeFF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wFolders.Designer.cs">
+      <DependentUpon>wFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSpyDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsSpyDetails.Designer.cs">
+      <DependentUpon>WindowsSpyDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinScanSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinScanSettings.Designer.cs">
+      <DependentUpon>WinScanSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wMBox.xaml.cs">
+      <DependentUpon>wMBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wQuaBa.xaml.cs">
+      <DependentUpon>wQuaBa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wReportFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wReportFor.Designer.cs">
+      <DependentUpon>wReportFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WScanSchedStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WScanSchedStep.Designer.cs">
+      <DependentUpon>WScanSchedStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WScanSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WScanSchedule.Designer.cs">
+      <DependentUpon>WScanSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wScanSchedule.xaml.cs">
+      <DependentUpon>wScanSchedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wScreenLockerProtection.xaml.cs">
+      <DependentUpon>wScreenLockerProtection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wAdvancedDNAScan.xaml.cs">
+      <DependentUpon>wAdvancedDNAScan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wEmailProtection.xaml.cs">
+      <DependentUpon>wEmailProtection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.xaml.cs">
+      <DependentUpon>frmSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmVlnr.xaml.cs">
+      <DependentUpon>frmVlnr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wSafeBanking.xaml.cs">
+      <DependentUpon>wSafeBanking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wMalwareProtection.xaml.cs">
+      <DependentUpon>wMalwareProtection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wFirewallProtection.xaml.cs">
+      <DependentUpon>wFirewallProtection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wReportSettings.xaml.cs">
+      <DependentUpon>wReportSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wAutomaticUpdate.xaml.cs">
+      <DependentUpon>wAutomaticUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="winEmail.xaml.cs">
+      <DependentUpon>winEmail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="winFilesFolders.xaml.cs">
+      <DependentUpon>winFilesFolders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wInternetSettings.xaml.cs">
+      <DependentUpon>wInternetSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndCustomScan.xaml.cs">
+      <DependentUpon>wndCustomScan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndFullScan.xaml.cs">
+      <DependentUpon>wndFullScan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndInNets.xaml.cs">
+      <DependentUpon>wndInNets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="webroam_classes.cs" />
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndMobileScan.xaml.cs">
+      <DependentUpon>wndMobileScan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndParental.xaml.cs">
+      <DependentUpon>wndParental.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndScanMemory.xaml.cs">
+      <DependentUpon>wndScanMemory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndTools.xaml.cs">
+      <DependentUpon>wndTools.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wpfReports.xaml.cs">
+      <DependentUpon>wpfReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wRegisterRestore.xaml.cs">
+      <DependentUpon>wRegisterRestore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wSandboxBrowser.xaml.cs">
+      <DependentUpon>wSandboxBrowser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wScanSettings.xaml.cs">
+      <DependentUpon>wScanSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wARProtection.xaml.cs">
+      <DependentUpon>wARProtection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wTrustedEmailClients.xaml.cs">
+      <DependentUpon>wTrustedEmailClients.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wVirusProtection.xaml.cs">
+      <DependentUpon>wVirusProtection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZipFile.cs" />
+    <Page Include="Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EDDevices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EDDTheftP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EDScanED.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gMbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pApplicationCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pWebCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wExcludeFF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wMBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wQuaBa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wScanSchedule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wScreenLockerProtection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wAdvancedDNAScan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wEmailProtection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmVlnr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wSafeBanking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wMalwareProtection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wFirewallProtection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wReportSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wAutomaticUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="winEmail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="winFilesFolders.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wInternetSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndCustomScan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndFullScan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndInNets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="scrollviewerDic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="togglbuttonDic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndMobileScan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndParental.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndScanMemory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndTools.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wpfReports.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wRegisterRestore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wSandboxBrowser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wScanSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wARProtection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wTrustedEmailClients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wVirusProtection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PInvoke.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="ActivateForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActivateForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivateWindow.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActivateWindow1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvanceSettings.resx">
+      <DependentUpon>AdvanceSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARSettings.resx">
+      <DependentUpon>ARSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bootscanmode.resx">
+      <DependentUpon>bootscanmode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaptchaDlg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CaptchaDlg1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPrgRules.resx">
+      <DependentUpon>ConfigPrgRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePassword.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreatePassword1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterPassword.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnterPassword1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcludeItem.resx">
+      <DependentUpon>ExcludeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddEditExceptions.resx">
+      <DependentUpon>fAddEditExceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddEditExceptions2.resx">
+      <DependentUpon>fAddEditExceptions2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddEditExceptions3.resx">
+      <DependentUpon>fAddEditExceptions3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddEditExceptions4.resx">
+      <DependentUpon>fAddEditExceptions4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddEditExceptions5.resx">
+      <DependentUpon>fAddEditExceptions5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddEditExceptions6.resx">
+      <DependentUpon>fAddEditExceptions6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExcludeURL.resx">
+      <DependentUpon>fExcludeURL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVlApplication.resx">
+      <DependentUpon>frmVlApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExportSettings.resx">
+      <DependentUpon>ImportExportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenseDetailsForm.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LicenseDetailsForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pApplicationBlockList.resx">
+      <DependentUpon>pApplicationBlockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentalControl.resx">
+      <DependentUpon>ParentalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pInternetSchedule.resx">
+      <DependentUpon>pInternetSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pPCSchedule.resx">
+      <DependentUpon>pPCSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductKeyForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProductKeyForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pWebBlockList.resx">
+      <DependentUpon>pWebBlockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterInfoForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RegisterInfoForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\res1.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\res2.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>res2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanItem.resx">
+      <DependentUpon>ScanItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanModeConfig.resx">
+      <DependentUpon>ScanModeConfig.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScanModeConfig1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanSchedFinish.resx">
+      <DependentUpon>ScanSchedFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectAction.resx">
+      <DependentUpon>SelectAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowHelp.resx">
+      <DependentUpon>ShowHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleParental.resx">
+      <DependentUpon>SimpleParental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tEmDisk1.resx">
+      <DependentUpon>tEmDisk1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tEmDisk2.resx">
+      <DependentUpon>tEmDisk2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tEmDisk3.resx">
+      <DependentUpon>tEmDisk3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tEmDisk4.resx">
+      <DependentUpon>tEmDisk4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tExcludeFileExtension.resx">
+      <DependentUpon>tExcludeFileExtension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tHiJackRestore.resx">
+      <DependentUpon>tHiJackRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tSystemExplorer.resx">
+      <DependentUpon>tSystemExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tTrackCleaner.resx">
+      <DependentUpon>tTrackCleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tUSBDriveProtection.resx">
+      <DependentUpon>tUSBDriveProtection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tViewQuarantineFiles.resx">
+      <DependentUpon>tViewQuarantineFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tWindowsSpy.resx">
+      <DependentUpon>tWindowsSpy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserInfoForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wBlockA.resx">
+      <DependentUpon>wBlockA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wFolders.resx">
+      <DependentUpon>wFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSpyDetails.resx">
+      <DependentUpon>WindowsSpyDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinScanSettings.resx">
+      <DependentUpon>WinScanSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wReportFor.resx">
+      <DependentUpon>wReportFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WScanSchedStep.resx">
+      <DependentUpon>WScanSchedStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wScanSchedule.resx">
+      <DependentUpon>WScanSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="simple_server.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\thumb_Drag_Maximized_Window.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Capture.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Untitled-20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-21.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-28.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-30.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-31.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-33.png" />
+    <Resource Include="Pictures\Untitled-34.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-35.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Untitled-18.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-19.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Untitled-9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Untitled-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="UIA">
+      <Guid>{930299CE-9965-4DEC-B0F4-A54848D4B667}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="UIAutomationClient">
+      <Guid>{944DE083-8FB8-45CF-BCB7-C477ACB2F897}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\1208461.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\thumb_Drag_Maximized_Window_1.cur">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="net_guard_logo2_yVg_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configure_sched_scan.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Properties\configure_sched_scan.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle-icons-folder.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ok-icon-3099.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+INSERT INTO tblInternet (ID, InBits) VALUES (1, fOnOff.IsChecked?1:0|((SSOnOff.IsChecked?1:0)>>1)|((TTOnOff.IsChecked?1:0)>>2)|((sOnOff.IsChecked?1:0)>>3)|((tOnOff.IsChecked?1:0)>>4)|((foOnOff.IsChecked?1:0)>>5)|((laOnOff.IsChecked?1:0)>>6) )
+
+if(count > 0)
+UPDATE SET InBits=fOnOff.IsChecked?1:0|((SSOnOff.IsChecked?1:0)>>1)|((TTOnOff.IsChecked?1:0)>>2)|((sOnOff.IsChecked?1:0)>>3)|((tOnOff.IsChecked?1:0)>>4)|((foOnOff.IsChecked?1:0)>>5)|((laOnOff.IsChecked?1:0)>>6)

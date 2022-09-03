@@ -1,0 +1,6 @@
+if(count == 0)
+INSERT INTO tblSafeBanking (ID, IP, FromDesktop, FromSafe, Contrls, Letter, IsDefault) VALUES (1, '8.8.8.8', FALSE, FALSE, 1|(1>>1), A, TRUE)
+else if(count == 1)
+INSERT INTO tblSafeBanking (ID, IP, FromDesktop, FromSafe, Contrls, Letter, IsDefault) VALUES (2, cmbDNS.Text != "" ? cmbDNS.Text:mtbIP.Text, FromDesktop.IsChecked.ToString(), FromSafe.IsChecked.ToString(), cCtrl.IsChecked?1:0|((cAlt.IsChecked?1:0)>>1)|(((cShift.IsChecked?1:0))>>2)|(((cWin.IsChecked?1:0))>>3), cmbAlphabet.Text, FALSE)
+else
+UPDATE tblSafeBanking SET IP=cmbDNS.Text != "" ? cmbDNS.Text:mtbIP.Text, FromDesktop=FromDesktop.IsChecked.ToString(), FromSafe=FromSafe.IsChecked.ToString(), Contrls=cCtrl.IsChecked?1:0|((cAlt.IsChecked?1:0)>>1)|(((cShift.IsChecked?1:0))>>2)|(((cWin.IsChecked?1:0))>>3), Letter=cmbAlphabet.Text WHERE (IsDefault <> TRUE)

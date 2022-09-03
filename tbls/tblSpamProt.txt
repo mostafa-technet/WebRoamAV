@@ -1,0 +1,31 @@
+tblSpamProt
+
+ID (int)
+Tag (char 50)
+SpamLevel (int)
+EnBlack (bool)
+EnWhite (bool)
+EnableAS (bool)
+IsDefault (bool)
+IDBlk (int)
+NameBlk (varchar 250)
+IDWt (int)
+NameWt (varchar 250)
+
+
+
+CREATE TABLE tblSpamProt (
+    ID        INTEGER       PRIMARY KEY
+                            UNIQUE
+                            NOT NULL,
+    Tag       CHAR (50),
+    SpamLevel INTEGER,
+    EnBlack   BOOLEAN,
+    EnWhite   BOOLEAN,
+    EnableAS  BOOLEAN,
+    IsDefault BOOLEAN,
+    IDBlk     INTEGER,
+    NameBlk   VARCHAR (250),
+    IDWt      INTEGER,
+    NameWt    VARCHAR (250) 
+);

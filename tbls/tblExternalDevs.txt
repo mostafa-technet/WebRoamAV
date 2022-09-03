@@ -1,0 +1,27 @@
+tblExternalDevs
+
+ID (int)
+AutProt (bool)
+ScanExDr (bool)
+DataThfProt (bool)
+ScanWmob (bool)
+ScanExDrChoice (int)
+ScanExDrDef (int)
+DataThfProtChoice (int)
+DataThfProtDef (int)
+
+
+
+CREATE TABLE tblExternalDevs (
+    ID                INTEGER PRIMARY KEY
+                              UNIQUE
+                              NOT NULL,
+    AutProt           BOOLEAN,
+    ScanExDr          BOOLEAN,
+    DataThfProt       BOOLEAN,
+    ScanWmob          BOOLEAN,
+    ScanExDrChoice    INTEGER,
+    ScanExDrDef       INTEGER,
+    DataThfProtChoice INTEGER,
+    DataThfProtDef    INTEGER
+);

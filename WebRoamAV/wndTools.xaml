@@ -1,0 +1,205 @@
+﻿<Window x:Class="WebRoamAV.wndTools"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p="clr-namespace:WebRoamAV.Resources"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebRoamAV"
+        mc:Ignorable="d"
+          WindowStyle="None" Topmost="False" WindowState="Normal"         
+         Background="White" Title="MainWindow" ResizeMode="CanMinimize"  Height="558" Width="696" WindowStartupLocation="Manual" Loaded="Window_Loaded" Keyboard.KeyDown="ButtonEsc_Click">
+    <Window.Resources>
+        <ResourceDictionary
+  xmlns:local="clr-namespace:WebRoamAV">
+            <!--<span class="code-comment"> Import the resource dictionary which contains the Style
+       applied to Border of each horse's "pit". -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="541*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"  Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Margin="0,10,85,525" Grid.RowSpan="2">
+
+            <TextBlock>
+                       
+                <Hyperlink Foreground="Green" x:Name="link1"  NavigateUri="frmSettings.xaml" RequestNavigate="link_RequestNavigate">
+                    <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="0" />    
+       </Style>
+</Hyperlink.Style>
+                <Run Text="Settings"/>
+            </Hyperlink>
+            </TextBlock>
+            <Label Width="10"/>
+            <TextBlock><Hyperlink  Foreground="Green" x:Name="link2" NavigateUri=""  RequestNavigate="link_RequestNavigate">
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+             <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="1" />   
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Tools"/></Hyperlink></TextBlock>
+            <Label Width="10"/>
+            <TextBlock><Hyperlink  Foreground="Green" x:Name="link3" NavigateUri="wpfReports.xaml"  RequestNavigate="link_RequestNavigate">
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+             <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="2" />   
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Report"/>
+            </Hyperlink>
+            </TextBlock>
+            <Label Width="10"/>
+            <TextBlock x:Name="tlink4"><Hyperlink  Foreground="Green" x:Name="link4" Click="link4_Click"><Hyperlink.Resources>
+                        <ContextMenu x:Key="link41" StaysOpen="true">
+                            <MenuItem Header="Help" Click="MenuItem_Click"/>
+                            <MenuItem Header="Submit System Information"  Click="MenuItem_Click" />
+                            <MenuItem Header="Support"  Click="MenuItem_Click" />
+                            <MenuItem Header="About" Click="MenuItem_Click"/>
+                        </ContextMenu>
+                    </Hyperlink.Resources>
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="3" />
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Help"/></Hyperlink></TextBlock>
+        </StackPanel>
+
+        <Rectangle Name="rect" Fill="#E7F3E8" Margin="0,173,24,30" Grid.Column="2" Grid.Row="1" />
+        <Rectangle Name="rect2" Height="20" Width="Auto" Fill="#328A3E"  Grid.ColumnSpan="3" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <Rectangle Name="rect3" Fill="#328A3E" Margin="0,59,0,395"  Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Button x:Name="buttonMin" IsTabStop="True" TabIndex="4" Focusable="True" PreviewKeyDown="buttonMin_KeyDown" Content="-" Grid.Column="2" VerticalContentAlignment="Center" Margin="587,0,42,525" Style="{StaticResource buttonMin}" Click="buttonMin_Click" Grid.RowSpan="2"/>
+        <Button x:Name="buttonClose" IsTabStop="True" TabIndex="5" Focusable="True" PreviewKeyDown="buttonClose_KeyDown" IsCancel="True" Content="X" Grid.Column="2" VerticalContentAlignment="Center" Margin="625,0,4,525" Style="{StaticResource buttonMin}" Click="buttonClose_Click" Grid.RowSpan="2"/>
+        <Button x:Name="ButtonMn" IsTabStop="True" TabIndex="6" Focusable="True" PreviewKeyDown="ButtonMn_KeyDown"  Content="&lt;&lt;   Back to Menu" Grid.Column="4" HorizontalAlignment="Left" Margin="487,87,0,0" Grid.Row="1" VerticalAlignment="Top" Width="151" Height="32" Foreground="#FF008000" FontFamily="Eras Demi ITC" FontSize="15" Cursor="Hand"  PreviewMouseLeftButtonUp="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#eaf5f5f5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#ebe5e5e5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Rectangle Name="rectMain" Margin="0,0,0,0" StrokeThickness="1" Stroke="#328A3E"  Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <TextBlock Text="Cleaning &amp; Restore Tools" Grid.Row="1" Grid.Column="2" Margin="40,180,0,0" FontSize="20" FontWeight="SemiBold" Foreground="#FF6B786D"/>
+        <TextBlock Text="Tools to clean &amp; restore your system to its original configuration" Grid.Row="1" Grid.Column="2" Margin="40,210,0,0" FontSize="14" Foreground="#FF474646"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,240,0,0" FontSize="13">
+        <!--Hyperlink RequestNavigate="Hyperlink_RequestNavigate1" NavigateUri="www.webroam.com">Hijack Restore</>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,240,0,0" Text="Restores important internet explorer settings modified by malwares" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,260,0,0" FontSize="13">
+        <Hyperlink RequestNavigate="Hyperlink_RequestNavigate2" NavigateUri="www.webroam.com">Track Cleaner</Hyperlink>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,260,0,0" Text="Cleans applications and Internet activity traces" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,280,0,0" FontSize="13">
+        <Hyperlink RequestNavigate="Hyperlink_RequestNavigate3" NavigateUri="www.webroam.com">Create Emergency Disk</Hyperlink>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,280,0,0" Text="Creates emergency disk which helps you to clean badly infected PC" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,300,0,0" Text="Cleans rogueware and malicious programs from PC" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,300,0,0" FontSize="13">
+        <Hyperlink RequestNavigate="Hyperlink_RequestNavigate4" NavigateUri="www.webroam.com">Launch AntiMalware</Hyperlink>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,320,0,0" Text="Helps to safely isolate the infected and suspecious files" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,320,0,0" FontSize="13"-->
+        <Hyperlink RequestNavigate="Hyperlink_RequestNavigate5"  NavigateUri="">
+             <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="7" />    
+       </Style>
+</Hyperlink.Style>
+            <Run>View Qarantine Files</Run>
+        </Hyperlink>
+        </TextBlock>
+        <TextBlock Text="Preventive Tools" Grid.Row="1" Grid.Column="2" Margin="40,280,0,0" FontSize="20" FontWeight="SemiBold" Foreground="#FF6B786D"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,300,0,0" Text="Tools used to secure your system" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,320,0,0" Text="Prevents USB drives against autorun malware infection" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,320,0,0" FontSize="13">
+        <Hyperlink RequestNavigate="Hyperlink_RequestNavigate6" NavigateUri="">            
+        <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="8" />    
+       </Style>
+</Hyperlink.Style>
+            <Run>USB Drive Protection</Run>
+        </Hyperlink>
+        </TextBlock>
+        <TextBlock Text="Diagnostic Tools" Grid.Row="1" Grid.Column="2" Margin="40,360,0,0" FontSize="20" FontWeight="SemiBold" Foreground="#FF6B786D"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,385,0,0" Text="Web Roam support needs these support tools to diagnose your system" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,400,0,0" Text="Diagnose system for running processes" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,400,0,0" FontSize="13">
+<Hyperlink RequestNavigate="Hyperlink_RequestNavigate7"  NavigateUri="">   
+ <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="8" />    
+       </Style>
+</Hyperlink.Style>
+            <Run>System Explorer</Run>
+        </Hyperlink>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,420,0,0" Text="Finds detailed information about an application or process" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,420,0,0" FontSize="13">
+<Hyperlink RequestNavigate="Hyperlink_RequestNavigate8"  NavigateUri="">      
+ <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="9" />    
+       </Style>
+</Hyperlink.Style>
+            <Run>Windows Spy</Run>
+    </Hyperlink>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="214,440,0,0" Text="Exclodes file extensions from Virus Protection" FontSize="14" Foreground="#FF323A33"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="40,440,0,0" FontSize="13">
+<Hyperlink RequestNavigate="Hyperlink_RequestNavigate9"  NavigateUri="">
+ <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="10" />    
+       </Style>
+</Hyperlink.Style>
+            <Run> Exclude File Extensions</Run>
+        </Hyperlink>
+        </TextBlock>
+
+        <Label x:Name="label" Content="{x:Static p:Resources.CopyRight}" Grid.Column="2" HorizontalAlignment="Left" Margin="0,517,0,-6" Grid.Row="1" VerticalAlignment="Top" Width="412" Height="30" Foreground="White"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="17*" />
+            <ColumnDefinition Width="331*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- <Rectangle Name="rect" Width="100" VerticalAlignment="Stretch" Fill="#99000000" Visibility="Collapsed" /> -->
+
+    </Grid>
+</Window>

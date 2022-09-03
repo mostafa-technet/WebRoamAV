@@ -1,0 +1,12 @@
+tblInternet
+
+ID (int)
+InBits (int)
+
+
+CREATE TABLE tblInternet (
+    ID     INTEGER PRIMARY KEY
+                   UNIQUE
+                   NOT NULL,
+    InBits INTEGER
+);

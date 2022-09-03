@@ -1,0 +1,29 @@
+tblScanSchedule
+
+ID (bigint)
+ScheduleItem (char 50)
+Frequency (int)
+FreqTime (char 25)
+FreqRepeat (int)
+FreqPriority (bool)
+FreqUserName (varchar 100)
+FreqPassword (varchar 100)
+FreqRunIfmissed (bool)
+ScanLocation (varchar 250)
+
+
+
+CREATE TABLE tblScanSchedule (
+    ID              INTEGER       PRIMARY KEY
+                                  UNIQUE
+                                  NOT NULL,
+    ScheduleItem    CHAR (50),
+    Frequency       INTEGER,
+    FreqTime        CHAR (25),
+    FreqRepeat      INTEGER,
+    FreqPriority    BOOLEAN,
+    FreqUserName    VARCHAR (100),
+    [FreqPassword ] VARCHAR (100),
+    FreqRunIfmissed BOOLEAN,
+    ScanLocation    VARCHAR (250) 
+);

@@ -1,0 +1,1 @@
+INSERT INTO tblReportFor (ID, ReportFID, Date, Time, ReportFor) VALUES (cnt+1, rpfID, iDate, sTime, repfor)

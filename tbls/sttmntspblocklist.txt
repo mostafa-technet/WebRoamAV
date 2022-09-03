@@ -1,0 +1,11 @@
+tblpBlockList
+
+INSERT INTO tblpBlockList (ID, Path) VALUES (cnt, 'dataGridView1.Rows[cnt0].Cells[0]')
+
+
+REMOVE FROM tblpBlockList WHERE ID=cur
+
+
+REMOVE FROM tblpBlockList
+
+

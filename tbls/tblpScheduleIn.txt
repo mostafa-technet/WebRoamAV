@@ -1,0 +1,26 @@
+tblpScheduleIn
+
+ID (int)
+AlwaysLet (bool)
+SundayBits (int)
+MondayBits (int)
+TuesdayBits (int)
+WednesdayBits (int)
+ThursdayBits (int)
+FridayBits (int)
+SaturdayBit (int)
+
+
+CREATE TABLE tblpScheduleIn (
+    ID            INTEGER PRIMARY KEY
+                          UNIQUE
+                          NOT NULL,
+    AlwaysLet     BOOLEAN,
+    SundayBits    INTEGER,
+    MondayBits    INTEGER,
+    TuesdayBits   INTEGER,
+    WednesdayBits INTEGER,
+    ThursdayBits  INTEGER,
+    FridayBits    INTEGER,
+    SaturdayBit   INTEGER
+);

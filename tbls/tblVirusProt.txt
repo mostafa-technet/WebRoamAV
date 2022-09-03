@@ -1,0 +1,20 @@
+tblVirusProt
+
+ID (int)
+DisplayAl (bool)
+Action (int)
+Backup (bool)
+Sound (bool)
+IsDefault (bool)
+
+
+CREATE TABLE tblVirusProt (
+    ID        INTEGER PRIMARY KEY
+                      UNIQUE
+                      NOT NULL,
+    DisplayAl BOOLEAN,
+    [Action]  INTEGER,
+    Backup    BOOLEAN,
+    Sound     BOOLEAN,
+    IsDefault BOOLEAN
+);

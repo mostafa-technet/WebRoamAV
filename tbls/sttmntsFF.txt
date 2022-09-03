@@ -1,0 +1,5 @@
+string qbno = "";
+INSERT INTO tblFilesF (ID, FFBits, QBNO) VALUES (1, ((fText.Text=="ON"?1:0)|((sText.Text=="ON"?1:0)>>1)|((tText.Text=="ON"?1:0)>>2)|((t2Text.Text=="ON"?1:0)>>3)|(>>4)), qbno)
+
+if(count > 0)
+UPDATE tblFilesF SET FFBits=((fText.Text=="ON"?1:0)|((sText.Text=="ON"?1:0)>>1)|((tText.Text=="ON"?1:0)>>2)|((t2Text.Text=="ON"?1:0)>>3)|(>>4)),QBNO=qbno

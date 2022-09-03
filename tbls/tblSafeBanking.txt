@@ -1,0 +1,22 @@
+tblSafeBanking
+ID (int)
+IP char (16)
+FromDesktop (bool)
+FromSafe (bool)
+Contrls (int)
+Letter (char)
+IsDefault (bool)
+
+
+
+CREATE TABLE tblSafeBanking (
+    ID          INTEGER   PRIMARY KEY
+                          UNIQUE
+                          NOT NULL,
+    IP          CHAR (16),
+    FromDesktop BOOLEAN,
+    FromSafe    BOOLEAN,
+    Contrls     INTEGER,
+    Letter      CHAR,
+    IsDefault   BOOLEAN
+);

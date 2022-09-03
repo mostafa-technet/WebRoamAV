@@ -1,0 +1,11 @@
+UPDATE tblEmailProt SET DisplayAM=ckMessage.IsChecked;
+INSERT INTO tblEmailProt (ID, DisplayAM, IssDefault) VALUES (1, ckMessage.IsChecked, 'FALSE')
+UPDATE tblEmailProt SET Action=i
+UPDATE tblEmailProt SET Backup=ckBackup.IsChecked
+UPDATE tblEmailProt SET BlkAttachment=ckBlockA.IsChecked
+UPDATE tblEmailProt SET BlkEmail=ckBlockE.IsChecked
+UPDATE tblEmailProt SET EnableAt=ckEnable.IsChecked
+UPDATE tblEmailProt SET BlockEn=j
+
+INSERT INTO tblEmailProt (ID, AExtensionID, AExtensionName) VALUES (cnt, i, textBox1.Text)
+DELETE FROM tblEmailProt WHERE AExtensionName=listBox1.SelectedItem

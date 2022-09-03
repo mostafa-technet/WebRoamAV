@@ -1,0 +1,14 @@
+tblScanExternal
+
+ID
+Choice (int)
+IsDefault (bool)
+
+
+CREATE TABLE tblScanExternal (
+    ID        INTEGER PRIMARY KEY
+                      NOT NULL
+                      UNIQUE,
+    Choice    INTEGER NOT NULL,
+    IsDefault BOOLEAN
+);

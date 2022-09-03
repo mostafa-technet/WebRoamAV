@@ -1,0 +1,16 @@
+tblParental
+
+ID (int)
+Alert (bool)
+Settings (int)
+AllUsersBits (int)
+
+
+CREATE TABLE tblParental (
+    ID           INTEGER PRIMARY KEY
+                         UNIQUE
+                         NOT NULL,
+    Alert        BOOLEAN,
+    Settings     INTEGER,
+    AllUsersBits INTEGER
+);

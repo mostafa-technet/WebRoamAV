@@ -1,0 +1,279 @@
+﻿<Window x:Class="WebRoamAV.wTrustedEmailClients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p="clr-namespace:WebRoamAV.Resources"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebRoamAV"
+        mc:Ignorable="d"
+        WindowStyle="None" Topmost="False" WindowState="Normal"         
+         Background="White" Title="MainWindow" ResizeMode="CanMinimize"  Height="558" Width="696" WindowStartupLocation="Manual" Loaded="Window_Loaded" Keyboard.KeyDown="ButtonEsc_Click">
+    <Window.InputBindings>
+        <KeyBinding Command="{x:Static local:Commands.btnteDefaultPressed}" CommandTarget="{Binding ElementName=btnDefault}" Modifiers="Alt" Key="D"/>
+        <KeyBinding Command="{x:Static local:Commands.btnteSaveChangesPressed}" CommandTarget="{Binding ElementName=btnSaveChanges}" Modifiers="Alt" Key="S"/>
+        <KeyBinding Command="{x:Static local:Commands.btnteCancelPressed}" CommandTarget="{Binding ElementName=btnCancel}" Modifiers="Alt" Key="C"/>
+        <KeyBinding Command="{x:Static local:Commands.btnteBrs1Pressed}" CommandTarget="{Binding ElementName=btnBtnBrs1}" Modifiers="Alt" Key="B"/>
+        <KeyBinding Command="{x:Static local:Commands.btnteAddPressed}" CommandTarget="{Binding ElementName=btnAdd}" Modifiers="Alt" Key="A"/>
+        <KeyBinding Command="{x:Static local:Commands.btnteDeletePressed}" CommandTarget="{Binding ElementName=btnDelete}" Modifiers="Alt" Key="e"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+
+        <CommandBinding
+      Command="{x:Static local:Commands.btnteDefaultPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnteSaveChangesPressed}"
+       
+            
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnteCancelPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnteBrs1Pressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnteAddPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnteDeletePressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+
+    </Window.CommandBindings>
+
+    <Window.Resources>
+        <ResourceDictionary
+  xmlns:local="clr-namespace:WebRoamAV">
+            <!--<span class="code-comment"> Import the resource dictionary which contains the Style
+       applied to Border of each horse's "pit". -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+                <ResourceDictionary Source="scrollviewerDic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="541*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"  Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Margin="0,10,85,525" Grid.RowSpan="2">
+            <TextBlock>
+            <Hyperlink Name="link1" Foreground="Green" NavigateUri="frmSettings.xaml" RequestNavigate="link_RequestNavigate">Settings</Hyperlink>
+            </TextBlock>
+            <Label Width="10"/>
+            <TextBlock>
+            <Hyperlink Name="link2" Foreground="Green" NavigateUri="wndTools.xaml"  RequestNavigate="link_RequestNavigate">Tools</Hyperlink>
+            </TextBlock>
+            <Label Width="10"/>
+            <TextBlock>
+            <Hyperlink Name="link3" Foreground="Green" NavigateUri="wpfReports.xaml"  RequestNavigate="link_RequestNavigate">Report</Hyperlink>
+            </TextBlock>
+            <Label Width="10"/>
+            <TextBlock Name="tlink4">
+            <Hyperlink  Name="link4" Foreground="Green" Click="link4_Click">
+                <Hyperlink.Resources>
+                    <ContextMenu x:Key="link41" StaysOpen="true">
+                        <MenuItem Header="Help" Click="MenuItem_Click"/>
+                        <MenuItem Header="Submit System Information"  Click="MenuItem_Click" />
+                        <MenuItem Header="Support"  Click="MenuItem_Click" />
+                        <MenuItem Header="About" Click="MenuItem_Click"/>
+                    </ContextMenu>
+                </Hyperlink.Resources>
+                Help
+            </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+        
+        <Grid Name="rect" Background="#E7F3E8" Margin="28,173,28,51" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" >
+            <Canvas>
+                <TextBlock Text="Select update mode" Canvas.Left="37" Canvas.Top="10" FontSize="16" FontWeight="SemiBold" Foreground="#FF444644"/>
+                <ListBox Name="lstMain" Canvas.Left="37" Canvas.Top="80" Width="477" Height="180">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="3" Source="{Binding Path}"/>
+                                <TextBlock Margin="3" Text="{Binding Name}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel Orientation="Horizontal" Canvas.Left="37" Canvas.Top="40">
+                    <TextBox Name="txtBrs1" Width="480"/>
+                    <Label Content=" "/>
+                    <Button x:Name="btnBtnBrs1"  Cursor="Hand" Height="27" Width="87" Canvas.Left="270" Canvas.Top="88" PreviewMouseLeftButtonDown="BtnBrs1_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="BtnBrs1_PreviewMouseLeftButtonUp" MouseLeave="BtnBrs1_MouseLeave_1" MouseEnter="BtnBrs1_MouseEnter">
+                        <Label x:Name="lblBtnBrs1" Foreground="White" VerticalAlignment="Center">_Browse</Label>
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="Green"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+                <Button x:Name="btnAdd"  Cursor="Hand" Height="27" Width="87" Canvas.Left="530" Canvas.Top="72" PreviewMouseLeftButtonDown="BtnAdd_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="BtnAdd_PreviewMouseLeftButtonUp" MouseLeave="BtnAdd_MouseLeave_1" MouseEnter="BtnAdd_MouseEnter">
+                        <Label x:Name="lblBtnAdd" Foreground="White" VerticalAlignment="Center" IsEnabled="False">_Add</Label>
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="Green"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+
+                <Button x:Name="btnDelete"  Cursor="Hand" Height="27" Width="87" Canvas.Left="530" Canvas.Top="104" PreviewMouseLeftButtonDown="BtnDelete_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="BtnDelete_PreviewMouseLeftButtonUp" MouseLeave="BtnDelete_MouseLeave_1" MouseEnter="BtnDelete_MouseEnter">
+                    <Label x:Name="lblBtnDelete" Foreground="White" VerticalAlignment="Center" IsEnabled="False">Del_ete</Label>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Green"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="btnDefault"  Cursor="Hand" Height="27" Width="87" Canvas.Left="310" Canvas.Top="280" PreviewMouseLeftButtonDown="Default_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="Default_PreviewMouseLeftButtonUp" MouseLeave="Default_MouseLeave_1" MouseEnter="Default_MouseEnter">
+                    <Label x:Name="lblBtnDefault" Foreground="White" VerticalAlignment="Center">_Default</Label>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Green"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="btnSaveChanges"  Cursor="Hand" Height="27" Width="87" Canvas.Left="410" Canvas.Top="280" PreviewMouseLeftButtonDown="SaveChanges_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="SaveChanges_PreviewMouseLeftButtonUp" MouseLeave="SaveChanges_MouseLeave_1" MouseEnter="SaveChanges_MouseEnter">
+                    <Label x:Name="lblBtnSaveChanges" Foreground="White" VerticalAlignment="Center">_SaveChanges</Label>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Green"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="btnCancel"  Cursor="Hand" Height="27" Width="87" Canvas.Left="510" Canvas.Top="280" PreviewMouseLeftButtonDown="Cancel_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="Cancel_PreviewMouseLeftButtonUp" MouseLeave="Cancel_MouseLeave_1" MouseEnter="Cancel_MouseEnter">
+                    <Label x:Name="lblBtnCancel" Foreground="White" VerticalAlignment="Center">_Cancel</Label>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Green"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Canvas>
+        </Grid>
+        <Rectangle Name="rect2" Height="20" Width="Auto" Fill="#328A3E"  Grid.ColumnSpan="3" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <Rectangle Name="rect3" Fill="#328A3E" Margin="0,59,0,395"  Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Button x:Name="buttonMin" Content="-" Grid.Column="2" VerticalContentAlignment="Center" Margin="587,0,42,525" Style="{StaticResource buttonMin}" Click="buttonMin_Click" Grid.RowSpan="2"/>
+        <Button x:Name="buttonClose" Content="X" Grid.Column="2" VerticalContentAlignment="Center" Margin="625,0,4,525" Style="{StaticResource buttonMin}" Click="buttonClose_Click" Grid.RowSpan="2"/>
+        <Button x:Name="ButtonMn" Content="&lt;&lt;   Back to Menu" Grid.Column="4" HorizontalAlignment="Left" Margin="487,87,0,0" Grid.Row="1" VerticalAlignment="Top" Width="151" Height="32" Foreground="#FF008000" FontFamily="Eras Demi ITC" FontSize="15" Cursor="Hand"  PreviewMouseLeftButtonUp="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#eaf5f5f5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#ebe5e5e5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Rectangle Name="rectMain" Margin="0,0,0,0" StrokeThickness="1" Stroke="#328A3E"  Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <Label x:Name="label" Content="{x:Static p:Resources.CopyRight}" Grid.Column="2" HorizontalAlignment="Left" Margin="0,517,0,-6" Grid.Row="1" VerticalAlignment="Top" Width="412" Height="30" Foreground="White"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="17*" />
+            <ColumnDefinition Width="331*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- <Rectangle Name="rect" Width="100" VerticalAlignment="Stretch" Fill="#99000000" Visibility="Collapsed" /> -->
+
+    </Grid>
+</Window>

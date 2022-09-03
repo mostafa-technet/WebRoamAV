@@ -1,0 +1,13 @@
+INSERT INTO tblExternalDevs (ID, AutProt, ScanExDr, DataThfProt, ScanWmob) VALUES (1, fOnOff.IsChecked, SSOnOff.IsChecked, TTOnOff.IsChecked, sOnOff.IsChecked)
+
+
+
+UPDATE tblExternalDevs SET AutProt=fOnOff.IsChecked, ScanExDr=SSOnOff.IsChecked, DataThfProt=TTOnOff.IsChecked, ScanWmob=sOnOff.IsChecked
+
+IF(count==0)
+INSERT INTO  tblExternalDevs (ID) VALUES (1)
+
+
+
+UPDATE tblExternalDevs SET ScanExDrChoice=ir, ScanExDrDef=0
+UPDATE tblExternalDevs SET DataThfProtChoice=ir, DataThfProtDef=0

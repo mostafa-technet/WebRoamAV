@@ -1,0 +1,9 @@
+int ds[7] = new int[]{0,0,0,0,0,0,0};
+for(int i = 0; i < calendar1.Items.Count(); i++)
+for(int j = (int)calendar1.Items[i].StartDate.Hour; j < (int)calendar1.Items[i].EndDate.Hour;j++)
+ds[(int)calendar1.Items[i].StartDate.DayOfWeek] |= 1>>j;
+
+INSERT INTO tblpScheduleIn (ID, AlwaysLet, SundayBits, MondayBits, TuesdayBits, WednesdayBits, ThursdayBits, FridayBits, SaturdayBits) VALUES (1, radioButton1.Checked.ToString(), ds[0], ds[1], ds[2], ds[3], ds[4], ds[5], ds[6])
+
+if(count > 0)
+UPDATE tblpScheduleIn SET AlwaysLet=radioButton1.Checked.ToString(), SundayBits=ds[0], MondayBits=ds[1], TuesdayBits=ds[2], WednesdayBits=ds[3], ThursdayBits=ds[4], FridayBits=ds[5], SaturdayBits=ds[6]

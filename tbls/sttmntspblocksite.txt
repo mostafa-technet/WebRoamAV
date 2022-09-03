@@ -1,0 +1,13 @@
+INSERT INTO tblpBlockSite (ID, Website, SubDomain) VALUES (cnt, 'dataGridView1.Rows[cnt0].Cells[0]','dataGridView1.Rows[cnt].Cells[1]')
+
+
+REMOVE FROM tblpBlockSite WHERE ID=cur
+
+
+REMOVE FROM tblpBlockSite
+
+
+
+
+
+

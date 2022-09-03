@@ -1,0 +1,13 @@
+tblpWebCat
+
+ID (int)
+WebCatBits1 (int)
+WebCatBits2 (int)
+
+CREATE TABLE tblpWebCat (
+    ID          INTEGER PRIMARY KEY
+                        UNIQUE
+                        NOT NULL,
+    WebCatBits1 INTEGER,
+    WebCatBits2 INTEGER
+);

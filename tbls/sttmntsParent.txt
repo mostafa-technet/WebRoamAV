@@ -1,0 +1,6 @@
+int abits = checkBox1.Checked?1:0|(checkBox4.Checked?1:0>>1)|(checkBox5.Checked?1:0>>2)|(checkBox6.Checked?1:0>>3)|(checkBox2.Checked?1:0>>4)|(checkBox7.Checked?1:0>>5)|(checkBox8.Checked?1:0>>6)|(checkBox3.Checked?1:0>>7);
+
+INSERT INTO tblParental (ID, Alert, Settings ,AllUsersBits) VALUES (1, checkbox1.IsChecked.ToString(), ir.ToString(), abits)
+
+if(count > 0)
+UPDATE SET tblParental Alert=checkbox1.IsChecked.ToString(), Settings=ir.ToString(), AllUsersBits=abits

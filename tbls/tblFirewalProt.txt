@@ -1,0 +1,58 @@
+tblFirewalProt
+
+ID (int)
+Wifi (bool)
+WifiDef (bool)
+rAllowT (bool)
+rFLevel (int)
+rID (bigint)
+rProgramP (varchar 250)
+rAccess (bool)
+asDisplayAM (bool)
+asCreateRep (bool)
+asPath (varchar 250)
+asDisplayAMDef (bool)
+asCreateRepDef (bool)
+asPathDef (varchar 250)
+asIsDefault (bool)
+asNNetID (char 70)
+asNNetProfile (int)
+asNNetProfStID (int)
+asNNetProfStStl (bool)
+asNNetProfStSharing (bool)
+asTrID (int)
+asTrException (varchar 100)
+asTrProtocol (int)
+asTrAction (int)
+asTrProfile (varchar 150)
+
+CREATE TABLE tblFirewalProt (
+    ID                  INTEGER       PRIMARY KEY
+                                      UNIQUE
+                                      NOT NULL,
+    Wifi                BOOLEAN,
+    WifiDef             BOOLEAN,
+    rAllowT             BOOLEAN,
+    rFLevel             INTEGER,
+    rID                 BIGINT,
+    rProgramP           VARCHAR (250),
+    rAccess             BOOLEAN,
+    asDisplayAM         BOOLEAN,
+    asCreateRep         BOOLEAN,
+    asPath              VARCHAR (250),
+    asDisplayAMDef      BOOLEAN,
+    asCreateRepDef      BOOLEAN,
+    asPathDef           VARCHAR (250),
+    asIsDefault         BOOLEAN,
+    asNNetID            CHAR (70),
+    asNNetProfile       INTEGER,
+    asNNetProfStID      INTEGER,
+    asNNetProfStStl     BOOLEAN,
+    asNNetProfStSharing BOOLEAN,
+    asTrID              INTEGER,
+    asTrSelected        BOOLEAN,
+    asTrException       VARCHAR (100),
+    asTrProtocol        INTEGER,
+    asTrAction          INTEGER,
+    asTrProfile         VARCHAR (150) 
+);

@@ -1,0 +1,14 @@
+tblFilesF
+
+ID (int)
+FFBits (int)
+QBNO (int)
+
+
+CREATE TABLE tblFilesF (
+    ID     INTEGER PRIMARY KEY
+                   UNIQUE
+                   NOT NULL,
+    FFBits INTEGER,
+    QBNO   INTEGER
+);

@@ -1,0 +1,42 @@
+tblpSchedulePC
+
+ID (int)
+AlwaysLet (bool)
+IsHourBits (int)
+SundayHour (int)
+MondayHour (int)
+TuesdayHour (int)
+WednesdayHour (int)
+ThursdayHour (int)
+FridayHour (int)
+SaturdayHour (int)
+SundayBits (int)
+MondayBits (int)
+TuesdayBits (int)
+WednesdayBits (int)
+ThursdayBits (int)
+FridayBits (int)
+SaturdayBit (int)
+
+
+CREATE TABLE tblpSchedulePC (
+    ID            INTEGER PRIMARY KEY
+                          UNIQUE
+                          NOT NULL,
+    AlwaysLet     BOOLEAN,
+    IsHourBits    INTEGER,
+    SundayHour    INTEGER,
+    MondayHour    INTEGER,
+    TuesdayHour   INTEGER,
+    WednesdayHour INTEGER,
+    ThursdayHour  INTEGER,
+    FridayHour    INTEGER,
+    SaturdayHour  INTEGER,
+    SundayBits    INTEGER,
+    MondayBits    INTEGER,
+    TuesdayBits   INTEGER,
+    WednesdayBits INTEGER,
+    ThursdayBits  INTEGER,
+    FridayBits    INTEGER,
+    SaturdayBit   INTEGER
+);

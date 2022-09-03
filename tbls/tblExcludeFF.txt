@@ -1,0 +1,16 @@
+tblExcludeFF
+
+ID (int)
+Path (varchar 250)
+Subfolders (bool)
+ExclusionFor (int)
+
+
+CREATE TABLE tblExcludeFF (
+    ID           INTEGER       PRIMARY KEY
+                               UNIQUE
+                               NOT NULL,
+    Path         VARCHAR (250),
+    Subfolders   BOOLEAN,
+    ExclusionFor INTEGER
+);

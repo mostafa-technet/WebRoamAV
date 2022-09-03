@@ -1,0 +1,3217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IDS_LIVEUPDATE_LIVEUPWIZARD" xml:space="preserve">
+    <value>Quick Update</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPERATION" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPERATION_SUBTITLE" xml:space="preserve">
+    <value>Please wait while Quick Update completes the following activities</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE" xml:space="preserve">
+    <value>Select the mode you prefer for updating %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD" xml:space="preserve">
+    <value>Retrieving updates</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_SUBTITLE" xml:space="preserve">
+    <value>Please wait while Quick Update retrieves latest updates from
+%s Internet Center</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_COMPLETE" xml:space="preserve">
+    <value>Download Completed</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_CANCELLED" xml:space="preserve">
+    <value>Download Canceled</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_FAILED" xml:space="preserve">
+    <value>Download Failed</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_SUCCESS" xml:space="preserve">
+    <value>UPDATED SUCCESSFULLY</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_ERROR" xml:space="preserve">
+    <value>UPDATE ERROR</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_UPTODATE" xml:space="preserve">
+    <value>UP-TO-DATE</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_INVALID_FILE" xml:space="preserve">
+    <value>Please enter valid definition file path.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_OLD_FORMAT" xml:space="preserve">
+    <value>%s has old definition file format. You will need to get the latest definition file by downloading from Internet Center. Please update your copy by using download from %s Internet Center.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_INVALID_PATH" xml:space="preserve">
+    <value>This is not a valid definition file. 
+Please provide the valid definition 
+file.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_OLD_DAT" xml:space="preserve">
+    <value>Specified definition file updates %s to 
+Version %s 
+Virus database %02d-%02d-%04d. 
+
+%s can not be updated further with 
+the provided definition file.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_NEW_DAT" xml:space="preserve">
+    <value>This definition file is applicable for version %s.
+
+ Your %s version is %s 
+      Virus database %02d-%02d-%04d.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_UNKNOWN" xml:space="preserve">
+    <value>Unknown error occurred. 
+Please enter valid DAT file path.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_VALID_FOLDER" xml:space="preserve">
+    <value>Please enter valid folder path.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_BKP_FOLDER" xml:space="preserve">
+    <value>Do not specify %s folder as backup folder.</value>
+  </data>
+  <data name="IDS_MAINSTRING_COMPANYNAME" xml:space="preserve">
+    <value>Total Security</value>
+  </data>
+  <data name="IDS_INSTALL_MBR_INFECTED" xml:space="preserve">
+    <value>The following drives are infected with boot virus:
+
+</value>
+  </data>
+  <data name="IDS_INSTALL_MBR_DISK" xml:space="preserve">
+    <value>Physical drive %d with virus %s
+</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_POPUP_MAJOR_UPDATED" xml:space="preserve">
+    <value>%s engine successfully updated.
+
+
+Version: %s
+Date: %s.</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINE_WEBADDRESS" xml:space="preserve">
+    <value>http://www.quickheal.com/renew.htm</value>
+  </data>
+  <data name="IDS_INSTALL_BOOT_SCAN" xml:space="preserve">
+    <value>Drive %c with virus %s
+</value>
+  </data>
+  <data name="IDS_REPORT_LOG_VERSION" xml:space="preserve">
+    <value>%s Version - %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_FOLDER" xml:space="preserve">
+    <value>Please log on with Administrative rights to change settings.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_POPUP_FOLDER" xml:space="preserve">
+    <value>Specify correct path for automatic update. Also check if valid definition files are present at the specified path.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_BROWSE" xml:space="preserve">
+    <value>Folder to keep backup of downloaded files</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGBROWSE_MSG" xml:space="preserve">
+    <value>Bad or corrupt definition file found. Browse valid definition file, and then click OK.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGBROWSE_SELECT" xml:space="preserve">
+    <value>Select definition file from:</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGBROWSE_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGBROWSE_BTN_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGBROWSE_BTN_BROWSE" xml:space="preserve">
+    <value>&amp;Browse</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGCLOSEAPP_MSG" xml:space="preserve">
+    <value>One or more applications contain %s component loaded that needs to be updated. Please close the below listed applications.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGCLOSEAPP_OPT1" xml:space="preserve">
+    <value>I have closed all listed applications</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGCLOSEAPP_OPT2" xml:space="preserve">
+    <value>Close the required applications and proceed</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGINTRO_NEXT" xml:space="preserve">
+    <value>&amp;Next &gt;</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_CHECKUPDATE" xml:space="preserve">
+    <value>Checking for update...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGDOWNLOAD_GRPCAPTION" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGDOWNLOAD_LBL1" xml:space="preserve">
+    <value>Bytes Downloaded:</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGDOWNLOAD_LBL2" xml:space="preserve">
+    <value>Bytes to Download:</value>
+  </data>
+  <data name="IDS_REPORT_LOG_VDBDATE" xml:space="preserve">
+    <value>Virus database - %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_INET_ERROR" xml:space="preserve">
+    <value>Unable to detect Internet Connection. 
+
+If you are on network using SOCKS5/Firewall 
+then please provide necessary authentication 
+information in Settings of Quick Update.
+
+Would you like to try again?</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_T_INET_ERROR" xml:space="preserve">
+    <value>Quick Update - Internet Connection</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_UPTO_DATE" xml:space="preserve">
+    <value>The Version of %s you have is
+up-to-date. Use Quick Update regularly to
+keep your copy updated.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_GET_LATEST" xml:space="preserve">
+    <value>Getting information of latest %s components...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_ING_LATEST" xml:space="preserve">
+    <value>Downloading latest %s Components...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_ERROR" xml:space="preserve">
+    <value>Unable to complete the download process due to Internet Connection disconnected by remote side. Please check your Internet Connection and run Quick Update to update your %s.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_CANCEL" xml:space="preserve">
+    <value>Do you really want to abort the download process?</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_EXTRACT" xml:space="preserve">
+    <value>Extracting dat file...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_LOCATE" xml:space="preserve">
+    <value>Locating definition files from the specified path...</value>
+  </data>
+  <data name="IDS_REPORT_LOG_STIME" xml:space="preserve">
+    <value>Time %02d:%02d:%02d</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_ERROR" xml:space="preserve">
+    <value>
+
+Unknown error occurred while processing definition file(s). Please check if you are having sufficient free disk space on your system.</value>
+  </data>
+  <data name="IDS_MAINSTRING_QHMOD_FONTSIZE" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="IDS_REPORT_LOG_FORMODULE" xml:space="preserve">
+    <value>Report for - %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_FILENOTFOUND" xml:space="preserve">
+    <value>Unable to locate the %s file or the file is corrupted.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_UPDATE" xml:space="preserve">
+    <value>Updating %s components...</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_MSGPART2" xml:space="preserve">
+    <value>Registration process requires Internet connection. Internet connection on your system will be detected automatically, when you press Next.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGINTRO_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGINTRO_HELP" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_UPDATED" xml:space="preserve">
+    <value>
+%s is Successfully updated
+
+   From Version: %s
+   Virus database: %s
+
+   To Version: %s
+   Virus database: %s.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTRO_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHFWINST" xml:space="preserve">
+    <value>Quick Heal &amp;Firewall Pro</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_OTHER_COMP" xml:space="preserve">
+    <value>One or more processes contain %s 
+components loaded that needs to be updated.
+
+</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHFWINST_DESC" xml:space="preserve">
+    <value>Protects your PC and valuable data when you are on-line.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_FINAL" xml:space="preserve">
+    <value>&amp;Finish</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_NOTACTIVATED" xml:space="preserve">
+    <value>To avail this feature you need to activate your copy. 
+Please activate your copy and try again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OPTIONS_MSG1" xml:space="preserve">
+    <value>What do you want to do</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OPTIONS_MSG2" xml:space="preserve">
+    <value>To activate the product please select Activate the copy. To renew
+the subscription please select Renew the subscription.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OPTIONS_REGISTER" xml:space="preserve">
+    <value>&amp;Activate the copy</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_CRITICAL" xml:space="preserve">
+    <value>Critical error: 
+Critical error detected with %s integrity. Quick Update can not proceed.
+
+Please install %s again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OPTIONS_REACTIVATE" xml:space="preserve">
+    <value>Re-&amp;activate the copy</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_TRIAL_EXPIRED" xml:space="preserve">
+    <value>TRIAL PERIOD IS EXPIRED.
+%s is no longer providing total protection to your system.
+
+Please purchase %s, to get the complete protection against viruses.
+
+For more details visit us at </value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_LICENSE_EXPIRED" xml:space="preserve">
+    <value>LICENSE PERIOD IS EXPIRED.
+The license period of this copy is expired and this copy can not be upgraded further.
+
+Please purchase %s, to get the complete protection against viruses.
+
+For more details visit us at 
+%s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_CONNECTING" xml:space="preserve">
+    <value>Connecting to %s Internet Center...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_FILE" xml:space="preserve">
+    <value>Downloading: %s ...</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OPTIONS_RENEW" xml:space="preserve">
+    <value>R&amp;enew the subscription</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_INIDR" xml:space="preserve">
+    <value>Dr.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_PERSONALUSE" xml:space="preserve">
+    <value>Personal Use</value>
+  </data>
+  <data name="IDS_MAINSTRING_FONTSIZE_QHMOD_HEADING" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_COMPANYUSE" xml:space="preserve">
+    <value>Company Use</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_SUBSCRIPTION_EXPIRED" xml:space="preserve">
+    <value>SUBSCRIPTION PERIOD IS EXPIRED.
+
+Your free upgrade subscription period is over.
+%s will not upgrade further.
+
+For further subscription and renewal information
+please contact %s or visit 
+%s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_TRIAL_EXPIRED_WINCLEANER" xml:space="preserve">
+    <value>TRIAL PERIOD IS EXPIRED.
+%s is no longer providing total protection to your system.
+
+Please purchase %s, to get the complete protection against viruses.
+
+For more details visit us at 
+ %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LOCATE_NEW_APPL_DAT" xml:space="preserve">
+    <value>Your %s version is %s Virus database %02d-%02d-%04d.
+
+Specified definition is applicable for
+%s Version %s Virus database %02d-%02d-%04d.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_EDUCATIOPNALUSE" xml:space="preserve">
+    <value>Educational Use</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_INIPROF" xml:space="preserve">
+    <value>Prof.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LIVEUP_TRIAL_COUNT_EXPIRED" xml:space="preserve">
+    <value>%s Trial Version can not be upgraded further. 
+
+Please purchase %s, to get the complete protection against viruses and upgrade support.
+
+For more information visit us at
+</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_INIMR" xml:space="preserve">
+    <value>Mr.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_INIMRS" xml:space="preserve">
+    <value>Mrs.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LICENSE_EXPIRED" xml:space="preserve">
+    <value>The license period of this copy is expired.
+This copy can not be upgraded further.
+
+Please renew %s license and get 
+complete protection against viruses.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_TRIAL_COUNT_WC" xml:space="preserve">
+    <value>%s trial version can not be upgraded further.  
+
+Please purchase %s , to get the complete protection against viruses and upgrade support.
+Visit %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_ERROR_DISKSPACE" xml:space="preserve">
+    <value>Error: Your system is low in resources.
+
+Quick Update requires at least %u MB of free disk space. Cleanup your disk and then run Quick Update.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_INIMS" xml:space="preserve">
+    <value>Ms.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_REBOOT_REQUIRED" xml:space="preserve">
+    <value>REBOOT REQUIRED.
+
+You require to reboot your system to complete previous update process.
+
+Please reboot your system to complete update process.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_UPDATING" xml:space="preserve">
+    <value>Updating %s version...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_NO_DEF" xml:space="preserve">
+    <value>DEFINITION NOT APPLICABLE  
+
+Provided definition files are not applicable for current version of %s.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_RESUME_ERROR" xml:space="preserve">
+    <value>UNKNOWN ERROR
+
+Unknown error occurred while updating %s.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_INET_COPY_NOT_ACTIVATED" xml:space="preserve">
+    <value>REGISTRATION REQUIRED
+
+%s is not registered. 
+Quick Update will run after registration. 
+
+Please register your copy to get further updates.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_POPUP_REBOOT" xml:space="preserve">
+    <value>%s engine update completed. 
+
+Reboot system for changes to take effect.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_POPUP_UPDATED" xml:space="preserve">
+    <value>%s successfully updated.
+
+
+  Version: %s
+Date: %s.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_POPUP_DOWNLOAD" xml:space="preserve">
+    <value>Quick Update is downloading engine update. 
+
+This will take few minutes.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_FILE_ERROR" xml:space="preserve">
+    <value>UPDATE FILES MISSING
+
+Unable to copy update files to %s folder. Please update your copy again.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_NO_FILES" xml:space="preserve">
+    <value>DEFINITION FILES NOT FOUND 
+
+Specify correct path for automatic update. Also check if valid definition files are present at the specified path.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_RESTRICTED" xml:space="preserve">
+    <value>%s Engine Update is available. But it can be applied for Administrator User. 
+Please Log on with Administrative rights to update.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_RESTRICTED2" xml:space="preserve">
+    <value>Please logon as Administrator to run %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGDOWNLOAD_LBL3" xml:space="preserve">
+    <value>Time Remaining:</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGINTRO_WELCOME" xml:space="preserve">
+    <value>Welcome to Quick Update</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGINTRO_TRANSPARENT1" xml:space="preserve">
+    <value>This wizard will guide you to update %s
+to the latest version.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGINTRO_TRANSPARENT2" xml:space="preserve">
+    <value>For maximum protection against latest viruses it is highly recommed to keep AntiVirus up-to-date.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGINTRO_BTN_SETTINGS" xml:space="preserve">
+    <value>&amp;Settings...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_MSG" xml:space="preserve">
+    <value>%s module requires the definition file to upgrade %s. Specify the location which contains the definition file.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_OPT1" xml:space="preserve">
+    <value>&amp;Download from %s Internet Center</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_OPT2" xml:space="preserve">
+    <value>&amp;Pick from specified location</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_OPT3" xml:space="preserve">
+    <value>Save a copy of downloaded definition file(s)</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_COPY" xml:space="preserve">
+    <value>Copy definition files to folder</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_BTN_FILE" xml:space="preserve">
+    <value>&amp;File...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_BTN_FOLDER" xml:space="preserve">
+    <value>F&amp;older...</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGOPERATION_GRPLBL" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGREBOOT_MSG" xml:space="preserve">
+    <value>%s is updated successfully. It is required to reboot your system for changes to take effect.
+
+Please restart your system.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGREBOOT_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_SENSOR_VERFYING_REGISTRY" xml:space="preserve">
+    <value>
+Verifying Registry Records...</value>
+  </data>
+  <data name="IDS_SENSOR_VERFYING_REGISTRYSUCCESS" xml:space="preserve">
+    <value>
+Verified Registry Successfully
+</value>
+  </data>
+  <data name="IDS_MAINSTRING_FONTSIZE_QHMOD_SUBHEADING" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="IDS_SENSOR_VERFYING_STARTUP" xml:space="preserve">
+    <value>
+Verifying Startup...</value>
+  </data>
+  <data name="IDS_ACTIVATION_LIC_REQ" xml:space="preserve">
+    <value>Offline Registration.</value>
+  </data>
+  <data name="IDS_ACTIVATION_PERSINFO_HDR" xml:space="preserve">
+    <value>Personal Information.</value>
+  </data>
+  <data name="IDS_SENSOR_VERFYING_STARTUPSUCCESS" xml:space="preserve">
+    <value>
+Verified Startup Successfully
+</value>
+  </data>
+  <data name="IDS_SENSOR_VERFYING_SYSTEMFILES" xml:space="preserve">
+    <value>
+Verifying System files....</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ACT_READY" xml:space="preserve">
+    <value>Ready to submit your activation request.</value>
+  </data>
+  <data name="IDS_ACTIVATION_ACTINFO_HDR" xml:space="preserve">
+    <value>Activation Information.</value>
+  </data>
+  <data name="IDS_SENSOR_SCANREPORT" xml:space="preserve">
+    <value>%s Startup Scanner Report</value>
+  </data>
+  <data name="IDS_ACTIVATION_MODE_ACT" xml:space="preserve">
+    <value>Select the mode of registration process.</value>
+  </data>
+  <data name="IDS_ACTIVATION_ACT_OPTION" xml:space="preserve">
+    <value>Activation Options.</value>
+  </data>
+  <data name="IDS_ACTIVATION_COMP_FIELDS" xml:space="preserve">
+    <value>Fields marked with asterisk (*) are compulsory.</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUB_INFO" xml:space="preserve">
+    <value>Submit the Information.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_QHACTIVATION" xml:space="preserve">
+    <value>The file you have specified is not a valid LICENSE.KEY file.
+Can not activate copy with the given file.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ABORTACT" xml:space="preserve">
+    <value>Unable to create activation record.
+Please abort this activation and try again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ACTIVATE" xml:space="preserve">
+    <value>%s Activation</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_LOADERR" xml:space="preserve">
+    <value>Error in Loading INETSDK.DLL. Unable to proceed with
+Activation. Please contact %s Technical Support at %s</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_INETCONN" xml:space="preserve">
+    <value>Unable to find Internet Connection. Please connect
+to internet and try again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_REINSTALL" xml:space="preserve">
+    <value>Activation module has detected some inconsistency
+in the installed copy.
+
+You will have to reinstall the copy.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_QHREG" xml:space="preserve">
+    <value>%s Registration</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_NOTACTIVATE" xml:space="preserve">
+    <value>Could not activate the copy. Please try again.
+
+You may need to reinstall the copy.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_FREESPACE" xml:space="preserve">
+    <value>Please free some space on the drive where %s is installed.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_SRLNUM" xml:space="preserve">
+    <value>Please provide the Product Key to proceed.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_SRNOINCORR" xml:space="preserve">
+    <value>This Product Key is incorrect. Please provide the exact Product Key to proceed.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_EXCACTNO" xml:space="preserve">
+    <value>If your copy has been activated previously then it is necessary to 
+provide the exact Activation Number issued to you after first activation.
+
+If you do not have the same please contact %s Technical
+ Support at %s</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_LOWDSKSPACE" xml:space="preserve">
+    <value>Your disk seems low on hard disk space.
+Please free some disk space and try again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_COMPNAME" xml:space="preserve">
+    <value>Please provide the Company Name.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_UNINSTALLABLE_OS" xml:space="preserve">
+    <value>The provided setup is not applicable for this operating system.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_USRNAME" xml:space="preserve">
+    <value>Please provide the Name.</value>
+  </data>
+  <data name="IDS_INSTALLER_XPSP2" xml:space="preserve">
+    <value>Unable to proceed with installation. Minimum Windows XP Service Pack 2
+is required. Please apply the Windows XP Service Pack 2 and try again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ADDR" xml:space="preserve">
+    <value>Please provide the Address.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_CITY" xml:space="preserve">
+    <value>Please provide the City Name.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_STATENAME" xml:space="preserve">
+    <value>Please provide the State/Province Name.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_COUNTRY" xml:space="preserve">
+    <value>Please provide the Country Name.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_EMAIL" xml:space="preserve">
+    <value>Please provide the Email address.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_VALEMAIL" xml:space="preserve">
+    <value>Please provide the valid Email address.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_CRITIACTERR" xml:space="preserve">
+    <value>Critical error in Activation process
+Please try again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_INVDPHCODE" xml:space="preserve">
+    <value>Invalid Phone registration code.
+Please provide the code again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ADMINPRV" xml:space="preserve">
+    <value>%s can be registered under administrator privileges only.
+Please log in as administrator and try again.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ALRDYREG" xml:space="preserve">
+    <value>This copy of %s is already registered.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_FIRSTACTNO" xml:space="preserve">
+    <value>This copy has been activated previously.
+Specify the exact Activation Number provided
+to you at the time of first activation.
+
+If you do not have the activation number
+Please contact %s Technical Support at
+
+%s</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_EXPACTCOPY" xml:space="preserve">
+    <value>This copy of %s can not be activated.
+The License time period of the copy has expired.
+
+To purchase a fresh copy of %s or to renew the 
+subscription period please contact %s at
+
+%s</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ACTDENIED" xml:space="preserve">
+    <value>Activation for this copy of %s denied by the WBA server.
+Please contact %s Technical Support at
+%s</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_SERVERSLOW" xml:space="preserve">
+    <value>WBA Server response is slow. This may be due
+to high traffic at this time.
+Please try again after some time.
+Write to %s if this
+problem persists.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ORGNAME" xml:space="preserve">
+    <value>Please provide the Organization Name.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_REGWIZ" xml:space="preserve">
+    <value>%s Registration Wizard</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_INVDINST" xml:space="preserve">
+    <value>Invalid Installation</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_WINCLNWIZ" xml:space="preserve">
+    <value>Welcome to %s Registration Wizard</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_PERUSE" xml:space="preserve">
+    <value>Personal Use</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_COMPUSE" xml:space="preserve">
+    <value>Company Use</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ACTFAILED" xml:space="preserve">
+    <value>This activation has failed.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_COPYNOTACT" xml:space="preserve">
+    <value>Your copy can not be activated.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_COPYACTSUCC" xml:space="preserve">
+    <value>Your copy has been successfully activated.</value>
+  </data>
+  <data name="IDS_INSTALLER_XPSP2STARTEREDITION" xml:space="preserve">
+    <value>Unable to proceed with installation. This Installer works on Microsoft Windows XP
+.Starter Edition only.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_COPYNOTACTF" xml:space="preserve">
+    <value>Your copy can not be activated further.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ACTSUCC" xml:space="preserve">
+    <value>%s is successfully activated.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_UNINSTALL" xml:space="preserve">
+    <value>Uninstall Quick Heal Total Security</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_TSSRNOINCORR" xml:space="preserve">
+    <value>Provided Product Key is not applicable for %s.
+Please provide the exact Product Key for %s to proceed.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT__MSG1" xml:space="preserve">
+    <value>This copy has been registered at %s Internet Center.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT__MSG2" xml:space="preserve">
+    <value>We request you to note this Activation Code and remember it since without this Activation Code you will not be allowed to reactivate the %s in case of reinstallation.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT__MSG3" xml:space="preserve">
+    <value>Your Activation Number is:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_COMPLETION_NEW_MSG1" xml:space="preserve">
+    <value>You need to have License.Key file to proceed further.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_COMPLETION_NEW_MSG2" xml:space="preserve">
+    <value>Please specify the path for License.Key file</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_COMPLETION_NEW_BTN_BROWSE" xml:space="preserve">
+    <value>&amp;Browse...</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT_MSG1" xml:space="preserve">
+    <value>This copy has been registered at %s Internet Center. Following is the activation code allocated to you. You must mention this code for every communication with %s team.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT_MSG2" xml:space="preserve">
+    <value>This will help us to provide you better support and fast responses. This is confidential code for your copy and is not inted to be shared with any other %s User</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT_MSG3" xml:space="preserve">
+    <value>We request you to note this Activation Code and remember it since without this Activation Code you will not be allowed to reactivate the %s in case of reinstallation.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT_MSG4" xml:space="preserve">
+    <value>Your Activation Code is:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_GRP" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_NAME" xml:space="preserve">
+    <value>*Name</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_LINE1" xml:space="preserve">
+    <value>*Address Line1</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_LINE2" xml:space="preserve">
+    <value>Address Line2</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_CITY" xml:space="preserve">
+    <value>*City/Town</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_STATE" xml:space="preserve">
+    <value>*State/Province</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_COUNTRY" xml:space="preserve">
+    <value>*Country/Region</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_ZIP" xml:space="preserve">
+    <value>ZIP/PIN Code</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_PHONE" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_EMAIL" xml:space="preserve">
+    <value>*Email Address</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_SUBMIT_MSG1" xml:space="preserve">
+    <value>Following information will be submitted to %s to register your copy. This information is used to provide technical support and customer services.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_SUBMIT_MSG2" xml:space="preserve">
+    <value>We respect your privacy, this information will not be shared or disclosed.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_SUBMIT_MSG3" xml:space="preserve">
+    <value>Please connect to the Internet and press next to submit the information.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_MSG1" xml:space="preserve">
+    <value>Registration process requires Internet connection. If you do not have Internet access on this system, please choose 'No' and press 'Next'.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_MSG2" xml:space="preserve">
+    <value>I have Internet access on this computer</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_RDO1" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_RDO2" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_BTN" xml:space="preserve">
+    <value>Internet &amp;Settings...</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_MSG3" xml:space="preserve">
+    <value>If you have Internet access through proxy server, then press 'Internet Settings' to configure proxy settings.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_GRP" xml:space="preserve">
+    <value>Registration Information</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_SERIAL" xml:space="preserve">
+    <value>*Product Key:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_FIRST" xml:space="preserve">
+    <value>Registering this Product Key for the first time.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_REACT" xml:space="preserve">
+    <value>Already registered, re-activate my copy.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_ACTIVATION" xml:space="preserve">
+    <value>*Activation Number:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_PURCHASED" xml:space="preserve">
+    <value>Purchased from:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_REGISTER" xml:space="preserve">
+    <value>Register for:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR2_NAME" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTRO_TITLE" xml:space="preserve">
+    <value>Welcome to %s Registration Wizard</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTRO_MSG1" xml:space="preserve">
+    <value>This wizard will guide you through the complete Registration process. Once %s is registered, it will be activated and you will be able to update your copy.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTRO_MSG2" xml:space="preserve">
+    <value>Activation would enable you to get free online services and other benefits for which a registered user is entitled.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTRO_MSG3" xml:space="preserve">
+    <value>This will help us to inform you about the latest developments regarding %s, newly discovered security threats and other information that is important for you and your business.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OFFLINE_WEB_TITLE" xml:space="preserve">
+    <value>To register offline through web:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OFFLINE_WEBMSG" xml:space="preserve">
+    <value>You will need to register your copy by filling the registration form on our website. You can visit our site with any PC having Internet connection.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OFFLINE_PHONE_TITLE" xml:space="preserve">
+    <value>To register offline through phone:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OFFLINE_PHONE_MSG1" xml:space="preserve">
+    <value>You will need to call our office and get a registration code.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OFFLINE_PHONE_MSG2" xml:space="preserve">
+    <value>Please select the mode you wish to follow and press NEXT</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OFFLINE_OPT_WEB" xml:space="preserve">
+    <value>Offline Registration through web</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OFFLINE_OPT_PHONE" xml:space="preserve">
+    <value>Offline Registration through phone</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_PHONE_MSG1" xml:space="preserve">
+    <value>Phone Registration can be done by calling %s at the below given phone number. You will need to provide the exact Product Key and the installation number given below.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_PHONE_MSG2" xml:space="preserve">
+    <value>To register through phone please call:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_PHONE_INSTNUM" xml:space="preserve">
+    <value>Installation Number:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_PHONE_MSG3" xml:space="preserve">
+    <value>Please enter the phone code here</value>
+  </data>
+  <data name="IDS_COMPANY_NAME" xml:space="preserve">
+    <value>Quick Heal Technologies (P) Ltd.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_SUBMIT_LVCOLUMN1" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_SUBMIT_LVCOLUMN2" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_MSG1" xml:space="preserve">
+    <value>You have selected to register your copy offline. You will need to register your copy by filling the registration form on our website. You can visit our site with any PC having Internet connection.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_MSG2" xml:space="preserve">
+    <value>When filling the registration form on site you will also need following information.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_INFO1" xml:space="preserve">
+    <value>Product Key of the installed copy (Provided with the %s Pack)</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_INFO2" xml:space="preserve">
+    <value>Installation number given below</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_WEB" xml:space="preserve">
+    <value>Please visit %s with above information for registration.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_WEBADDR" xml:space="preserve">
+    <value>http://www.quickheal.com/actinfo.htm</value>
+  </data>
+  <data name="IDS_QUICKHEAL_WEBADDRESS" xml:space="preserve">
+    <value>http://www.quickheal.com</value>
+  </data>
+  <data name="IDS_WINCLEANER" xml:space="preserve">
+    <value>WinCleaner</value>
+  </data>
+  <data name="IDS_QUICKHEAL_RENEWADDRESS" xml:space="preserve">
+    <value>http://www.quickheal.co.in/public/products/renewonline.asp</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_STR_CNTRDFILE" xml:space="preserve">
+    <value>Cannot read from file!</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_MSG3" xml:space="preserve">
+    <value>On registration you will be provided License Key file. Once you have License Key file, you can proceed with activation process.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_INSTNUM" xml:space="preserve">
+    <value>Installation Number:</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MY_MSG4" xml:space="preserve">
+    <value>If you have obtained License.Key file press Next to proceed else press Cancel to exit the wizard.</value>
+  </data>
+  <data name="IDS_MESSENGER_STR_QHMSGR" xml:space="preserve">
+    <value>%s Messenger</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_STR_NTENGHMEM" xml:space="preserve">
+    <value>Not enough memory!</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_GROUPNAME" xml:space="preserve">
+    <value>Quick Heal Total Security</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_AV" xml:space="preserve">
+    <value>Quick Heal Total Security</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_UPDATE" xml:space="preserve">
+    <value>Quick Update</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NATIVE_CONFIRMATION" xml:space="preserve">
+    <value>System is infected with %s, Do you want to set boot time scanner to clean the system?</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NATIVESET_DOYOUWANTTORESTART" xml:space="preserve">
+    <value>System will be scanned in the next boot. Do you want to restart the system now?</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_STR_CNTRDFILE" xml:space="preserve">
+    <value>Cannot read from file!</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_STR_ERR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_STR_NTENGHMEM" xml:space="preserve">
+    <value>Not enough memory!</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NATIVE_ERRORMSG" xml:space="preserve">
+    <value>Unable to load %s</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NATIVESET_UNABLETOACCESS" xml:space="preserve">
+    <value>Unable to access</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NATIVESET_UNABLETOCOPY" xml:space="preserve">
+    <value>Unable to copy file %s as %s</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NATIVESET_UNABLETOSCHEDULE" xml:space="preserve">
+    <value>Unable to schedule boot time scanner.</value>
+  </data>
+  <data name="IDS_MAINSTRING_ADMINSTRING" xml:space="preserve">
+    <value>Quick Heal Admin Console</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_LAUNCH_REGISTERNOW" xml:space="preserve">
+    <value>&amp;Register Now</value>
+  </data>
+  <data name="IDS_ACTIVATION_UNICODE_ERROR" xml:space="preserve">
+    <value>Multilanguage characters are not allowed.
+Use plain English to fill in the information.</value>
+  </data>
+  <data name="IDS_SENSOR_REPORTHEADING" xml:space="preserve">
+    <value>Startup Scan Report</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_POPUP_LATEST_UPDATED" xml:space="preserve">
+    <value>%s is successfully updated.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_LATEST_UPDATED" xml:space="preserve">
+    <value>
+Update for Outbreak is successfully applied
+
+   From Version: %s
+   Virus database: %s
+
+   To Version: %s
+   Virus database: %s.</value>
+  </data>
+  <data name="IDS_COMPANY_SUPPORT_ID" xml:space="preserve">
+    <value>support@quickheal.com</value>
+  </data>
+  <data name="IDS_MAINSTRING_QHMOD_FONTNAME" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_ACT__ACTSUB" xml:space="preserve">
+    <value>Your subscription is valid till:</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_SELECTLANGUAGE" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_BDCRPTFILE" xml:space="preserve">
+    <value>Bad or corrupt data file.</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_QHM" xml:space="preserve">
+    <value>%s Messenger</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_CNTRDFILE" xml:space="preserve">
+    <value>Cannot read from file!</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_ERR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_INTERIOR1_ICREQ" xml:space="preserve">
+    <value>Internet Connection is required to register/activate
+%s </value>
+  </data>
+  <data name="IDS_ANTIPOP_CAPTION" xml:space="preserve">
+    <value>%s Anti-Popup!</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ACTION_DELETE" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ACTION_REPAIR" xml:space="preserve">
+    <value>Repaired</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_MULT_EXT" xml:space="preserve">
+    <value>Multiple Extensions:</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_BLOCKED_EXT" xml:space="preserve">
+    <value>Blocked Extension:</value>
+  </data>
+  <data name="IDS_EMLPROXY_STATS_NOEXTENSION" xml:space="preserve">
+    <value>&lt;Without Extension&gt;</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_ANTIMLWR" xml:space="preserve">
+    <value>AntiMalware</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_REINSTSW_SND" xml:space="preserve">
+    <value>Incomplete installation!
+Sound files are missing. Try reinstalling the software.
+Aborting Program.</value>
+  </data>
+  <data name="IDS_RENEWAL_CONFIRM_MSG" xml:space="preserve">
+    <value>To renew the existing subscription click Renew, click Cancel to quit.</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_INETPROBTRYAGAN" xml:space="preserve">
+    <value>Internet connection not available.
+Please connect to the Internet and try again.</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_NONEWMSG" xml:space="preserve">
+    <value>Sorry, no new messages.</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_DOWNLOAD_IN_PROGRESS" xml:space="preserve">
+    <value>Download is in progress. Please wait</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_REINSTSW_QHRI" xml:space="preserve">
+    <value>Incomplete installation
+Some files seems to be missing or corrupt.
+Try reinstalling the software.
+Aborting Program.</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STR_INVALIDPATH" xml:space="preserve">
+    <value>Unable to find specified path to get messages.
+
+Please specify valid path for %s Messenger.</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_DLG_BTN_UPDATE_NOW" xml:space="preserve">
+    <value>&amp;Update Now...</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_DLG_STC_VISIT_URL" xml:space="preserve">
+    <value>Visit URL:</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_DLG_CHK_ADD_TO_LOG" xml:space="preserve">
+    <value>&amp;Add Newslet to message log</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_DLG_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_TASKBARMSG1" xml:space="preserve">
+    <value>New Virus Alert</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_TASKBARMSG2" xml:space="preserve">
+    <value>Hoax</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_TASKBARMSG3" xml:space="preserve">
+    <value>A General Message</value>
+  </data>
+  <data name="IDS_MESSENGER_AUTOVIEW_DLG_CAPTION" xml:space="preserve">
+    <value>%s Messenger Message</value>
+  </data>
+  <data name="IDS_RENEWAL_CURR_EXPDATE" xml:space="preserve">
+    <value>Current Expiry Date:</value>
+  </data>
+  <data name="IDS_RENEWAL_SUBSCRIPTION" xml:space="preserve">
+    <value>Important Subscription Information</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR_IE55" xml:space="preserve">
+    <value>%s requires Internet Explorer 5.5 or higher installed on the system. Unable to proceed with the installation</value>
+  </data>
+  <data name="IDS_RENEWAL_NEW_EXPDATE" xml:space="preserve">
+    <value>New Expiry Date will be:</value>
+  </data>
+  <data name="IDS_RENEWAL_RENEW" xml:space="preserve">
+    <value>&amp;Renew</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_OPTION_WARNING_REACT" xml:space="preserve">
+    <value>Warning: Please ensure that the earlier installed copy bearing
+the same Product Key is un-installed completely. In case the
+earlier copy is not un-installed this copy will be treated as a
+pirated copy and will be blocked. Blocked copies do not receive
+updates.
+
+To proceed with Activation click OK. To stop the activation
+process click Cancel.</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_INVALID_PHONE_CODE" xml:space="preserve">
+    <value>Incorrect Phone Code, Please enter valid Phone Code.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_INVALID_COPY_BLOCKED" xml:space="preserve">
+    <value>Invalid Subscription.
+
+Your %s Product Key is being used from
+multiple installations. Updates for this Product Key are being
+downloaded from multiple locations. Each %s   
+Product Key can download updates only for single PC.
+
+Unable to update your copy of %s.
+Please contact your vor or %s Support to
+resolve this problem.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_LNK_ANTIMLWR" xml:space="preserve">
+    <value>Quick Heal AntiMalware</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_TITLE_DEALERCD" xml:space="preserve">
+    <value>Dealer Code</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_DEALERCD" xml:space="preserve">
+    <value>&amp;Dealer Code:</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_ENGINEERCD" xml:space="preserve">
+    <value>&amp;Engineer Code:</value>
+  </data>
+  <data name="IDS_UPLDFILE_NO_INET_CONNECTION" xml:space="preserve">
+    <value>Unable to detect Internet Connection. 
+
+If you are on network using SOCKS5/Firewall 
+then please provide necessary authentication 
+information in Quick Heal Internet Settings.
+
+Would you like to try again?</value>
+  </data>
+  <data name="IDS_USBPRCTN_CORRUPT_MESSAGE" xml:space="preserve">
+    <value>%s %s is corrupt. Please re-install the product.</value>
+  </data>
+  <data name="IDS_USBPRCTN_FAILURE_MESSAGE" xml:space="preserve">
+    <value>Unable to complete the %s�s action. Please close all the running applications and try again.</value>
+  </data>
+  <data name="IDS_USBPRCTN_HEADING" xml:space="preserve">
+    <value>Manage autorun functionality of the PC and removable drives</value>
+  </data>
+  <data name="IDS_USBPRCTN_BTN_CLOSE" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="IDS_USBPRCTN_TAB_PC" xml:space="preserve">
+    <value>Secure PC from autorun malwares</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_BTN_ENABLE_INFO" xml:space="preserve">
+    <value>Recommed:</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_LOG_CAPTION" xml:space="preserve">
+    <value>Newslet Viewer</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_LOG_BTN_VIEW" xml:space="preserve">
+    <value>&amp;View...</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_LOG_BTN_DELETE" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_LOG_BTN_CLOSE" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_LST_CLMN1" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_LST_CLMN2" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_LST_CLMN3" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_MSG_CAPTION" xml:space="preserve">
+    <value>%s Messenger Message</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_MSG_VISITURL" xml:space="preserve">
+    <value>Visit URL:</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_MSG_BTN_PREV" xml:space="preserve">
+    <value>&lt; &amp;Prev</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_MSG_BTN_NEXT" xml:space="preserve">
+    <value>&amp;Next &gt;</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_MSG_BTN_CLOSE" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_BTN_DISABLE_INFO" xml:space="preserve">
+    <value>Not-recommed:</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_BTN_ENABLE" xml:space="preserve">
+    <value>&amp;Enable Protection</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_TOOLTIP" xml:space="preserve">
+    <value>Downloading...</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_BTN_DISABLE" xml:space="preserve">
+    <value>&amp;Disable Protection</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_STATUS_DISABLE" xml:space="preserve">
+    <value>Currently your PC is not protected against malwares that use autorun
+feature.</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_STATUS_DISABLE_DESC" xml:space="preserve">
+    <value>Clicking the above button will protect your PC against autorun malwares.
+This will prevent automatic execution of malwares and other applications
+on your PC when removable devices (like USB, Pen Drives, CD/DVD etc.)
+are plugged-in.</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_STATUS_ENABLE" xml:space="preserve">
+    <value>Your PC is secure against malwares that use autorun feature.</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_STATUS_ENABLE_DESC" xml:space="preserve">
+    <value>Clicking the above button will unprotect your PC against autorun malwares.
+This will allow automatic execution of malwares and other applications on
+your PC when removable devices (like USB, Pen Drives, CD/DVD etc.) are
+plugged-in.</value>
+  </data>
+  <data name="IDS_USBPRCTN_PC_DISABLE_CONFIRM" xml:space="preserve">
+    <value>Do you really wish to disable autorun protection?</value>
+  </data>
+  <data name="IDS_SENSOR_STR_SYDTFLNTFND" xml:space="preserve">
+    <value>The system data file was not found.
+Cannot proceed with system integrity check.
+System data needs to be rebuild.
+Rebuild?</value>
+  </data>
+  <data name="IDS_SENSOR_STR_SYDTFLNTFND2" xml:space="preserve">
+    <value>The system data file was not found.
+Cannot proceed with system integrity check.
+System data needs to be rebuild.
+Rebuild?</value>
+  </data>
+  <data name="IDS_SENSOR_STR_QHSENSERR" xml:space="preserve">
+    <value>%s Sensor Error</value>
+  </data>
+  <data name="IDS_USBPRCTN_TAB_USB" xml:space="preserve">
+    <value>Secure Removable Drives</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_BTN_ENABLE" xml:space="preserve">
+    <value>&amp;Secure Removable Drive</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_BTN_DISABLE" xml:space="preserve">
+    <value>&amp;Un-secure Removable Drive</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_STATUS_INFO" xml:space="preserve">
+    <value>Select a removable drive:</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_STATUS_NOITEM" xml:space="preserve">
+    <value>No removable device is plugged-in.</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_STATUS_NOITEM_INFO" xml:space="preserve">
+    <value>Plug removable device</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_STATUS_DISABLE" xml:space="preserve">
+    <value>Removable drive is secured.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_BKDRPRGWR" xml:space="preserve">
+    <value>in '%s' is modified.
+'%s' is set to execute on every boot. It may be a backdoor program or a worm.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_ORVLPRSVL" xml:space="preserve">
+    <value>in '%s' is modified.
+Old value was  :  '%s'
+New value is  :   '%s'.</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_STATUS_ENABLE" xml:space="preserve">
+    <value>Removable drive is not secured.</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_STATUS_DESC" xml:space="preserve">
+    <value>Autorun feature of the removable devices is one of the medium of spreading malwares. Securing a removable device will prevent spreading infection through autorun malwares.</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_DISABLE_CONFIRM" xml:space="preserve">
+    <value>Do you really wish to un-secure the removable drive?</value>
+  </data>
+  <data name="IDS_SENSOR_STR_EXEEVRBT" xml:space="preserve">
+    <value>is set to execute on every boot. It may be a backdoor program or a worm. 
+Select 'Accept' if its a part of a valid application.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_WAR_PART1" xml:space="preserve">
+    <value>%s
+
+Accept only if it is a part of a newly installed valid application.</value>
+  </data>
+  <data name="IDS_USBPRCTN_REQUIREDADMIN" xml:space="preserve">
+    <value>You do not have administrative access rights. Please logon as an administrator and try again.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_NWVL" xml:space="preserve">
+    <value>%s
+
+Accept only if it is a part of newly installed valid application.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_INCSNT" xml:space="preserve">
+    <value>is inconsistent. Please choose accept only in case if you have install or upgrade the operating system files or service pack.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_ERRACS" xml:space="preserve">
+    <value>Error accessing '%s'.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_FLHBQUAR" xml:space="preserve">
+    <value>
+
+The file %s
+has been Quarantined.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_FLQR" xml:space="preserve">
+    <value>File Quarantined</value>
+  </data>
+  <data name="IDS_SENSOR_STR_FLCNDNTQR" xml:space="preserve">
+    <value>
+The file %s
+could not be Quarantined.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_RMDSUCCS" xml:space="preserve">
+    <value>
+
+%s removed successfully.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_CUDNTRMD" xml:space="preserve">
+    <value>
+
+%s could not be removed.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_REPSUCC" xml:space="preserve">
+    <value>
+
+%s repaired successfully.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_CNDBEREP" xml:space="preserve">
+    <value>
+
+%s could not be repaired.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_FNDSTRN" xml:space="preserve">
+    <value>Found strain of %s in
+%s
+
+Please clean your system using %s
+Emergency diskette.
+Aborting...</value>
+  </data>
+  <data name="IDS_SENSOR_STR_VRFND" xml:space="preserve">
+    <value>Virus Found!</value>
+  </data>
+  <data name="IDS_USBPRCTN_USB_NOTSUPPORTED" xml:space="preserve">
+    <value>%s drive cannot be secured. %s volumes are not supported
+ by %s %s.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_FL" xml:space="preserve">
+    <value>File: </value>
+  </data>
+  <data name="IDS_SENSOR_STR_WARN_PART1" xml:space="preserve">
+    <value>This file is set to execute on every boot. Such type of behavior is observed in trojans and worms. There is a possibility that this file is a new trojan or a worm. If you </value>
+  </data>
+  <data name="IDS_SENSOR_STR_WARN_PART2" xml:space="preserve">
+    <value>Suspect it to be so then s the file to %s. If you are sure that the above file is a part of a valid application then please select 'Accept', else select the other option.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_WARN1_PART1" xml:space="preserve">
+    <value>The above file has been changed. It is possible that
+some trojan or worm has patched the above file. If you suspect so then please
+select the 'Repair' option. The above file will be
+Quarantined, </value>
+  </data>
+  <data name="IDS_SENSOR_STR_WARN1_PART2" xml:space="preserve">
+    <value>Please s that file to
+%s. If you are sure that the above change is valid then
+select 'Accept' else select the other option.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_ERRACSABVFL" xml:space="preserve">
+    <value>There was an error accessing the above file. Select
+'Repair' it.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_ERRBLDGSYSDT" xml:space="preserve">
+    <value>There was an error while building system data.
+Some system files may probably be missing.
+Aborting installation.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_CONSTITUENT" xml:space="preserve">
+    <value>*Constituent Country</value>
+  </data>
+  <data name="IDS_SENSOR_STR_INVDARG" xml:space="preserve">
+    <value>
+Invalid arguments.
+Please View SENSOR /? for help.</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_CONSTITUENT" xml:space="preserve">
+    <value>Constituent Country</value>
+  </data>
+  <data name="IDS_INSTALLER_GENGUARD_RUNNING" xml:space="preserve">
+    <value>Installation can not proceed on this system due to one
+of the following reasons:
+
+ - Quick Heal installation was terminated before completion on this system.
+ - System has not been restarted after un-installation.
+
+Restart is required to proceed with the installation.</value>
+  </data>
+  <data name="IDS_UNINSTD_ANTISPAM_PROMPT" xml:space="preserve">
+    <value>%s's Anti-Spam Black list and White list have configuration
+data. It is recommed to have a backup of this data so that it can
+be used later when you wish to re-install %s again.
+
+Do you want to save Anti-Spam configuration data?</value>
+  </data>
+  <data name="IDS_SENSOR_STR_ERR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="IDS_SENSOR_STR_FNDSTRCLNSYS" xml:space="preserve">
+    <value>Found strain of %s in
+%s.
+Please clean your system using %s
+Emergency diskette and try again.
+Aborting...</value>
+  </data>
+  <data name="IDS_UNINSTD_ANTISPAM_INVALIDFOLDER" xml:space="preserve">
+    <value>'%s' is not a valid folder name. Please enter a valid folder name and try again.</value>
+  </data>
+  <data name="IDS_UNINSTD_ANTISPAM_SELECTFOLDER" xml:space="preserve">
+    <value>Select a folder to save Black list and White list into:</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_MAILFROM" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OPER_NEWLATEST_UPDATED" xml:space="preserve">
+    <value>
+Update for Outbreak is successfully applied.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SERVER_EDITION" xml:space="preserve">
+    <value>%s Server edition</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DESKTOP_ERROR" xml:space="preserve">
+    <value>%s is only available 
+for Server systems of Microsoft Windows.
+
+Aborting Installation.</value>
+  </data>
+  <data name="IDS_MAINSTRIING_COPYRIGHT" xml:space="preserve">
+    <value>
+Copyright � 2009 Quick Heal Technologies (P) Ltd., Pune.
+</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_CONFIRM_EMAIL" xml:space="preserve">
+    <value>*Confirm Email Address</value>
+  </data>
+  <data name="IDS_RENEWAL_INFO" xml:space="preserve">
+    <value>If you do not have the renewal code, please visit</value>
+  </data>
+  <data name="IDS_RENEWAL_LINK" xml:space="preserve">
+    <value>http://www.quickheal.co.in/renew.asp</value>
+  </data>
+  <data name="IDS_SCAN_SCANDLG_TIME" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="IDS_LANG_LOCALE_DEC" xml:space="preserve">
+    <value>1033</value>
+  </data>
+  <data name="IDS_SENSOR_STR_REG_NEWENTRY" xml:space="preserve">
+    <value>
+
+New Registry Entry!!!</value>
+  </data>
+  <data name="IDS_SENSOR_STR_SYSFLCHNGD" xml:space="preserve">
+    <value>Some inconsistent system files are repaired.
+For changes to take effect you need to restart your machine.</value>
+  </data>
+  <data name="IDS_SENSOR_STR_QHSENS" xml:space="preserve">
+    <value>%s Startup Scanner Alert!!!</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_INSTALLATION_NUMBER" xml:space="preserve">
+    <value>Installation Number: %s</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_PRODUCT_KEY" xml:space="preserve">
+    <value>Product Key: %s</value>
+  </data>
+  <data name="IDS_SENSOR_STARTUP_CAPTION" xml:space="preserve">
+    <value>%s Startup Scanner - Alert!!!</value>
+  </data>
+  <data name="IDS_SENSOR_LOAD_LIB_FAIL" xml:space="preserve">
+    <value>Inconsistency found in data
+Please reinstall %s</value>
+  </data>
+  <data name="IDS_SENSOR_LOAD_LIB_FAIL_CAPTION" xml:space="preserve">
+    <value>%s Startup Scanner Error</value>
+  </data>
+  <data name="IDS_SENSOR_PROMPTUSER_MSG1" xml:space="preserve">
+    <value>DisableRegistryTools is newly added so that Registry Editor will not run.</value>
+  </data>
+  <data name="IDS_SENSOR_PROMPTUSER_MSG2" xml:space="preserve">
+    <value>
+
+This modification is done by worm. We recomm you to choose Delete
+option.</value>
+  </data>
+  <data name="IDS_SENSOR_PROMPTUSER_MSG3" xml:space="preserve">
+    <value>DisableTaskMgr is newly added so that Task manager will not run.</value>
+  </data>
+  <data name="IDS_SENSOR_MSG_REPAIR" xml:space="preserve">
+    <value>
+
+This modification may be done by new worm. We recomm you to choose Repair option.</value>
+  </data>
+  <data name="IDS_SENSOR_MSG_REPAIR1" xml:space="preserve">
+    <value>Default registry setting for %s is modified to </value>
+  </data>
+  <data name="IDS_SENSOR_MSG_NEW_APP" xml:space="preserve">
+    <value>
+
+Accept only if it is a part of newly installed valid application.</value>
+  </data>
+  <data name="IDS_SENSOR_MSG_BOOT_EXCT" xml:space="preserve">
+    <value>Following file is set to execute on every boot:</value>
+  </data>
+  <data name="IDS_SENSOR_LOGMSG_REPAIR" xml:space="preserve">
+    <value>User selected REPAIR
+</value>
+  </data>
+  <data name="IDS_SENSOR_LOGMSG_QUARANTINED" xml:space="preserve">
+    <value>Above file has been Quarantined
+</value>
+  </data>
+  <data name="IDS_SENSOR_LOGMSG_ACCEPT" xml:space="preserve">
+    <value>User selected ACCEPT
+</value>
+  </data>
+  <data name="IDS_SENSOR_LOGMSG_DELETE" xml:space="preserve">
+    <value>User selected DELETE
+</value>
+  </data>
+  <data name="IDS_SENSOR_LOGMSG_REPAIRSYS" xml:space="preserve">
+    <value>User selected REPAIR
+System file repaired successfully.</value>
+  </data>
+  <data name="IDS_SENSOR_LOGMSG_VERIFYSYSFILES" xml:space="preserve">
+    <value>
+Verified System files Successfully</value>
+  </data>
+  <data name="IDS_SENSOR_INVCHAR" xml:space="preserve">
+    <value>Invalid Character Entered</value>
+  </data>
+  <data name="IDS_SENSOR_RESERR" xml:space="preserve">
+    <value>Response Error</value>
+  </data>
+  <data name="IDS_SENSOR_WNDCAPTION" xml:space="preserve">
+    <value>%s Sensor Error</value>
+  </data>
+  <data name="IDS_SENSOR_ADMIN_MSG" xml:space="preserve">
+    <value>You Cannot remove Registry entry.
+You are Probably in Restricted User Mode</value>
+  </data>
+  <data name="IDS_SENSOR_RESUSR_MSG" xml:space="preserve">
+    <value>
+Cannot Delete the Entry Due to Restricted User Mode
+</value>
+  </data>
+  <data name="IDS_SENSOR_CAP_RESUSR" xml:space="preserve">
+    <value>Restricted User Mode</value>
+  </data>
+  <data name="IDS_SENSOR_INST_FAIL_CAPTION" xml:space="preserve">
+    <value>%s Startup Scanner</value>
+  </data>
+  <data name="IDS_SENSOR_INST_FAILS" xml:space="preserve">
+    <value>Installation failed. Try Again</value>
+  </data>
+  <data name="IDS_SENSOR_START_INCDATA" xml:space="preserve">
+    <value>Inconsistent Data, Reinstall %s</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_ACCEPTDELETE_CAPTION" xml:space="preserve">
+    <value>%s Startup Scanner - Alert!!!</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_ACCEPTDELETE_STC_EVERY" xml:space="preserve">
+    <value>The following file is set to execute on every boot:</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_ACCEPTDELETE_STC_REG" xml:space="preserve">
+    <value>Registry Value:</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_ACCEPTDELETE_BTN_ACCEPT" xml:space="preserve">
+    <value>&amp;Accept</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_ACCEPTDELETE_BTN_DELETE" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_ACCEPTDELETE_BTN_HELP" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_ACCEPTREPAIR_BTN_REPAIR" xml:space="preserve">
+    <value>&amp;Repair</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_COMPLETE_CAPTION" xml:space="preserve">
+    <value>%s Startup Scanner</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_COMPLETE_STC_STARTUP" xml:space="preserve">
+    <value>Verified Successfully</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_COMPLETE_STC_VIEWLOG" xml:space="preserve">
+    <value>Please view log for details</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_CAPTION" xml:space="preserve">
+    <value>%s Startup Scanner Usage</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_STC_USAGE" xml:space="preserve">
+    <value>Usage:</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_STC_EXENAME" xml:space="preserve">
+    <value>Sensor.exe [ options ]</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_STC_OPTIONS" xml:space="preserve">
+    <value>Options:</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_STC_INSTALL" xml:space="preserve">
+    <value>/Install: Installs %s Startup Scanner</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_STC_CHECK" xml:space="preserve">
+    <value>/Check: Checks System for Consistency</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_STC_REBUILD" xml:space="preserve">
+    <value>/Rebuild: Restore Data require for Scanner</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_STC_UNINSTALL" xml:space="preserve">
+    <value>/UnInstall: Remove %s Startup Scanner</value>
+  </data>
+  <data name="IDS_SENSOR_DLG_USAGE_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_MSG_MENU_COPY" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="IDS_MESSENGER_MSGVIEW_DLG_MSG_MENU_SELECTALL" xml:space="preserve">
+    <value>&amp;Select All</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_STC_LSTCON" xml:space="preserve">
+    <value>Last connected on:</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_STC_ACTIVITY" xml:space="preserve">
+    <value>Activity:</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_STC_UNVIEWED" xml:space="preserve">
+    <value>Unviewed Messages:</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_STC_TOTAL" xml:space="preserve">
+    <value>Total messages:</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_BTN_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_CAPTION" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_BUSY" xml:space="preserve">
+    <value>Busy</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_IDEL" xml:space="preserve">
+    <value>Idle</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_BTN_VIEWLOG" xml:space="preserve">
+    <value>&amp;View Log...</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_BTN_OPTIONS" xml:space="preserve">
+    <value>&amp;Options...</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_BTN_MINIMIZE" xml:space="preserve">
+    <value>&amp;Minimize</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_APPLICATION" xml:space="preserve">
+    <value>Installer</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERRNEWFILE" xml:space="preserve">
+    <value>Unable to create new file.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INVALIDFILE" xml:space="preserve">
+    <value>Data Files required for Installation seems to be corrupt.
+Installation cannot proceed further.
+Aborting program.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DSKSPACE" xml:space="preserve">
+    <value>Insufficient disk space.
+Please change the destination folder to 
+other drive or free some disk space to 
+proceed with installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FOLDEREXISTS" xml:space="preserve">
+    <value>%s
+folder already exists.
+Overwrite?</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FOLDERCREATE" xml:space="preserve">
+    <value>%s
+folder does not exist.
+Would you like to create the folder?</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FOLDERCREATEFAIL" xml:space="preserve">
+    <value>Unable to create folder.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_EXTRACTFILE" xml:space="preserve">
+    <value>Extracting %s file...</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FININST" xml:space="preserve">
+    <value>Finished Installation.</value>
+  </data>
+  <data name="IDS_UNINSTA_FILE_MISSING" xml:space="preserve">
+    <value>%s file is missing.</value>
+  </data>
+  <data name="IDS_UNINSTA_FILE_ERR" xml:space="preserve">
+    <value>Invalid %s file.</value>
+  </data>
+  <data name="IDS_UNINSTA_DLL_LOAD_ERR" xml:space="preserve">
+    <value>Unable to load %s.</value>
+  </data>
+  <data name="IDS_UNINSTA_DLL_INVALID" xml:space="preserve">
+    <value>Invalid %s.</value>
+  </data>
+  <data name="IDS_UNINSTA_REM_FILES" xml:space="preserve">
+    <value>Removing Files and Folders</value>
+  </data>
+  <data name="IDS_UNINSTA_REM_REG" xml:space="preserve">
+    <value>Removing Registry entries</value>
+  </data>
+  <data name="IDS_UNINSTA_REM_PRGGRP" xml:space="preserve">
+    <value>Removing Program Shortcuts</value>
+  </data>
+  <data name="IDS_UNINSTA_COMPLETE" xml:space="preserve">
+    <value>Completing uninstallation</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_ALREADYPRESENT" xml:space="preserve">
+    <value>%s is already running.</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_SRNO" xml:space="preserve">
+    <value>Product Key</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_USRNAME" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_RGSTFOR" xml:space="preserve">
+    <value>Registered For</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_PURFROM" xml:space="preserve">
+    <value>Purchased From</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_ADDR" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_COUNTRY" xml:space="preserve">
+    <value>Country/Region</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_STATE" xml:space="preserve">
+    <value>State/Province</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_CITY" xml:space="preserve">
+    <value>City/Town</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_POST" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_PHONE" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_EMAIL" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_ACTNO" xml:space="preserve">
+    <value>Activation Number</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUBDLG_LST_ACTTYPE" xml:space="preserve">
+    <value>Activation Type</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_CABLEMON" xml:space="preserve">
+    <value>As a part of Network Protection driver installation
+you may get prompts saying The software you are
+installing for this hardware has not passed Windows
+logo testing.
+
+Driver signing is under process and will be done by
+next version. Please select Continue Anyway to
+continue with installation. The driver has been tested
+thoroughly and there are no compatibility issues on any
+Windows platforms.
+</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHFW_DOC_NAME" xml:space="preserve">
+    <value>qhfw.doc</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DESKTOP_EDITION" xml:space="preserve">
+    <value>%s Desktop edition</value>
+  </data>
+  <data name="IDS_UNINSTD_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_UNINSTD_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_UNINSTD_UINSTDLG_STC_RICHECKFILES" xml:space="preserve">
+    <value>Removing Integrity check files</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHALERT" xml:space="preserve">
+    <value>Memory scan</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_VIRACTIVE3" xml:space="preserve">
+    <value>Some viruses were found active in memory.
+</value>
+  </data>
+  <data name="IDS_EMLPROXY_SOCKETS_INIT_FAILED" xml:space="preserve">
+    <value>Failed to Initialize Sockets</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FOLDERSEL" xml:space="preserve">
+    <value>Select a folder to install %s.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PATHDISP" xml:space="preserve">
+    <value>Setup will install %s in the folder specified below.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_UPDTCOMP" xml:space="preserve">
+    <value>Please wait while %s is being installed...</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_WELCOME" xml:space="preserve">
+    <value>Welcome to
+%s
+Installation</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QUERYCANCEL" xml:space="preserve">
+    <value>Unable to abort, Installation is in progress.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INVALID_PATH" xml:space="preserve">
+    <value>The specified path is invalid.
+Please give local drive path to proceed with installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NORENAMEFILE" xml:space="preserve">
+    <value>Some previous files already exists in the destination folder.
+Please delete the old files to install %s successfully.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DESKTOP_SHORTCUT" xml:space="preserve">
+    <value>&lt;A CHECK LISTBOX USED IN MISCTASK.CPP&gt;</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_LICENSE_AGREE" xml:space="preserve">
+    <value>                             License Agreement</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_LICENSE_AGREE_SUB" xml:space="preserve">
+    <value>                                        Please read the License Agreement carefully</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DESTINATION_FOLDER" xml:space="preserve">
+    <value>                             Installation Folder</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DESTINATION_FOLDER_SUB" xml:space="preserve">
+    <value>                                        Please select the Installation folder.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INSTALLATION" xml:space="preserve">
+    <value>                             Installation</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INSTALLATION_SUB" xml:space="preserve">
+    <value>                                        Installation in progress</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_README" xml:space="preserve">
+    <value>                             Read Me </value>
+  </data>
+  <data name="IDS_STR_INSTALLER_LAUNCH_APP_NOW" xml:space="preserve">
+    <value>&amp;Update Now</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SUCCESS_INSTD" xml:space="preserve">
+    <value>%s 
+has been successfully installed.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_WELCOME_FW" xml:space="preserve">
+    <value>Welcome to the Installation of
+%s</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PATH_REMOTE" xml:space="preserve">
+    <value>%s cannot be installed on network drive.
+Please specify the folder on local drive to proceed with installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PATH_CDROM" xml:space="preserve">
+    <value>%s cannot be installed on read only drive.
+Please specify the folder on local drive to proceed with installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PATH_UNKNOW_DRV" xml:space="preserve">
+    <value>Unable to detect the drive you have selected.
+Please specify the folder on appropriate drive to proceed with installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NO_ADMIN_RTS" xml:space="preserve">
+    <value>Login user does not have administrator rights 
+for installing this software.
+Please login with administrative rights and try again.
+
+Installation cannot proceed further. Aborting program.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RESTART_MSG" xml:space="preserve">
+    <value>Before you can use %s you must restart the system for configuration changes to take effect.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INST_COMPONENTS" xml:space="preserve">
+    <value>Installing components</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_APPRUNNING" xml:space="preserve">
+    <value>Installer already running on this machine</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PATH_INVALID_CHARS" xml:space="preserve">
+    <value>The given path contains some characters that are not permitted. 
+Please remove the special characters from the installation path.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHTS_COMPONENTS" xml:space="preserve">
+    <value>                             Internet Components</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHTS_COMPONENTS_SUB" xml:space="preserve">
+    <value>                                        Select the Total Security Protection options</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_EXIT_SETUP" xml:space="preserve">
+    <value>You have selected to exit Setup.
+The Installation is not yet complete. 
+
+To continue Installation, click Resume. 
+To quit the Setup, click Exit Setup.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RESUME" xml:space="preserve">
+    <value>&amp;Resume</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_EXIT" xml:space="preserve">
+    <value>E&amp;xit Setup</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FOLDER_INFO" xml:space="preserve">
+    <value>To continue installing in this folder, click Next. To change the installation folder either click Browse and select the new folder or directly type the new path in the editbox below. To quit installation at this stage, click Cancel.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FOLDER_BROWSE" xml:space="preserve">
+    <value>B&amp;rowse...</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_LAUNCH_APP_NAME" xml:space="preserve">
+    <value>Quick Update</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RESTART_NOW" xml:space="preserve">
+    <value>Restart the system now.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RESTART_LATER" xml:space="preserve">
+    <value>I will restart the system later.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_COMBO_ITEM01" xml:space="preserve">
+    <value>I agree</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_COMBO_ITEM02" xml:space="preserve">
+    <value>I disagree</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RADIO_AGREE" xml:space="preserve">
+    <value>I do Agree</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RADIO_NOT_AGREE" xml:space="preserve">
+    <value>I do not Agree (Exit Setup)</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHTS_CAPTION" xml:space="preserve">
+    <value>Select the %s protection options.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTIMALWARE" xml:space="preserve">
+    <value>Anti&amp;Malware Protection (Recommed)</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTIMALWARE_DESC" xml:space="preserve">
+    <value>Protect your system against Internet Malwares i.e. Adware, Spyware etc.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTISPAM" xml:space="preserve">
+    <value>Anti&amp;Spam</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTISPAM_DESC" xml:space="preserve">
+    <value>Prevent unwanted Email coming to your Inbox</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NWPROTECTION" xml:space="preserve">
+    <value>N&amp;etwork Protection</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NWPROTECTION_DESC" xml:space="preserve">
+    <value>Put your system in stealth mode while accessing net (Only for 2K/XP upwards)</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTIPOPUP" xml:space="preserve">
+    <value>Anti-&amp;Popup</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTIPOPUP_DESC" xml:space="preserve">
+    <value>Block annoying Popup Ads</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DISP_EXTRACT_INFO" xml:space="preserve">
+    <value>Extracting...</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_WARN" xml:space="preserve">
+    <value>WARNING: This program is protected by 
+copyright law and international treaties.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_STEPS" xml:space="preserve">
+    <value>Click Next to continue with installation. 
+Click Cancel to quit Setup and close the program.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_COPYRIGHT" xml:space="preserve">
+    <value>Unauthorised reproduction and distribution 
+of this program or any portion of it, may 
+result in severe penalties and will be prosecuted 
+to the maximum possible extent under the law.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NO_UNICODE" xml:space="preserve">
+    <value>The path may not contain any Unicode characters.
+Please specify a path in English only.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INSQH" xml:space="preserve">
+    <value>Insert %s Setup disk 1 in drive %c</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHSETUP" xml:space="preserve">
+    <value>%s Setup</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NORT" xml:space="preserve">
+    <value>You do not have administrative access rights.
+To install driver services properly you need to have
+administrative access rights. 
+
+Please logon as an Administrator and try again.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ALINST" xml:space="preserve">
+    <value>Evaluation copy cannot be installed on this system, as you
+have already used %s previously on this system.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QH_EVAL" xml:space="preserve">
+    <value>%s Evaluation</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SETABT" xml:space="preserve">
+    <value>Aborting Setup</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR" xml:space="preserve">
+    <value>%s was installed on more than one operating systems.
+Uninstall %s from all the operating systems before
+installing %s.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR1" xml:space="preserve">
+    <value>%s is already installed on this system.
+Would you like to uninstall the previous version
+before proceeding with installation?</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHALINT" xml:space="preserve">
+    <value>%s already installed</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR2" xml:space="preserve">
+    <value>%s is already installed on this system.
+You will need to uninstall the previous version 
+before proceeding with new installation.
+
+Aborting installation.
+Please uninstall the previous version and try again.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR3" xml:space="preserve">
+    <value>Previous version of %s was not uninstalled.
+Can not proceed with installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHSHD" xml:space="preserve">
+    <value>%s Scheduler</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PWRSN" xml:space="preserve">
+    <value>%s comes with a powerful scheduler to schedule the scans.
+Would you like to schedule the %s scanner now?</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SCQHSN" xml:space="preserve">
+    <value>Schedule %s Scanner</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_WARN1" xml:space="preserve">
+    <value>One or more files on your computer are infected. 
+It is highly recommed that you scan the system 
+to eliminate the virus(es) after restart.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_REG" xml:space="preserve">
+    <value>%s - Register</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHCUST" xml:space="preserve">
+    <value>It is the right time to fill up the registration card. Register
+your copy and take all the advantages of being a registered
+in %s customer.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DSK1" xml:space="preserve">
+    <value>Insert %s Setup disk 1 in drive %c</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERR" xml:space="preserve">
+    <value>%s Installation Error</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ABTQHSP" xml:space="preserve">
+    <value>Aborting %s Setup</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR4" xml:space="preserve">
+    <value>
+
+Selecting No will loose one of your installation counts.
+Select Cancel to stop installation</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHRBT" xml:space="preserve">
+    <value>%s setup will now reboot the system to remove Online Protection.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHRUN" xml:space="preserve">
+    <value>%s is currently running.
+%s setup will not be able to
+proceed till %s is running.
+
+Close the application to continue with the setup.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR5" xml:space="preserve">
+    <value>Could not locate %s.
+
+Unable to install Word macro virus solution.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SETUPERR" xml:space="preserve">
+    <value>Setup Error</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR6" xml:space="preserve">
+    <value>Unable to install Word macro virus solution. Load MS-WORD and open %s file for macro virus protection.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_CPTERR" xml:space="preserve">
+    <value>QHMSI32.DLL is corrupt.
+Cannot proceed...</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ERROR7" xml:space="preserve">
+    <value>Quick Heal PCTuner is already installed. Please remove it before 
+proceeding with Quick Heal Total Security installation.</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_BROWSETITLE" xml:space="preserve">
+    <value>Browse for folder where %s is installed</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DOWNLOAD_ADMINSITE" xml:space="preserve">
+    <value>Connecting to Admin Server Site...</value>
+  </data>
+  <data name="IDS_STR_LDERR2" xml:space="preserve">
+    <value>Could not load RESCUE.DLL.
+Call for technical support.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_VRFND1" xml:space="preserve">
+    <value>Found some threats in your system. Proceeding with installation
+will not be safe as the installed copy will be infected. We
+recomm you to scan and clean your system using emergency disk.
+
+</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_VRFND" xml:space="preserve">
+    <value>Threats Found</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_VRFND3" xml:space="preserve">
+    <value>We recomm that you scan your complete system
+after finishing the installation.
+
+Found following threats in your system:
+
+</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QHFWINSTOV" xml:space="preserve">
+    <value>QHFW Installation Over</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_TPOFDAY" xml:space="preserve">
+    <value>Tip of the Day</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NAVMAC1" xml:space="preserve">
+    <value>WARNING! Setup has detected that some other AntiVirus
+is also installed on this system. It is not safe to install
+and use two AntiVirus products at the same time.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NAVMAC2" xml:space="preserve">
+    <value>
+
+Please remove your existing AntiVirus before installing
+%s AntiVirus. Otherwise your PC may freeze up
+upon restart.
+
+Click OK to exit the setup or click Cancel to continue
+with setup.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_NAVWARN" xml:space="preserve">
+    <value>%s - Attention!</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_WCAVCUST" xml:space="preserve">
+    <value>Register your copy and take all the advantages
+of being a registered customer.
+
+Fill up the online registration form using register
+online link at http://www.wincleaner.com</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SRVINSTERR" xml:space="preserve">
+    <value>Setup is unable to install Online Protection service.
+Cannot proceed with installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SERVICEPACK_ERROR" xml:space="preserve">
+    <value>To install %s on %s you will
+need to have service pack %d or higher.
+
+Please install %s service pack %d or
+higher and try again.
+Aborting installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SERVER_ERROR" xml:space="preserve">
+    <value>%s is only available 
+for Desktop systems of Microsoft Windows.
+
+Aborting Installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_REINST_QH_SEC_OS" xml:space="preserve">
+    <value>Installation cannot proceed further.
+
+The %s copy on the specified path seems to be inconsistent.
+Please reinstall %s and try again.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FST_COPY_NT_ACTIVATED" xml:space="preserve">
+    <value>Installation cannot proceed further.
+
+The specified copy of %s is not activated.
+Installation will not proceed until the specified copy
+of %s is activated.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_QH_CNT_PROCCED" xml:space="preserve">
+    <value>%s installation cannot proceed.
+Do you want to exit?</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_REMOTE_PATH_ERR" xml:space="preserve">
+    <value>Installation cannot proceed further.
+Please specify the path on local system.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_CD_ROM_PATH_ERR" xml:space="preserve">
+    <value>Installation cannot proceed further.
+Please specify proper folder path.
+Cannot use the CD-ROM drive as path.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_UNKNOWN_PATH_ERR" xml:space="preserve">
+    <value>Installation cannot proceed further.
+Please specify proper folder path.
+Cannot use the current selected path.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_IE_ACROBAT_INST1" xml:space="preserve">
+    <value>Some modules of %s requires Internet Explorer 5.0
+or greater installed in your system. If your system does not
+have Internet Explorer 5.0 or greater, then click on the IE 5.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_IE_ACROBAT_INST2" xml:space="preserve">
+    <value>
+installation icon in the %s program group to install.
+
+To view the User Manual, Acrobat Reader is required.
+You can install Acrobat Reader 5 by clicking on installation
+icon in %s Program group.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_DESK_MULTI" xml:space="preserve">
+    <value>The provided %s folder is a desktop copy that does not support Server.
+Hence Installation cannot proceed with Multi OS installation.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OEM_INSTALLED" xml:space="preserve">
+    <value>Free %s Upgrade subscription of this copy is
+already expired for this system.
+
+To keep on using %s you will have to purchase
+the license copy. To purchase please visit:
+
+</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RTCOM" xml:space="preserve">
+    <value>Your system has not been restarted after previous
+%s un-installation. To complete the previous
+un-installation process successfully you will have to
+restart your system.
+
+%s cannot proceed with installation in this case.
+Please restart your system and try again.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INFO" xml:space="preserve">
+    <value>You have selected to install %s on more than one Operating System. To install %s, please specify the folder of %s where it is already installed.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FOLDER" xml:space="preserve">
+    <value>%s folder:</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_BROWSE" xml:space="preserve">
+    <value>B&amp;rowse...</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SCAN_HEADING" xml:space="preserve">
+    <value>%s Setup is now scanning system areas for viruses.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SCANNING_MEM" xml:space="preserve">
+    <value>Scanning Memory</value>
+  </data>
+  <data name="IDS_INSTALLER_SCANNING_MBR" xml:space="preserve">
+    <value>Scanning Master Boot Record</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SCANNING_SYS_FILES" xml:space="preserve">
+    <value>Scanning System Files</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_SCANSYSTEMAREAS" xml:space="preserve">
+    <value>%s pre-install virus scan</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_MULTI_OS" xml:space="preserve">
+    <value>%s Installer</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_WCSCANSYSTEMAREAS" xml:space="preserve">
+    <value>WinCleaner AntiVirus pre-install virus scan</value>
+  </data>
+  <data name="IDS_INSTALLER_MEMSCAN_UNABLETOLOAD" xml:space="preserve">
+    <value>Unable to load the file %s</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_RECOMM" xml:space="preserve">
+    <value>It is strongly recommed that you exit all running Windows programs before starting installation.</value>
+  </data>
+  <data name="IDS_UNINSTD_APPTITLE" xml:space="preserve">
+    <value>Uninstaller</value>
+  </data>
+  <data name="IDS_UNINSTD_ACT_INFO" xml:space="preserve">
+    <value>Important Information:
+
+Please note down the Product Key of %s. This will be needed, in case you need to re-install %s some time later. You will need the Product Key for reactivation.</value>
+  </data>
+  <data name="IDS_UNINSTD_APPINUSE1" xml:space="preserve">
+    <value>Some components of %s are in use
+through following applications.
+
+</value>
+  </data>
+  <data name="IDS_UNINSTD_APPINUSE2" xml:space="preserve">
+    <value>Please close all the above applications
+and try to uninstall again.</value>
+  </data>
+  <data name="IDS_UNINSTD_INVALIDPASSWORD" xml:space="preserve">
+    <value>The password is not valid.</value>
+  </data>
+  <data name="IDS_UNINSTD_USEENT" xml:space="preserve">
+    <value>Please use %s Admin Console Uninstaller.</value>
+  </data>
+  <data name="IDS_UNINSTD_IMPROPER_INST" xml:space="preserve">
+    <value>%s is not properly installed on your system.
+Please reinstall %s.</value>
+  </data>
+  <data name="IDS_UNINSTD_APP_RUNNING" xml:space="preserve">
+    <value>%s is currently running.
+
+Uninstall will not be able to proceed till the application is running.
+
+Close %s and try again.</value>
+  </data>
+  <data name="IDS_UNINSTD_PASSWORD" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="IDS_UNINSTD_ENTERPASS" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="IDS_UNINSTD_REMREPORT" xml:space="preserve">
+    <value>Remove &amp;Report files</value>
+  </data>
+  <data name="IDS_UNINSTD_SRNO" xml:space="preserve">
+    <value>Product Key:</value>
+  </data>
+  <data name="IDS_UNINSTD_ACTNO" xml:space="preserve">
+    <value>Activation Number:</value>
+  </data>
+  <data name="IDS_UNINSTA_APPTITLE" xml:space="preserve">
+    <value>Uninstaller</value>
+  </data>
+  <data name="IDS_UNINSTA_REBOOT_MSG" xml:space="preserve">
+    <value>%s uninstall is rebooting the system.
+The remaining uninstallation will be continued after reboot.
+Please close all the programs or else your data might be lost.
+
+Restart your computer now?</value>
+  </data>
+  <data name="IDS_UNINSTA_PRE_MSG" xml:space="preserve">
+    <value>Removing installed components</value>
+  </data>
+  <data name="IDS_UNINSTA_FINISHED" xml:space="preserve">
+    <value>%s has been successfully uninstalled from your system.</value>
+  </data>
+  <data name="IDS_UNINSTA_ADMIN_PRVLG" xml:space="preserve">
+    <value>In order to uninstall this application,
+you must have Administrative Privileges.
+Please Log In as an Administrator.</value>
+  </data>
+  <data name="IDS_UNINSTA_RESTART_MSG" xml:space="preserve">
+    <value>Please restart the Windows to continue Uninstallation.</value>
+  </data>
+  <data name="IDS_UNINSTA_CONFIRM_MSG" xml:space="preserve">
+    <value>This will remove %s from your computer.
+
+Do you wish to proceed?</value>
+  </data>
+  <data name="IDS_UNINSTA_FAIL_MSG" xml:space="preserve">
+    <value>%s Uninstallation failed.</value>
+  </data>
+  <data name="IDS_UNINSTA_RESTART_CONFIRM" xml:space="preserve">
+    <value>It is recommed that you restart your computer.
+Do you want to restart your computer now?</value>
+  </data>
+  <data name="IDS_EMLPROXY_LOAD_FAILED" xml:space="preserve">
+    <value>Unable to load %s</value>
+  </data>
+  <data name="IDS_EMLPROXY_ERROR_INIT" xml:space="preserve">
+    <value>Failed to Initialize %s %s</value>
+  </data>
+  <data name="IDS_EMLPROXY_OTHER_APP" xml:space="preserve">
+    <value>%s %s can not start.
+
+Please check if any other Application or Service is running on your system from Port %d to %d. Please close such applications or services those are currently running on this port range.
+
+Then try to start %s %s.</value>
+  </data>
+  <data name="IDS_EMLPROXY_PRODUCT_DESC" xml:space="preserve">
+    <value>Email Protection</value>
+  </data>
+  <data name="IDS_EMLPROXY_SMTP_WARN1" xml:space="preserve">
+    <value>The above application is trying to s Emails. This application is not configured as Trusted Email Client, hence Internet access to this application has been blocked.</value>
+  </data>
+  <data name="IDS_EMLPROXY_SMTP_WARN2" xml:space="preserve">
+    <value>NOTE: Add only if you are sure that this is a legal Email Client.
+
+Do you want to add this application as Trusted Email Client?</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_VIRFOUND" xml:space="preserve">
+    <value>Detected:</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ATTACHMENT" xml:space="preserve">
+    <value>Attachment:</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ACTION" xml:space="preserve">
+    <value>Action:</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ACTIONON1" xml:space="preserve">
+    <value>Message Rule: Block All Attachments</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ACTIONON2" xml:space="preserve">
+    <value>Message Rule: Block Specified Attachments</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ACTIONON3" xml:space="preserve">
+    <value>Exploit: Multiple Extension</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_ACTIONON4" xml:space="preserve">
+    <value>Exploit: Message Partial</value>
+  </data>
+  <data name="IDS_MESSENGER_VIEWLOG" xml:space="preserve">
+    <value>View log...</value>
+  </data>
+  <data name="IDS_MESSENGER_OPTIONS" xml:space="preserve">
+    <value>Options...</value>
+  </data>
+  <data name="IDS_MESSENGER_STATUS" xml:space="preserve">
+    <value>Status...</value>
+  </data>
+  <data name="IDS_MESSENGER_CHECKNOW" xml:space="preserve">
+    <value>Check Now</value>
+  </data>
+  <data name="IDS_MESSENGER_CLOSE" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="IDS_MESSENGER_QHBULETTIN_STATUSDLG_UNKNOWN" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="IDS_RENEWAL_MODULENAME" xml:space="preserve">
+    <value>%s Renewal</value>
+  </data>
+  <data name="IDS_RENEWAL_ADD_RECORD" xml:space="preserve">
+    <value>This Product Key does not exists.
+Please specify the exact Product Key provided
+to you at the time of first activation.
+
+If you do not have the activation number
+Please contact %s at
+
+%s</value>
+  </data>
+  <data name="IDS_RENEWAL_INET_CONN_NOTAVAILABLE" xml:space="preserve">
+    <value>Unable to find Internet Connection. Please connect
+to internet and try again</value>
+  </data>
+  <data name="IDS_RENEWAL_INVALID_SERIAL_NUMBER" xml:space="preserve">
+    <value>Product Key you have supplied is Invalid
+Please enter the exact Product Key.</value>
+  </data>
+  <data name="IDS_RENEWAL_ACTIVATION_NUM_REQUIRED" xml:space="preserve">
+    <value>This copy has been activated previously.
+Specify the exact Activation Number provided
+to you at the time of first activation.
+
+If you do not have the activation number
+Please contact %s at
+
+%s</value>
+  </data>
+  <data name="IDS_RENEWAL_EXPIRED_COPY" xml:space="preserve">
+    <value>This copy of %s can not be activated.
+The License time period of the copy has expired
+
+To purchase a fresh copy of %s or to renew the 
+subscription please contact %s at
+
+%s</value>
+  </data>
+  <data name="IDS_RENEWAL_ACTIVATION_WITHIN_20DAYS" xml:space="preserve">
+    <value>Activation for this copy of %s denied by the server.
+Please contact %s for assistance at
+
+%s</value>
+  </data>
+  <data name="IDS_RENEWAL_INVALID_RESPONCE" xml:space="preserve">
+    <value>Server response is slow. This may be due
+to high traffic at this time.
+
+Please try again after some time.
+Write to %s if this
+problem persists.</value>
+  </data>
+  <data name="IDS_RENEWAL_INVALID_RNEWCD" xml:space="preserve">
+    <value>The Renewal Code is invalid.</value>
+  </data>
+  <data name="IDS_RENEWAL_RNEWCD_NOTENTERED" xml:space="preserve">
+    <value>The Renewal Code is not entered.</value>
+  </data>
+  <data name="IDS_RENEWAL_INVALID_SRNO" xml:space="preserve">
+    <value>The Product Key is invalid.
+Please enter correct Product Key to proceed.</value>
+  </data>
+  <data name="IDS_RENEWAL_SRNO_NOTENTERED" xml:space="preserve">
+    <value>The Product Key is not entered.</value>
+  </data>
+  <data name="IDS_RENEWAL_ACTNO_NOTENTERED" xml:space="preserve">
+    <value>The Activation Number is not entered.</value>
+  </data>
+  <data name="IDS_RENEWAL_INVALID_ACTNO" xml:space="preserve">
+    <value>The Activation Number is invalid.</value>
+  </data>
+  <data name="IDS_RENEWAL_EXPDT_PASSED" xml:space="preserve">
+    <value>The Renewal duration is already over.
+The copy cannot be renewed anymore.</value>
+  </data>
+  <data name="IDS_RENEWAL_EXPDT_YET_COME" xml:space="preserve">
+    <value>The %s copy cannot be renewed now.
+Renewal duration is within two months before/after
+the expiry date.</value>
+  </data>
+  <data name="IDS_RENEWAL_RNCD_ALREADY_EXITS" xml:space="preserve">
+    <value>Cannot proceed with the provided Renewal Code.
+
+The Renewal Code already registered.
+Renewal Code can be used only once.</value>
+  </data>
+  <data name="IDS_RENEWAL_USN_CMN_FAILED" xml:space="preserve">
+    <value>Unable to get the user name and company name.</value>
+  </data>
+  <data name="IDS_RENEWAL_EXP_RNEWCD" xml:space="preserve">
+    <value>The Renewal Code is Expired.
+This Renewal Code cannot be used anymore.</value>
+  </data>
+  <data name="IDS_RENEWAL_COPY_REACTIVATED_SUCCESSFULLY" xml:space="preserve">
+    <value>The copy of %s Renewed successfully.</value>
+  </data>
+  <data name="IDS_RENEWAL_ITIS_NOT_INTERNETLOCK_COPY" xml:space="preserve">
+    <value>This copy of %s is an Evaluation copy.
+This copy cannot be renewed.</value>
+  </data>
+  <data name="IDS_RENEWAL_DESK_SRNO_TO_SERVER_COPY" xml:space="preserve">
+    <value>The Renewal Code entered is not applicable for this copy.
+Please provide proper Renewal Code.</value>
+  </data>
+  <data name="IDS_RENEWAL_PURCHASE_FRM_NOTENTERED" xml:space="preserve">
+    <value>The purchase from value is not entered.</value>
+  </data>
+  <data name="IDS_RENEWAL_FAILED_TO_LOAD_INETSDK" xml:space="preserve">
+    <value>Error in Loading INETSDK.DLL. Unable to proceed with
+Activation. Please contact %s.</value>
+  </data>
+  <data name="IDS_RENEWAL_RNEW_ALREADY_LOADED" xml:space="preserve">
+    <value>The application already loaded in Memory.</value>
+  </data>
+  <data name="IDS_RENEWAL_USR_NO_ADMIN_RTS" xml:space="preserve">
+    <value>You do not have administrative access rights.
+Please logon as an Administrator and try again.</value>
+  </data>
+  <data name="IDS_RENEWAL_COPY_UNABLE_TO_CNG_REGACT" xml:space="preserve">
+    <value>Unable to renew %s.</value>
+  </data>
+  <data name="IDS_RENEWAL_REINST_QH_ON_OLD_OS" xml:space="preserve">
+    <value>Please reinstall the %s on the Old Operating System.
+Renewal unable to detect %s.</value>
+  </data>
+  <data name="IDS_RENEWAL_OLD_QH_NOT_ACTIVATED" xml:space="preserve">
+    <value>You have not activated the first copy of %s.
+Installation will not proceed until the first copy of %s is activated.
+Aborting Installation</value>
+  </data>
+  <data name="IDS_RENEWAL_SPECIAL_CHR_SERIALNO" xml:space="preserve">
+    <value>Special characters not allowed in the Product Key.
+Please enter appropriate Product Key to proceed.</value>
+  </data>
+  <data name="IDS_RENEWAL_SPECIAL_CHR_ACTNO" xml:space="preserve">
+    <value>Special characters not allowed in the Activation Number.
+Please enter appropriate Activation Number to proceed.</value>
+  </data>
+  <data name="IDS_RENEWAL_SPECIAL_CHR_RNEWNO" xml:space="preserve">
+    <value>Special characters not allowed in the Renewal Code.
+Please enter appropriate Renewal Code to proceed.</value>
+  </data>
+  <data name="IDS_RENEWAL_SPECIAL_CHR_PFR" xml:space="preserve">
+    <value>Special characters not allowed in the Purchase From Field.
+Please enter appropriate Purchase From value to proceed.</value>
+  </data>
+  <data name="IDS_RENEWAL_INVALID_KEY_FILE" xml:space="preserve">
+    <value>The file you have specified is not a valid LICENSE.KEY file.
+Can not Renew copy with the given file.</value>
+  </data>
+  <data name="IDS_RENEWAL_DLG_PARENT_NT_FND" xml:space="preserve">
+    <value>Unexpected error occurred.
+Application Terminated.</value>
+  </data>
+  <data name="IDS_RENEWAL_COPY_ALREADY_ACTIVATED" xml:space="preserve">
+    <value>The copy of %s already renewed.</value>
+  </data>
+  <data name="IDS_RENEWAL_QH_NOT_INST" xml:space="preserve">
+    <value>%s is not installed on the system.
+Please install %s if you want to Renew it</value>
+  </data>
+  <data name="IDS_RENEWAL_UNABLE_TO_REACTIVATE" xml:space="preserve">
+    <value>Unable to reactivate the %s copy.</value>
+  </data>
+  <data name="IDS_RENEWAL_ACT_REC_FAILED" xml:space="preserve">
+    <value>Unable to create activation record.
+Please abort this activation and try again.</value>
+  </data>
+  <data name="IDS_RENEWAL_RNCDADD_FAILED" xml:space="preserve">
+    <value>Unable to add the renewal record.
+Please abort this activation and try again later.</value>
+  </data>
+  <data name="IDS_RENEWAL_EXPDT_UPDT_FAILED" xml:space="preserve">
+    <value>Unable to update the expiry date.
+Please contact %s at
+
+%s.</value>
+  </data>
+  <data name="IDS_RENEWAL_ERR_DEFAULT" xml:space="preserve">
+    <value>Some internal error occured.
+Please abort this session and try again later.</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_DRIVE_REMOTE" xml:space="preserve">
+    <value>Please specify the path on local system.
+Cannot select remote machine path.
+Installation cannot proceed further.</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_DRIVE_CDROM" xml:space="preserve">
+    <value>Please specify proper folder path.
+Cannot use the CD-ROM drive as path.
+Installation cannot proceed further.</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_DRIVE_UNKNOWN" xml:space="preserve">
+    <value>Please specify proper folder path.
+Cannot use the current selected path.
+Installation cannot proceed further.</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_DEFAULT" xml:space="preserve">
+    <value>Please specify the path on local system.
+Cannot select remote machine path.
+Installation cannot proceed further.</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_MODULENAME" xml:space="preserve">
+    <value>%s Installer</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINERENEWAL_MODULENAME" xml:space="preserve">
+    <value>%s Offline Renewal</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINERENEWAL_ERR_UNEXPECTED" xml:space="preserve">
+    <value>Unexpected error occurred.</value>
+  </data>
+  <data name="IDS_RENEWAL_ONLINERENEWAL_MODULENAME" xml:space="preserve">
+    <value>%s Renewal</value>
+  </data>
+  <data name="IDS_RENEWAL_ONLINERENEWAL_NO_INET_CONNECTION" xml:space="preserve">
+    <value>Unable to find Internet Connection. Please connect
+to internet and try again.</value>
+  </data>
+  <data name="IDS_RENEWAL_ABOUT_MODULENAME" xml:space="preserve">
+    <value>About %s Renewal</value>
+  </data>
+  <data name="IDS_RENEWAL_ABOUT_COPYRIGHT" xml:space="preserve">
+    <value>Copyright � 2009 %s (P). Ltd.</value>
+  </data>
+  <data name="IDS_RENEWAL_HELP" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="IDS_RENEWAL_TITLE" xml:space="preserve">
+    <value>Renewal Tool</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_GRP" xml:space="preserve">
+    <value>Offline Renewal</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_MSG" xml:space="preserve">
+    <value>You will need to fill the off-line renewal form on our website. After filling the form you will be provided with a license.key file. You may need following information along with renewal code to fill the offline renewal form:</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_SRLNO" xml:space="preserve">
+    <value>&amp;Product Key:</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_ACTNO" xml:space="preserve">
+    <value>&amp;Activation Number:</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_INSTNO" xml:space="preserve">
+    <value>&amp;Installation Number:</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_HELP" xml:space="preserve">
+    <value>Please visit %s.
+If you already have the Renewal license.key file please click Next.</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_NEXT" xml:space="preserve">
+    <value>Ne&amp;xt</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINEDLG_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_GRP" xml:space="preserve">
+    <value>Multi OS Renewal</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_1" xml:space="preserve">
+    <value>You have selected to renew Quick Heal on more than one Operating System on same PC. To proceed renewal using /multi you must have renewed atleast one installation of Quick Heal on the same PC. To renew</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_2" xml:space="preserve">
+    <value>%s on the second Operating System, please specify the folder of %s that is already renewed.</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_BROWSE" xml:space="preserve">
+    <value>B&amp;rowse...</value>
+  </data>
+  <data name="IDS_RENEWAL_OFFLINE_LSCKEY" xml:space="preserve">
+    <value>You need to have Renewal license.key file to proceed further.
+Please specify the path to license key file below and press Next.</value>
+  </data>
+  <data name="IDS_RENEWAL_ONLINEDLG_GRP" xml:space="preserve">
+    <value>Renewal Information</value>
+  </data>
+  <data name="IDS_RENEWAL_ONLINEDLG_SRLNO" xml:space="preserve">
+    <value>&amp;Product Key:</value>
+  </data>
+  <data name="IDS_RENEWAL_ONLINEDLG_ACTNO" xml:space="preserve">
+    <value>&amp;Activation Number:</value>
+  </data>
+  <data name="IDS_RENEWAL_ONLINEDLG_RNEWNO" xml:space="preserve">
+    <value>&amp;Renewal Code:</value>
+  </data>
+  <data name="IDS_RENEWAL_ONLINEDLG_PFR_FRM" xml:space="preserve">
+    <value>&amp;Purchased From:</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_RENEWAL_MULTIOSDLG_CANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_RENEWAL_QHRNEWDLG_OFFLINE" xml:space="preserve">
+    <value>Renew O&amp;ffline</value>
+  </data>
+  <data name="IDS_RENEWAL_SUCCESSINFODLG_MSG" xml:space="preserve">
+    <value>Your copy of %s Renewed Successfully</value>
+  </data>
+  <data name="IDS_RENEWAL_SUCCESSINFODLG_USRNAME" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="IDS_RENEWAL_SUCCESSINFODLG_COMNAME" xml:space="preserve">
+    <value>Company Name:</value>
+  </data>
+  <data name="IDS_RENEWAL_SUCCESSINFODLG_SRLNO" xml:space="preserve">
+    <value>Product Key:</value>
+  </data>
+  <data name="IDS_RENEWAL_SUCCESSINFODLG_NEXPDATE" xml:space="preserve">
+    <value>New Expiry Date:</value>
+  </data>
+  <data name="IDS_RENEWAL_SUCCESSINFODLG_NOTAVAILABLE" xml:space="preserve">
+    <value>Not Available</value>
+  </data>
+  <data name="IDS_EUSCAN_PROTECTION" xml:space="preserve">
+    <value>Eudora Protection</value>
+  </data>
+  <data name="IDS_EUSCAN_ACTION_NOT_S" xml:space="preserve">
+    <value>Email NOT Sent.</value>
+  </data>
+  <data name="IDS_OE_PROTECTION" xml:space="preserve">
+    <value>Outlook Express Protection</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_FOUND_MSG" xml:space="preserve">
+    <value>Setup has detected %s installed on this system. %s is not compatible with this program. It is recommed to uninstall this product. Click Uninstall to uninstall %s.
+
+To keep %s and proceed with installation click Continue. </value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_CONT_MSG" xml:space="preserve">
+    <value>The following programs of %s are incompatible with %s. Loading following programs along with %s may create issues like freezing the system. It is recommed to disable following programs of %s to avoid the incompatibility issues.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_ONLINE_CHK" xml:space="preserve">
+    <value>Disable O&amp;nline Protection</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_EMAIL_CHK" xml:space="preserve">
+    <value>Disable E&amp;mail Protection</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_QHFOUND_MSG" xml:space="preserve">
+    <value>Setup has detected older version of %s installed on this system. To uninstall the older version of %s Click Uninstall.
+
+To keep the older version and quit the setup Click Exit Setup.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_CAPTION_UNINSTALL" xml:space="preserve">
+    <value>&amp;Uninstall</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_CAPTION_EXIT_SETUP" xml:space="preserve">
+    <value>E&amp;xit Setup</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_CAPTION_INCOMPATIBLE_PROGRAM" xml:space="preserve">
+    <value>Incompatible Program Detected</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_LAUNCH_INSTALLFIREWALL" xml:space="preserve">
+    <value>Install Quick Heal &amp;Firewall Pro</value>
+  </data>
+  <data name="IDS_STR_NATIVESET_UNABLETOSCHEDULEMSG" xml:space="preserve">
+    <value>Unable to schedule Native Boot Scan to execute for next boot.
+Native Boot Scanner files may be corrupt or damaged.
+Please use the Emergency Bootable CD to clean the system.</value>
+  </data>
+  <data name="IDS_RENEWAL_RNKEY_ALREADY_EXITS" xml:space="preserve">
+    <value>Cannot proceed with the provided Renewal Key.
+
+The Renewal Key is already registered.
+Renewal Key can be used only once.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_FIREWALL_NOTSPP" xml:space="preserve">
+    <value>Quick Heal Firewall Pro can not be installed on this operating system.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_PHONE_NOS" xml:space="preserve">
+    <value>+91-20-65223883/92</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DLGLOCATE_OPTADMIN" xml:space="preserve">
+    <value>Download from &amp;Admin Console Server</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_ADMIN_ROAMPERIODOVER" xml:space="preserve">
+    <value>You have not connected to your Corporate Network since last 2 months.
+To get further definition updates for %s you need to connect to your
+Corporate Network.
+
+Note: Corporate Network is the network where %s Admin Console
+is installed. For more information, contact your System Administrator.</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_ADMIN_NAME" xml:space="preserve">
+    <value>*Company/Organization Email</value>
+  </data>
+  <data name="IDS_ACTIVATION_DLG_MINFO_ADMIN_EMAIL" xml:space="preserve">
+    <value>*Admin Email Address</value>
+  </data>
+  <data name="IDS_REMIND_ABOUTTOEXPIRE" xml:space="preserve">
+    <value>Your %s upgrade
+subscription is about to expire in %d day(s).</value>
+  </data>
+  <data name="IDS_REMIND_EXPIRINGTODAY" xml:space="preserve">
+    <value>Your %s upgrade
+subscription is expiring Today.</value>
+  </data>
+  <data name="IDS_REMIND_EXPIRED" xml:space="preserve">
+    <value>Your %s upgrade
+subscription is expired.</value>
+  </data>
+  <data name="IDS_UNINSTD_REMQUAR" xml:space="preserve">
+    <value>Remove &amp;Quarantine/Backup files</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_INSTALL" xml:space="preserve">
+    <value>Installation</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_WHATSNEW" xml:space="preserve">
+    <value>Whats New</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_BLOCKALL" xml:space="preserve">
+    <value>Configured to block all attachments.
+Attachment(s) deleted are:
+
+</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_CAPTION_INCOMPATIBLE_MODULE" xml:space="preserve">
+    <value>Incompatible Module</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_CAPTION_QUIT" xml:space="preserve">
+    <value>E&amp;xit Setup</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_OAV_CAPTION_CONTINUE" xml:space="preserve">
+    <value>Co&amp;ntinue</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_SDNASCAN_INFORMATION" xml:space="preserve">
+    <value>There are new suspicious file entries in your Quarantine folder, that are yet to be submitted to research lab. Suspicious file submission ensures the detailed analysis of the file in research lab of Quick Heal. After the detailed analysis it can be added in the known virus signature database which will be provided in updates to all the users.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_SDNASCAN_YES" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_SDNASCAN_NO" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_SDNASCAN_DONTSHOWNEXTTIME" xml:space="preserve">
+    <value>&amp;Don't display this message next time.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTIPHISHINST" xml:space="preserve">
+    <value>AntiP&amp;hishing</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_ANTIPHISHINST_DESC" xml:space="preserve">
+    <value>Block Phishing Sites</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_SERVICESTART" xml:space="preserve">
+    <value>Quick Update service is not started. Please re-install %s.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_AGREEMSG" xml:space="preserve">
+    <value>Do you agree to all the terms of this license agreement?</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_RESTRICTED_SERVICESTART" xml:space="preserve">
+    <value>Quick Update service is not started. To start this service follow the below given steps:
+1. Login as Administrative user account.
+2. Start the Quick Update Service.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_COPY_BLOCKED" xml:space="preserve">
+    <value>Your %s Product Key is being used from
+multiple installations. Updates for this Product Key are being
+downloaded from multiple locations. Each %s   
+Product Key can download updates only for single PC.
+
+Unable to update your copy of %s.
+Please contact your vor or %s Support to
+resolve this problem.</value>
+  </data>
+  <data name="IDS_SENSOR_NOTAPPLICABLE" xml:space="preserve">
+    <value>Startup Scanner is not applicable for this Operating System.</value>
+  </data>
+  <data name="IDS_STR_INSTALLER_PM_ACTIVATENOW" xml:space="preserve">
+    <value>Activate Quick Heal Total Security</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_PRODUCT_MSG" xml:space="preserve">
+    <value>The definition file is not applicable for %s.
+
+Aborting the update process.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OSNT_MSG" xml:space="preserve">
+    <value>The definition file is not applicable for %s
+on Windows NT and above Operating Systems.
+
+Aborting the update process.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_OS9X_MSG" xml:space="preserve">
+    <value>The definition file is not applicable for %s
+on Windows 95/98 and ME Operating System.
+
+Aborting the update process.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_ARCH64_MSG" xml:space="preserve">
+    <value>The definition file is not applicable for %s
+on 64-bit editions of Windows XP/2003/Vista/2008 Operating System.
+
+Aborting the update process.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_ARCH32_MSG" xml:space="preserve">
+    <value>The definition file is not applicable for %s
+on 32-bit editions of Windows NT and above Operating Systems.
+
+Aborting the update process.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_LANGUAGE_MSG" xml:space="preserve">
+    <value>The definition file is not applicable for %s version of
+%s.
+
+Aborting the update process.</value>
+  </data>
+  <data name="IDS_PRODUCT_LANGUAGE" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="IDS_ANTIPHIS_CAPTION" xml:space="preserve">
+    <value>%s AntiPhishing</value>
+  </data>
+  <data name="IDS_ANTIPHIS_PHISHFILTER" xml:space="preserve">
+    <value>Phishing Filter</value>
+  </data>
+  <data name="IDS_ANTIPHIS_PHISHFILTER_MSG" xml:space="preserve">
+    <value>%s AntiPhishing has detected that Internet Explorer's AntiPhishing is enabled. Running two or more AntiPhishing could affect your browsing experience in the following ways:
+
+1. Inconsistent result may be seen.
+2. Browsing speed may slow down.</value>
+  </data>
+  <data name="IDS_ANTIPHIS_PHISHFILTER_DISABLE" xml:space="preserve">
+    <value>Disable Internet Explorer's AntiPhishing, enable %s AntiPhishing.</value>
+  </data>
+  <data name="IDS_ANTIPHIS_PHISHFILTER_ENABLE" xml:space="preserve">
+    <value>Keep Internet Explorer's AntiPhishing enabled.</value>
+  </data>
+  <data name="IDS_ANTIPHIS_OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="IDS_ANTIPHIS_ENABLE_TOOLTIP_MSG" xml:space="preserve">
+    <value>%s AntiPhishing status will be displayed when you browse next.</value>
+  </data>
+  <data name="IDS_ANTIPHIS_DISABLE_TOOLTIP_MSG" xml:space="preserve">
+    <value>To view the blocked Phishing site, Click on 'I want to visit this page anyway' on this page or Restart your browser.</value>
+  </data>
+  <data name="IDS_ANTIPHIS_REPORTPHISH" xml:space="preserve">
+    <value>Report a Phishing site</value>
+  </data>
+  <data name="IDS_ANTIPHIS_REPORTNONPHISH" xml:space="preserve">
+    <value>Report an Incorrectly Blocked site</value>
+  </data>
+  <data name="IDS_ANTIPHIS_DISABLEANTIPHISH" xml:space="preserve">
+    <value>Disable %s AntiPhishing Toolbar</value>
+  </data>
+  <data name="IDS_ANTIPHIS_HELP" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="IDS_ANTIPHIS_ENABLEANTIPHISH" xml:space="preserve">
+    <value>Enable %s AntiPhishing Toolbar</value>
+  </data>
+  <data name="IDS_STR_NTCANL" xml:space="preserve">
+    <value>Please check if %s 
+is properly installed. 
+Uninstall and reinstall it again.</value>
+  </data>
+  <data name="IDS_MAINSTRING_COMPANYNAME_CORE" xml:space="preserve">
+    <value>Quick Heal</value>
+  </data>
+  <data name="IDS_MAINSTRING_PRODUCTNAME" xml:space="preserve">
+    <value>Quick Heal Total Security</value>
+  </data>
+  <data name="IDS_ANTIPHIS_PHISHSITE" xml:space="preserve">
+    <value>Phishing Site:</value>
+  </data>
+  <data name="IDS_ANTIPHIS_ACTIONTAKEN_VISITED" xml:space="preserve">
+    <value>Action Taken: Visited</value>
+  </data>
+  <data name="IDS_ANTIPHIS_ACTIONTAKEN_NOTVISITED" xml:space="preserve">
+    <value>Action Taken: Not Visited</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_DEF_ERROR" xml:space="preserve">
+    <value>
+The update definition file is corrupt.
+
+Aborting Update Process.</value>
+  </data>
+  <data name="IDS_ACTIVATION_FIRST_ACTIVATION" xml:space="preserve">
+    <value>First Activation</value>
+  </data>
+  <data name="IDS_ACTIVATION_REACTIVATION" xml:space="preserve">
+    <value>Reactivation</value>
+  </data>
+  <data name="IDS_ACTIVATION_STR_OTHER" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="IDS_EMLPROXY_VIRDLG_VIRUS" xml:space="preserve">
+    <value>Virus:</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_ADMIN_ROAMPERIODOVER1" xml:space="preserve">
+    <value>You have not connected to your Corporate Network
+since last 2 months. To get further definition updates
+for %s you need to connect to your
+Corporate Network.
+
+Note: Corporate Network is the network where
+%s Admin Console is installed. For more
+information, contact your System Administrator.</value>
+  </data>
+  <data name="IDS_REMIND_BUYNOW" xml:space="preserve">
+    <value>&amp;Buy Now...</value>
+  </data>
+  <data name="IDS_REMIND_CLOSE" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="IDS_ACTIVATION_MSG_CONFIRM_EMAIL" xml:space="preserve">
+    <value>Confirm Email Address should be same as Email Address.</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUB_MULTIUSER_PACK" xml:space="preserve">
+    <value>Multi User Pack Activation.</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUB_MULTIUSER_PACK_DETAIL" xml:space="preserve">
+    <value>Accept the Multi User Pack activation details.</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUB_MULTIUSER_MSG" xml:space="preserve">
+    <value>The provided Product Key belongs to a Multi User Pack that is already registered. Below
+are the registration details of the Multi User Pack which will be applicable to the provided
+Product Key. To continue with activation click Next, to quit the activation click Cancel.</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUB_EXPIRY_DATE" xml:space="preserve">
+    <value>Subscription valid till</value>
+  </data>
+  <data name="IDS_ACTIVATION_SUB_REACT_MSG" xml:space="preserve">
+    <value>The provided Product Key is already registered with following details.
+To activate your copy click Next. To quit the activation process click Cancel.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_EMAILID" xml:space="preserve">
+    <value>&amp;Email :</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_EMAILID_REQUIRED" xml:space="preserve">
+    <value>To submit quarantined file, provide your email address below and click OK.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_INVALID_EMAILID" xml:space="preserve">
+    <value>Please provide correct email address.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_REBOOTPROMPT_REBOOTMSG" xml:space="preserve">
+    <value>Quick Update has downloaded a critical update which requires the system to restart. Quick update will not download further updates until the next restart hence your system may be exposed to new threats.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_REBOOTPROMPT_UPDIMP" xml:space="preserve">
+    <value>If you wish to restart your system now, please save all your work and reboot your system. Incase if you wish to restart later, select the desired time so that Quick Update will remind you again about the restart.</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_REBOOTPROMPT_REMINDME" xml:space="preserve">
+    <value>&amp;Remind me after </value>
+  </data>
+  <data name="IDS_LIVEUPDATE_REBOOTPROMPT_TIMEINTERVAL1" xml:space="preserve">
+    <value>30 mins</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_REBOOTPROMPT_TIMEINTERVAL2" xml:space="preserve">
+    <value>1 hour</value>
+  </data>
+  <data name="IDS_LIVEUPDATE_REBOOTPROMPT_TIMEINTERVAL3" xml:space="preserve">
+    <value>2 hours</value>
+  </data>
+  <data name="IDS_USBPRCTN_PRODUCT_NAME" xml:space="preserve">
+    <value>Autorun Protection</value>
+  </data>
+</root>

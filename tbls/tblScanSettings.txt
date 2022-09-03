@@ -1,0 +1,40 @@
+tblScanSettings
+
+ID (int)
+ScanMode (int)
+ScanAction (int)
+Backup (bool)
+IsDefault (bool)
+cID (int)
+cScanItem (int)
+cScanArchive (bool)
+cScanPacked (bool)
+cScanMailB (int)
+cIsDefault (bool)
+ccID (int)
+ccAction (int)
+ccLevel (int)
+ccArType (char 10)
+ccIsDefault (bool)
+
+
+CREATE TABLE tblScanSettings (
+    ID           INTEGER   PRIMARY KEY
+                           UNIQUE
+                           NOT NULL,
+    ScanMode     INTEGER,
+    ScanAction   INTEGER,
+    Backup       BOOLEAN,
+    IsDefault    BOOLEAN,
+    cID          INTEGER,
+    cScanItem    INTEGER,
+    cScanArchive BOOLEAN,
+    cScanPacked  BOOLEAN,
+    cScanMailB   INTEGER,
+    cIsDefault   BOOLEAN,
+    ccID         INTEGER,
+    ccAction     INTEGER,
+    ccLevel      INTEGER,
+    ccArType     CHAR (10),
+    ccIsDefault  BOOLEAN
+);

@@ -1,0 +1,263 @@
+﻿<Window x:Class="WebRoamAV.pApplicationCategory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p="clr-namespace:WebRoamAV.Resources"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebRoamAV"
+        mc:Ignorable="d"
+         Title="Application Category" Topmost="False" Height="700" Width="560" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner">
+    <Window.InputBindings>
+        <KeyBinding Command="{x:Static local:Commands.btnp2ExcludePressed}" CommandTarget="{Binding ElementName=btnExclude}" Modifiers="Alt" Key="E"/>
+        <KeyBinding Command="{x:Static local:Commands.btnp2DefaultPressed}" CommandTarget="{Binding ElementName=btnDefault}" Modifiers="Alt" Key="D"/>
+        <KeyBinding Command="{x:Static local:Commands.btnp2OKPressed}" CommandTarget="{Binding ElementName=btnExclude}" Modifiers="Alt" Key="O"/>
+        <KeyBinding Command="{x:Static local:Commands.btnp2CancelPressed}" CommandTarget="{Binding ElementName=btnExclude}" Modifiers="Alt" Key="C"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+
+        <CommandBinding
+      Command="{x:Static local:Commands.btnp2ExcludePressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnp2DefaultPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnp2OKPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+        <CommandBinding
+      Command="{x:Static local:Commands.btnp2CancelPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <ResourceDictionary
+  xmlns:local="clr-namespace:WebRoamAV">
+            <!--<span class="code-comment"> Import the resource dictionary which contains the Style
+       applied to Border of each horse's "pit". -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+                <ResourceDictionary Source="scrollviewerDic.xaml"/>
+                <ResourceDictionary Source="togglbuttonDic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Select the access rights for below categories of application:" FontSize="14" FontWeight="Bold" Foreground="Gray" Height="30" Width="Auto" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"/>
+        <TextBlock Text="You can exclude certain known applications from getting blocked by adding the application in exclusion list. Click Exclude to add application in exclusion list." Height="50" Grid.Row="3" Width="350" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+        <Button Name="btnExclude" Content="_Exclude" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Width="80" Height="25" Click="btnExclude_Click"/>
+        <Button Name="btnDefault" Content="_Default" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="0 0 200 0" Width="80" Height="25" Click="btnDefault_Click"/>
+        <Button Name="btnOK" Content="_OK" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="0 0 100 0" Width="80" Height="25" Click="btnOK_Click"/>
+        <Button Name="btnCancel" Content="_Cancel" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancel_Click"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"  Margin="0,0,0,0" Grid.Column="1" Grid.Row="2" PreviewMouseMove="ScrollViewer_PreviewMouseMove" MouseLeave="ScrollViewer_MouseLeave">
+            <StackPanel  Margin="0,0,0,0"  Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="CD/DVD Applications" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText0" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff0" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked0" Unchecked="aOnOff_Unchecked0"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Chat Applications" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText1" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff1" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked1" Unchecked="aOnOff_Unchecked1"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Download Managers" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText2" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff2" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked2" Unchecked="aOnOff_Unchecked2"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Email Clients" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText3" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff3" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked3" Unchecked="aOnOff_Unchecked3"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="File Sharing Applications" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText4" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff4" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked4" Unchecked="aOnOff_Unchecked4"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Games" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText5" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff5" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked5" Unchecked="aOnOff_Unchecked5"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Media Players" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText6" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff6" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked6" Unchecked="aOnOff_Unchecked6"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Miscellaneous" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText7" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff7" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked7" Unchecked="aOnOff_Unchecked7"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Web Proxy" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText8" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff8" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked8" Unchecked="aOnOff_Unchecked8"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="USB Modems" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText9" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff9" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked9" Unchecked="aOnOff_Unchecked9"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Web Browsers" Margin="10,30,0,0" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="aText10" Text="DENY" Margin="400,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="aOnOff10" Margin="450,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="aOnOff_Checked10" Unchecked="aOnOff_Unchecked10"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="220*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>

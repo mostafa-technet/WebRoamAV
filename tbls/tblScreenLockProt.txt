@@ -1,0 +1,17 @@
+tblScreenLockProt
+
+
+ID (int)
+ProtectSL (bool)
+Key (char)
+IsDefault (bool)
+
+
+CREATE TABLE tblScreenLockProt (
+    ID        INTEGER PRIMARY KEY
+                      UNIQUE
+                      NOT NULL,
+    ProtectSL BOOLEAN,
+    [Key]     CHAR,
+    IsDefault BOOLEAN
+);

@@ -1,0 +1,18 @@
+tblADNAScan
+
+ID (int)
+EnableDNA (bool)
+EnableBhaviorDet (int)
+SubmitFiles (int)
+IsDefault (bool)
+
+
+CREATE TABLE tblADNAScan (
+    ID               INTEGER PRIMARY KEY
+                             UNIQUE
+                             NOT NULL,
+    EnableDNA        BOOLEAN,
+    EnableBhaviorDet INTEGER,
+    SubmitFiles      INTEGER,
+    IsDefault        BOOLEAN
+);

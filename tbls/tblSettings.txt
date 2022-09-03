@@ -1,0 +1,44 @@
+tblSettings
+
+ID (int)
+AShow (bool)
+AMode (bool)
+APath (varchar 250)
+ACopyPath (varchar 250)
+ISEnableP (bool)
+ISType (Int)
+ISServer (varchar 150)
+ISPort (int)
+ISUser (varcahr 70)
+ISPassword (varchar 30)
+RRRestore (bool)
+RRRepaire (bool)
+RSDelAfter (Int)
+SAU (bool)
+SIS (bool)
+SRR (bool)
+SRS (bool)
+
+
+CREATE TABLE tblSettings (
+    ID         INTEGER       PRIMARY KEY
+                             UNIQUE
+                             NOT NULL,
+    AShow      BOOLEAN,
+    AMode      BOOLEAN,
+    APath      VARCHAR (250),
+    ACopyPath  VARCHAR (250),
+    ISEnableP  BOOLEAN,
+    ISType     INTEGER,
+    ISServer   VARCHAR (150),
+    ISPort     INTEGER,
+    ISUser     VARCHAR (70),
+    ISPassword VARCHAR (30),
+    RRRestore  BOOLEAN,
+    RRRepaire  BOOLEAN,
+    RSDelAfter INTEGER,
+    SAU        BOOLEAN,
+    SIS        BOOLEAN,
+    SRR        BOOLEAN,
+    SRS        BOOLEAN
+);

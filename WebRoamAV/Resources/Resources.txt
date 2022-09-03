@@ -1,0 +1,2 @@
+﻿CopyRight=Copyright (c) 2018 Webroam Inc.
+pInternetSchedulL1=Specify when the user can access the Internet.

@@ -1,0 +1,17 @@
+tblOnOff
+
+ID
+frmName char[20]
+fieldID int
+fieldOnOff bool
+
+
+
+CREATE TABLE tblOnOff (
+    ID         BIGINT    PRIMARY KEY
+                         UNIQUE
+                         NOT NULL,
+    frmName    CHAR (20) NOT NULL,
+    fieldID    INTEGER   NOT NULL,
+    fieldOnOff BOOLEAN   NOT NULL
+);

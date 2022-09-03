@@ -1,0 +1,310 @@
+﻿<Window x:Class="WebRoamAV.frmSettings"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p="clr-namespace:WebRoamAV.Resources"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebRoamAV"
+        mc:Ignorable="d"
+        WindowStyle="None" Topmost="False" WindowState="Normal"         
+         Background="White" Title="MainWindow" ResizeMode="CanMinimize"  Height="558" Width="696" WindowStartupLocation="Manual" Loaded="Window_Loaded" Keyboard.KeyDown="ButtonEsc_Click">
+    <Window.InputBindings>
+        <KeyBinding Command="{x:Static local:Commands.btnDflPressed}" CommandTarget="{Binding ElementName=btnDefault}" Modifiers="Alt" Key="D"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding
+      Command="{x:Static local:Commands.btnDflPressed}"
+
+      CanExecute="CommandBinding_CanExecute"
+
+      Executed="CommandBinding_Executed"
+
+      />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <ResourceDictionary
+  xmlns:local="clr-namespace:WebRoamAV">
+            <!--<span class="code-comment"> Import the resource dictionary which contains the Style
+       applied to Border of each horse's "pit". -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+                <ResourceDictionary Source="scrollviewerDic.xaml"/>
+                <ResourceDictionary Source="togglbuttonDic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="541*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"  Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Margin="0,10,85,525" Grid.RowSpan="2">
+
+            <TextBlock>
+                       
+                <Hyperlink Foreground="Green" x:Name="link1"  NavigateUri="" RequestNavigate="link_RequestNavigate">
+                    <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="0" />    
+       </Style>
+</Hyperlink.Style>
+                <Run Text="Settings"/>
+            </Hyperlink>
+            </TextBlock>
+            <Label Width="10"/>
+            <TextBlock><Hyperlink  Foreground="Green" x:Name="link2" NavigateUri="wndTools.xaml"  RequestNavigate="link_RequestNavigate">
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+             <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="1" />   
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Tools"/></Hyperlink></TextBlock>
+            <Label Width="10"/>
+            <TextBlock><Hyperlink  Foreground="Green" x:Name="link3" NavigateUri="wpfReports.xaml"  RequestNavigate="link_RequestNavigate">
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+             <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="2" />   
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Report"/></Hyperlink></TextBlock>
+            <Label Width="10"/>
+            <TextBlock x:Name="tlink4"><Hyperlink  Foreground="Green" x:Name="link4" Click="link4_Click"><Hyperlink.Resources>
+                        <ContextMenu x:Key="link41" StaysOpen="true">
+                            <MenuItem Header="Help" Click="MenuItem_Click"/>
+                            <MenuItem Header="Submit System Information"  Click="MenuItem_Click" />
+                            <MenuItem Header="Support"  Click="MenuItem_Click" />
+                            <MenuItem Header="About" Click="MenuItem_Click"/>
+                        </ContextMenu>
+                    </Hyperlink.Resources>
+                <Hyperlink.Style>
+      <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="True" />       
+          <Setter Property="KeyboardNavigation.TabIndex" Value="3" />
+       </Style>
+</Hyperlink.Style>
+
+                <Run Text="Help"/></Hyperlink></TextBlock>
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"  Margin="0,153,23,51" Grid.Column="2" Grid.Row="1" PreviewMouseMove="ScrollViewer_PreviewMouseMove" MouseLeave="ScrollViewer_MouseLeave">
+            <StackPanel  Margin="0,0,0,0"  Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+                <Canvas Width="Auto" KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="8" PreviewKeyDown="Canvas_KeyDown" Height="79" Cursor="Hand" PreviewMouseUp="Canvas_PreviewMouseUp">
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                    <TextBlock Text="Automatic Update" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Change Automatic Update" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="fText" Text="OFF" Margin="460,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="fOnOff" IsTabStop="True" TabIndex="9" Focusable="True" PreviewKeyDown="fOnOff_KeyDown" Margin="510,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="fOnOff_Checked" Unchecked="fOnOff_Unchecked"/>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79" Cursor="Hand"  KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="10" PreviewKeyDown="Canvas_KeyDown_1"  PreviewMouseUp="Canvas_PreviewMouseUp_1">
+                    <TextBlock Text="Internet Settings" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Change Internet settings if not able to connect to the Internet" Margin="10,45,0,0" FontSize="14"/>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <!--Canvas Width="Auto"  Height="79" Cursor="Hand" PreviewMouseUp="Canvas_PreviewMouseUp_2">
+                    <TextBlock Text="Registry Restore" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Restore critical system registry areas changed by viruses and malwares" Margin="10,45,0,0" FontSize="14"/>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </>
+                <Line Fill="White" Width="Auto" Height="3"/-->
+                <Canvas Width="Auto"  Height="79">
+                    <TextBlock Text="Self Protection" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Protects product's installation files, folders services, processes, settings" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="sText" Text="OFF" Margin="460,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="sOnOff"  IsTabStop="True" TabIndex="11" Focusable="True" PreviewKeyDown="sOnOff_KeyDown" IsChecked="False"  Margin="510,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="sOnOff_Checked" Unchecked="sOnOff_Unchecked" Cursor="Hand"/>
+
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <TextBlock Text="Password Protection" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Prevents unauthorized access to product settings" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="tText" Text="OFF" Margin="460,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="tOnOff" IsTabStop="True" TabIndex="12" Focusable="True" PreviewKeyDown="tOnOff_KeyDown" Margin="510,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="tOnOff_Checked" Unchecked="tOnOff_Unchecked" Cursor="Hand"/>
+
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79" Cursor="Hand" KeyboardNavigation.IsTabStop="True" Focusable="True" KeyboardNavigation.TabIndex="13" PreviewKeyDown="Canvas_KeyDown_2" PreviewMouseUp="Canvas_PreviewMouseUp_3">
+                    <TextBlock Text="Report Settings" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Configure schedule for deleting reports" Margin="10,45,0,0" FontSize="14"/>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <TextBlock Text="Report Virus Statistics" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Submits virus detection statistics to research center" Margin="10,45,0,0" FontSize="14"/>
+                    <TextBlock x:Name="foText" Text="OFF" Margin="460,30,0,0" FontSize="15" FontStyle="Normal"/>
+                    <ToggleButton x:Name="foOnOff" IsTabStop="True" TabIndex="14" Focusable="True" PreviewKeyDown="foOnOff_KeyDown" Margin="510,30,0,0" Style="{StaticResource AnimatedSwitch}" Checked="foOnOff_Checked" Unchecked="foOnOff_Unchecked" Cursor="Hand"/>
+
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+                <Line Fill="White" Width="Auto" Height="3"/>
+                <Canvas Width="Auto"  Height="79">
+                    <TextBlock Text="Restore Default Settings" Margin="10,10,0,0" FontSize="23" FontWeight="SemiBold"/>
+                    <TextBlock Text="Restore default settings of entire product" Margin="10,45,0,0" FontSize="14"/>
+                    <Button x:Name="btnDefault" IsTabStop="True" TabIndex="15" Focusable="True" PreviewKeyDown="btnDefault_KeyDown" HorizontalAlignment="Left" Margin="450,30,10,0" Cursor="Hand" Height="25" Width="87" PreviewMouseLeftButtonDown="Default_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="Default_PreviewMouseLeftButtonUp" MouseLeave="Default_MouseLeave_1" MouseEnter="Default_MouseEnter">
+                        <Label x:Name="lblBtnDefault" Foreground="White" VerticalAlignment="Center">_Default All</Label>
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="Green"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Canvas.Style>
+                        <Style>
+                            <Setter Property="Canvas.Background" Value="#E7F3E8"/>
+                            <Style.Triggers>
+                                <Trigger Property="Canvas.IsMouseOver" Value="True">
+                                    <Setter Property="Canvas.Background" Value="#A5D2F1D5" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Canvas.Style>
+                </Canvas>
+            </StackPanel>
+        </ScrollViewer>
+        <Rectangle Name="rect2" Height="20" Width="Auto" Fill="#328A3E"  Grid.ColumnSpan="3" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <Rectangle Name="rect3" Fill="#328A3E" Margin="0,59,0,395"  Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Button x:Name="buttonMin" IsTabStop="True" TabIndex="4" Focusable="True" PreviewKeyDown="buttonMin_KeyDown" Content="-" Grid.Column="2" VerticalContentAlignment="Center" Margin="587,0,42,525" Style="{StaticResource buttonMin}" Click="buttonMin_Click" Grid.RowSpan="2"/>
+        <Button x:Name="buttonClose" IsTabStop="True" TabIndex="5" Focusable="True" PreviewKeyDown="buttonClose_KeyDown" IsCancel="True" Content="X" Grid.Column="2" VerticalContentAlignment="Center" Margin="625,0,4,525" Style="{StaticResource buttonMin}" Click="buttonClose_Click" Grid.RowSpan="2"/>
+        <Button x:Name="ButtonMn" Content="&lt;&lt;   Back to Menu" Grid.Column="4" HorizontalAlignment="Left" Margin="487,87,0,0" Grid.Row="1" VerticalAlignment="Top" Width="151" Height="32" Foreground="#FF008000" FontFamily="Eras Demi ITC" FontSize="15" Cursor="Hand" IsTabStop="True" TabIndex="7" Focusable="True" PreviewKeyDown="ButtonMn_KeyDown"  PreviewMouseLeftButtonUp="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#eaf5f5f5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#ebe5e5e5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="Buttonimex" IsTabStop="True" TabIndex="6" Focusable="True" PreviewKeyDown="Buttonimex_KeyDown" Content="Import / Export" Grid.Column="4" HorizontalAlignment="Left" Margin="307,87,0,0" Grid.Row="1" VerticalAlignment="Top" Width="151" Height="32" Foreground="#FF008000" FontFamily="Eras Demi ITC" FontSize="15" Cursor="Hand"  PreviewMouseLeftButtonUp="Buttonimex_PreviewMouseLeftButtonUp">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#eaf5f5f5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#ebe5e5e5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Rectangle Name="rectMain" Margin="0,0,0,0" StrokeThickness="1" Stroke="#328A3E"  Grid.ColumnSpan="3" Grid.RowSpan="2">
+        </Rectangle>
+        <Label x:Name="label" Content="{x:Static p:Resources.CopyRight}" Grid.Column="2" HorizontalAlignment="Left" Margin="0,517,0,-6" Grid.Row="1" VerticalAlignment="Top" Width="412" Height="30" Foreground="White"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="17*" />
+            <ColumnDefinition Width="331*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- <Rectangle Name="rect" Width="100" VerticalAlignment="Stretch" Fill="#99000000" Visibility="Collapsed" /> -->
+
+    </Grid>
+</Window>

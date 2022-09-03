@@ -1,0 +1,31 @@
+﻿<Window x:Class="WebRoamAV.gMbox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebRoamAV"
+        mc:Ignorable="d"
+          WindowStyle="None"
+AllowsTransparency="True"
+Background="Transparent"
+ Height="250" Width="300" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Background="Gray">
+        <Border BorderThickness="1" BorderBrush="Orange" CornerRadius="6"></Border>
+        <StackPanel>
+
+            <StackPanel  Width="300" Height="70" Background="DarkRed">
+                <Grid Grid.Column="2" Height="36"  Margin="10,10,10,10" RenderTransformOrigin="0.427,0.573" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="Resources/1208461.gif" />
+                    <Label Name="gtitle" Grid.Column="1" Height="55" Padding="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="White" FontSize="16" FontWeight="Bold" FontFamily="Ariel" RenderTransformOrigin="0.496,0.939">Information</Label>
+                </Grid>
+
+                <TextBlock TextAlignment="Right" VerticalAlignment="Center" Foreground="White" FontSize="11" FontWeight="Bold" FontFamily="Ariel">By Webroam</TextBlock>
+            </StackPanel>
+            <TextBlock Name="tmsg" Width="Auto" TextWrapping="Wrap" FontSize="14" Foreground="White" Grid.Column="0" Text="" Margin="10,10,10,0" Height="131"/>
+        </StackPanel>
+    </Grid>
+</Window>
