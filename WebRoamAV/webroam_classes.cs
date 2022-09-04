@@ -330,7 +330,7 @@ namespace WebRoamAV //unitilities file
           //  MessageBox.Show(AppSettings.IsParentalProtectOn.ToString());
             blocked = File.ReadAllLines("blockedsites.txt");
             AppSettings.IsParentalProtectOn = blocked.Any(l => !String.IsNullOrWhiteSpace(l));
-
+           
             Task.Run(() =>
             {
                 while (true)
@@ -344,6 +344,7 @@ namespace WebRoamAV //unitilities file
                                 source.Cancel();
                             }
                             catch { }
+
                         }
                         else
                         {
@@ -354,6 +355,35 @@ namespace WebRoamAV //unitilities file
                                     t.Start();
                                 }
                             }
+                        }
+                        if(!App.AppSettings.IsParentalProtectOn)
+                        { 
+                            try
+                            {
+                                var Pcs = Process.GetProcessesByName("webroam_diver_packets");
+                                foreach(var p in Pcs)
+                                {
+                                    p.Kill();
+                                }
+                            }
+                            catch
+                            { }
+                        }
+                        else
+                        {
+                            try
+                            {
+                                var pinfo = new ProcessStartInfo();
+                                pinfo.WindowStyle = ProcessWindowStyle.Hidden;
+                                pinfo.FileName = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\" + "webroam_diver_packets.exe";
+                                pinfo.CreateNoWindow = true;
+                                pinfo.WorkingDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                                pinfo.UseShellExecute = false;
+                                pinfo.Verb = "runas";
+                                Process.Start(pinfo);
+                            }
+                            catch
+                            { }
                         }
                     }
                     Thread.Sleep(800);
